@@ -1,11 +1,9 @@
 # Projects-Management
 
-Yzahk Maymon
+Yzahk Tzahy Maymon
 
 Yahel Friedman
 
 Matan Lazimi
 
 Elhanan Ben-Shabu
-
-Tzahy Maymon
