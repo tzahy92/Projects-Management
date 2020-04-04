@@ -1,6 +1,6 @@
 # Projects-Management
-tzahy
-maymon tzahyv
-vfdvm
-matam lazimi
+
+Yzahk Maymon
+Yahel Friedman
+Matan lazimi
 Elhanan Ben-Shabu
