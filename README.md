@@ -4,8 +4,8 @@ Yzahk Maymon
 
 Yahel Friedman
 
-Matan lazimi
+Matan Lazimi
 
 Elhanan Ben-Shabu
 
-Tzahy maymon
+Tzahy Maymon
