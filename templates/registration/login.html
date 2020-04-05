@@ -167,7 +167,7 @@ a{color:inherit;text-decoration:none}
 		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
 		<div class="login-form">
 			<div class="sign-in-htm">
-                <form method="POST" action="{% url 'submit' %}">
+                <form method="POST" action="{% url 'login' %}">
                     {% csrf_token %}
 				<div class="group">
 					<label for="user" class="label">Username</label>
