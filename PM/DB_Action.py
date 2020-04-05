@@ -21,6 +21,9 @@ def get_user_by_ID(_ID):
 def update_user_by_ID(_ID):
     usersCollection.update_one({"_id":20},{"$set":{"score":"30"}})
 
+def get_user_by_userName(username):
+    return usersCollection.find_one({"userName": username})
+
 
 
 

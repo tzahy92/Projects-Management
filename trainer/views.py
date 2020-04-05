@@ -5,21 +5,29 @@ from django import forms
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from  django.contrib.auth.models import User, auth
+from PM import DB_Action
 
-def submit(request):
-    print("i made it")
-    f = open("C:\\Users\\admin\\Desktop\\demo.txt", "a")
-    f.write("Now the file has more content!")
-    f.close()
-    if request.method =='POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = auth.authenticate(username=username,password=password)
-        if user is not  None:
-            auth.login(request,user)
-            return redirect("/")
-        else:
-            messages.info(request,"invalid credentials")
-            return redirect('login')
-    else:
-        return render(request,'login.html')
+def trainer(request):
+    print("")
+
+
+def trainee(request):
+    print("")
+
+def admin(request):
+    print("")
+
+def loginBtn(request):
+    uname =request.POST.get('username')
+    pwd = request.POST.get('password')
+    user = DB_Action.get_user_by_userName(uname)
+    if(user!=None):
+        if(user['password']==pwd):
+            if (user['role'] == 1):
+                return render(request, "admin.html")
+            if(user['role']==2):
+                return render(request, "trainer.html")
+            if (user['role'] == 3):
+                return render(request, "trainee.html")
+
+    #return render(request,"login.html")
