@@ -1,11 +1,15 @@
-from .settings import DATABASES
-from django.conf import settings
+from . import DB_Action
+
+x = DB_Action.get_user_by_ID("20")
+DB_Action.update_user_by_ID(20)
+z = ""
 
 
 
-tot = DATABASES.get()
-db = DATABASES.items(10)
-X = DATABASES.values()
-Y =5
+
+
+
+
+
 
 
