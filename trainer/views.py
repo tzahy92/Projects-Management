@@ -18,16 +18,17 @@ def admin(request):
     print("")
 
 def loginBtn(request):
-    uname =request.POST.get('username')
-    pwd = request.POST.get('password')
+    uname = request.POST.get('username',False)
+    pwd = request.POST.get('password',False)
     user = DB_Action.get_user_by_userName(uname)
-    if(user!=None):
+    if(user!= None):
         if(user['password']==pwd):
             if (user['role'] == 1):
                 return render(request, "admin.html")
-            if(user['role']==2):
+            if(user['role'] == 2):
                 return render(request, "trainer.html")
             if (user['role'] == 3):
                 return render(request, "trainee.html")
-
-    #return render(request,"login.html")
+            else:
+                return render(request,"malic.html")
+    return render(request,"login.html")
