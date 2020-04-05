@@ -1,4 +1,15 @@
-from djongo import models
+from . import DB_Action
 
-class Student(models.Model):
-    created_at = models.DateTimeField(auto_now_add=True, auto_now=False)
+x = DB_Action.get_user_by_ID("20")
+DB_Action.update_user_by_ID(20)
+z = ""
+
+
+
+
+
+
+
+
+
+
