@@ -1,11 +1,4 @@
-from .settings import DATABASES
-from django.conf import settings
+from djongo import models
 
-
-
-tot = DATABASES.get()
-db = DATABASES.items(10)
-X = DATABASES.values()
-Y =5
-
-
+class Student(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True, auto_now=False)
