@@ -29,6 +29,4 @@ def loginBtn(request):
                 return render(request, "trainer.html")
             if (user['role'] == 3):
                 return render(request, "trainee.html")
-            else:
-                return render(request,"malic.html")
     return render(request,"login.html")
