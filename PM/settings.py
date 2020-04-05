@@ -76,8 +76,14 @@ WSGI_APPLICATION = 'PM.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'shareBall',
+        'HOST': 'mongodb+srv://yahelfr:29913051@cluster0-4iuqq.mongodb.net/test?retryWrites=true&w=majority',
+        'USER': 'yahelfr',
+        'PASSWORD': '29913051',
+
+        ##mongodb+srv://yahelfr:<password>@cluster0-4iuqq.mongodb.net/test?retryWrites=true&w=majority
+       ## 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
