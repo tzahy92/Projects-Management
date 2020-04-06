@@ -15,11 +15,13 @@ def trainee(request):
 def admin(request):
     print("")
 
+
+"""sign button clicked action, gets username and password from sign in page, and navigate to the right page"""
 def loginBtn(request):
     uname = request.POST.get('username',False)
     pwd = request.POST.get('password',False)
     user = DB_Action.get_user_by_userName(uname)
-    if(user!= None):
+    if(user!= None and uname != None and pwd != None):
         if(user['password']==pwd):
             if (user['role'] == 1):
                 return render(request, "admin.html")
