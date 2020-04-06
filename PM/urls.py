@@ -16,9 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.contrib.auth.views import LoginView
+from trainer import views
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',LoginView.as_view(),name='login'),
+    path('loginBtn/', views.loginBtn),
+    path('trainer/',views.trainer,name='trainer'),
+    path('admin/',views.admin,name='admin'),
+    path('trainee/',views.trainee,name='trainee'),
 ]
