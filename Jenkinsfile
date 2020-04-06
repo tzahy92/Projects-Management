@@ -5,10 +5,11 @@ pipeline {
             steps {
                 sh 'python --version'
             }
-          stage('test') {
-            steps {
+        }
+         stage('test') {
+             steps {
                 sh 'python testPM.py'
-            }
+             }
         }
     }
 }
