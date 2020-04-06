@@ -23,7 +23,7 @@ def loginBtn(request):
     if(user!= None):
         if(user['password']==pwd):
             if (user['role'] == 1):
-                return render(request, "index.html")
+                return render(request, "admini/index.html")
             if(user['role'] == 2):
                 return render(request, "trainer.html")
             if (user['role'] == 3):

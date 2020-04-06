@@ -21,11 +21,11 @@ from trainer import views
 
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+    #path('admini/', admini.site.urls),
     path('login/',LoginView.as_view(),name='login'),
     path('loginBtn/', views.loginBtn),
     path('trainer/',views.trainer,name='trainer'),
-    path('index/',views.admin,name='index'),
+    path('admini/',views.admin,name='index'),
     path('trainee/',views.trainee,name='trainee'),
 
 ]
