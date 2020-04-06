@@ -21,7 +21,7 @@ def insert_user(_id,userName,password,firstName,lastName,role):
         usersCollection.insert_one((newUser))
 
 def get_user_by_ID(_ID):
-    return usersCollection.find_one({"_id":20,"name":"yahel"})
+    return usersCollection.find_one({"_id":_ID})
 
 def update_user_by_ID(_ID,field,value):
     if (field == "userName" and get_user_by_userName(value) != None):
