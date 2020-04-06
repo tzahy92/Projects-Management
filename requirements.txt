@@ -1,0 +1,13 @@
+Django
+asgiref	
+bson
+dataclasses	
+djongo
+dnspython
+pip	
+pymongo	
+python-dateutil	
+pytz
+setuptools
+six	
+sqlparse
