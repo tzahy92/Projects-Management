@@ -26,9 +26,9 @@ def get_user_by_ID(_ID):
 def update_user_by_ID(_ID,field,value):
     if (field == "userName" and get_user_by_userName(value) != None):
         raise Exception("this username is taken")
-    if (field == "id" and get_user_by_ID(field) != None):
+    if (field == "id" and get_user_by_ID(value) != None):
         raise Exception("this ID is taken")
-    usersCollection.update_one({"_id":20},{"$set":{field:value}})
+    usersCollection.update_one({"_id":_ID},{"$set":{field:value}})
 
 def get_user_by_userName(username):
     return usersCollection.find_one({"userName": username})

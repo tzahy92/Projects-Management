@@ -1,15 +1,31 @@
 pipeline {
-    agent { docker { image 'python:3.7' } }
+    agent none
     stages {
-        stage('build') {
+        stage('Build') {
+            agent {
+                docker {
+                    image 'python:2-alpine'
+                }
+            }
             steps {
-                sh 'python --version'
+                sh 'pip install -r requirements.txt'
+                sh 'python manage.py runserver'
             }
         }
-         stage('test') {
-             steps {
-                sh 'python manage test'
-             }
+        stage('Test') {
+            agent {
+                docker {
+                    image 'qnib/pytest'
+                }
+            }
+            steps {
+                sh 'py.test --verbose --junit-xml test-reports/results.xml trainer/tests.py'
+            }
+            post {
+                always {
+                    junit 'test-reports/results.xml'
+                }
+            }
         }
     }
 }
