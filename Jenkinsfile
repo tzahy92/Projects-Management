@@ -8,7 +8,7 @@ pipeline {
         }
          stage('test') {
              steps {
-                sh 'python testPM.py'
+                sh 'python trainer/tests.py'
              }
         }
     }
