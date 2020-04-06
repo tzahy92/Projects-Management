@@ -1,5 +1,4 @@
 import unittest
-from django.test import TestCase
 
 # Create your tests here.
 from PM import DB_Action
