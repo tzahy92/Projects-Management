@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 # Create your views here.
 from django import forms
 from django.shortcuts import render, redirect
@@ -23,9 +22,9 @@ def loginBtn(request):
     if(user!= None):
         if(user['password']==pwd):
             if (user['role'] == 1):
-                return render(request, "admini/index.html")
+                return render(request, "admin.html")
             if(user['role'] == 2):
                 return render(request, "trainer.html")
             if (user['role'] == 3):
-                return render(request, "trainee.html")
+                return render(request, "../templates/folder_trainee/web_trainee.html")
     return render(request,"login.html")
