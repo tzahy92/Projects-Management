@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile manage.py'
+                sh 'python manage.py runserver'
             }
         }
         stage('Test') {
