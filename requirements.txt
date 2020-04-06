@@ -1,4 +1,4 @@
-Djang==2.2.12	
+"Djang==2.2.12"	
 asgiref==3.2.7
 bson==0.5.8
 dataclasses==0.6
