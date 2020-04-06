@@ -4,9 +4,8 @@ from django.shortcuts import render
 from django import forms
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from  django.contrib.auth.models import User, auth
+from django.contrib.auth.models import User, auth
 from PM import DB_Action
-
 def trainer(request):
     print("")
 
@@ -24,7 +23,7 @@ def loginBtn(request):
     if(user!= None):
         if(user['password']==pwd):
             if (user['role'] == 1):
-                return render(request, "admin.html")
+                return render(request, "index.html")
             if(user['role'] == 2):
                 return render(request, "trainer.html")
             if (user['role'] == 3):
