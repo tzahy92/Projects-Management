@@ -12,7 +12,8 @@ pipeline {
                    sh 'pip install django'
                    sh 'pip install pymongo'
                    sh 'pip install djongo'
-                   sh 'pip install dnspython'
+                   sh 'pip install dnspython' 
+                   sh 'pip install bson'
                }
            }
        }
@@ -28,6 +29,7 @@ pipeline {
                    sh 'pip install pymongo'
                    sh 'pip install djongo'
                    sh 'pip install dnspython'
+                   sh 'pip install bson'
                    sh 'python manage.py test'
                }
            }
