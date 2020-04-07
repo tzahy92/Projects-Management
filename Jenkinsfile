@@ -10,7 +10,9 @@ pipeline {
            steps {
                withEnv(["HOME=${env.WORKSPACE}"]) {
                    sh 'pip install django'
-                   sh 'pip install pymongo'
+                   sh 'pip uninstall bson'
+                   sh 'pip uninstall pymongo'
+                   sh 'conda install -c anaconda pymongo'
                    sh 'pip install djongo'
                    sh 'pip install dnspython' 
                    sh 'pip install bson'
@@ -26,9 +28,11 @@ pipeline {
            steps {
                withEnv(["HOME=${env.WORKSPACE}"]) {
                    sh 'pip install django'
-                   sh 'pip install pymongo'
+                   sh 'pip uninstall bson'
+                   sh 'pip uninstall pymongo'
+                   sh 'conda install -c anaconda pymongo'
                    sh 'pip install djongo'
-                   sh 'pip install dnspython'
+                   sh 'pip install dnspython' 
                    sh 'pip install bson'
                    sh 'python manage.py test'
                }
