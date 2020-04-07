@@ -13,8 +13,6 @@ pipeline {
                    sh 'pip install djongo'
                    sh 'pip install pymongo'
                    sh 'pip install bson'
-                   sh 'pip uninstall bson'
-                   sh 'pip uninstall pymongo'
                    sh 'conda install -c anaconda pymongo'
                    sh 'pip install dnspython' 
                }
@@ -32,8 +30,6 @@ pipeline {
                    sh 'pip install djongo'
                    sh 'pip install pymongo'
                    sh 'pip install bson'
-                   sh 'pip uninstall bson'
-                   sh 'pip uninstall pymongo'
                    sh 'conda install -c anaconda pymongo'
                    sh 'pip install dnspython' 
                    sh 'python manage.py test'
