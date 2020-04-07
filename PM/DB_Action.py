@@ -1,7 +1,6 @@
 
 from django.contrib import admin
 from django.urls import path
-import pymongo
 from pymongo import MongoClient
 
 
