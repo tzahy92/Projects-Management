@@ -11,8 +11,8 @@ pipeline {
                withEnv(["HOME=${env.WORKSPACE}"]) {
                    sh 'pip install django'
                    sh 'pip install pymongo'
-                   sh 'pip install djnogo'
-				   sh 'pip install dnspython'
+                   sh 'pip install djongo'
+                   sh 'pip install dnspython'
                }
            }
        }
@@ -26,8 +26,8 @@ pipeline {
                withEnv(["HOME=${env.WORKSPACE}"]) {
                    sh 'pip install django'
                    sh 'pip install pymongo'
-                   sh 'pip install djnogo'
-				   sh 'pip install dnspython'
+                   sh 'pip install djongo'
+                   sh 'pip install dnspython'
                    sh 'python manage.py test'
                }
            }
