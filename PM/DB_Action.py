@@ -32,12 +32,3 @@ def update_user_by_ID(_ID,field,value):
 def get_user_by_userName(username):
     return usersCollection.find_one({"userName": username})
 
-
-
-
-
-
-
-
-
-

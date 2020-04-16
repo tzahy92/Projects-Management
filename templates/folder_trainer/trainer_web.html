@@ -1,40 +1,49 @@
 <!DOCTYPE HTML>
 <html>
 <style>
-    html
-{ height: 100%;}
+    html {
+        height: 100%;
+    }
 
-*
-{ margin: 0;
-  padding: 0;}
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body
-{ font: normal .80em 'trebuchet ms', arial, sans-serif;
-  background: #F0EFE2 url(background.png) repeat;
-  color: #777;}
+{
+    font: normal .80em 'trebuchet ms', arial, sans-serif;
+    background: #F0EFE2 url(background.png) repeat;
+    color: #777;
+}
 
-p
-{ padding: 0 0 20px 0;
-  line-height: 1.7em;}
+p {
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
 
-img
-{ border: 0;}
+img {
+    border: 0;
+}
 
-h1, h2, h3, h4, h5, h6
-{ font: normal 175% 'century gothic', arial, sans-serif;
-  color: #43423F;
-  margin: 0 0 15px 0;
-  padding: 15px 0 5px 0;}
+h1, h2, h3, h4, h5, h6 {
+    font: normal 175% 'century gothic', arial, sans-serif;
+    color: #43423F;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
 
-h2
-{ font: normal 175% 'century gothic', arial, sans-serif;
-  color: #000;}
+h2 {
+    font: normal 175% 'century gothic', arial, sans-serif;
+    color: #000;
+}
 
-h4, h5, h6
-{ margin: 0;
-  padding: 0 0 5px 0;
-  font: normal 120% arial, sans-serif;
-  color: #000;}
+h4, h5, h6 {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font: normal 120% arial, sans-serif;
+    color: #000;
+}
 
 h5, h6
 { font: italic 95% arial, sans-serif;
@@ -294,10 +303,35 @@ table tr th, table tr td
   text-align: left;}
 
 table tr td
-{ background: #F0EFE2;
-  color: #47433F;
-  border-top: 1px solid #FFF;}
+{
+    background: #F0EFE2;
+    color: #47433F;
+    border-top: 1px solid #FFF;
+}
+
+label[for = field_type]{
+    font-size: large;
+    font-family: Arial;
+}
+
+select[id = field_type]{
+    width: 140px;
+    height: 30px;
+    font-size: medium;
+    font-family: Arial;
+    border-radius: 5px;
+}
+
+select[id = Addresses]{
+    width: 140px;
+    height: 30px;
+    font-size: medium;
+    font-family: Arial;
+    border-radius: 5px;
+}
+
 </style>
+
 <head>
   <title>Trainer</title>
   <meta name="description" content="website description" />
@@ -318,6 +352,20 @@ table tr td
       </div>
       <div id="menubar">
         <ul id="menu">
+            <label for="field_type">Search: </label>
+            <select id="field_type">
+                <option value="None"></option>
+                <option value="Soccer">Soccer</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Combined">Combined</option>
+            </select>
+            <select id="Addresses">
+                <option value="None"></option>
+                <option value="Schona A">Schona A</option>
+                <option value="Schona B">Schona B</option>
+                <option value="Schona C">Schona C</option>
+            </select>
+
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on >
           <li class="selected"><a href="trainer_web.html">Home</a></li>
           <li><a href="examples.html">Examples</a></li>
