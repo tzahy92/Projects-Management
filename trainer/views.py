@@ -52,14 +52,14 @@ def register(request):
         messages.info(request,'please enter same password')
         return render(request,"../templates/registration/sign-up.html")
     elif(DB_Action.checkUserNameExistence(uname)):
-        messages.info(request, 'userName already Exist')
+        messages.info(request, 'user name already Exist')
         return render(request, "../templates/registration/sign-up.html")
     elif(DB_Action.checkEmailExistence(email)):
-        messages.info(request, 'email adress already exist')
+        messages.info(request, 'email address already exist')
         return render(request, "../templates/registration/sign-up.html")
     else:
-        print("")
-        ##return render(request, "../templates/folder_trainer/trainer_web.html")
+        ##DB_Action.insert_user(uname,firstpwd)
+        return render(request, "../templates/folder_trainer/trainer_web.html")
 
 
 
