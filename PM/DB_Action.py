@@ -1,7 +1,6 @@
 
 from django.contrib import admin
 from django.urls import path
-import pymongo
 from pymongo import MongoClient
 
 """this file connecting all the other files to the project's data base"""
@@ -34,13 +33,4 @@ def update_user_by_ID(_ID,field,value):
 """get user-name and return all user's details from DB"""
 def get_user_by_userName(username):
     return usersCollection.find_one({"userName": username})
-
-
-
-
-
-
-
-
-
 
