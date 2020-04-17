@@ -11,13 +11,13 @@ usersCollection = db["users"]  ##connect to collection
 
 
 """ get user details and insert a new user to database"""
-def insert_user(_id,userName,password,firstName,lastName,role,Email):
+def insert_user(userName,password,firstName,lastName,role,Email):
     if(get_user_by_userName(userName)!=None):
         raise Exception("this username is taken")
-    if(get_user_by_ID(_id)!=None):
-        raise Exception("this ID is taken")
+    ##if(get_user_by_ID(_id)!=None):
+     ##   raise Exception("this ID is taken")
     else:
-        newUser = {"_id": _id,"userName" : userName,"password" : password, "firstName": firstName,"lastName":lastName, "role": role,"E-mail":Email}
+        newUser = {"userName" : userName,"password" : password, "firstName": firstName,"lastName":lastName, "role": role,"E-mail":Email}
         usersCollection.insert_one((newUser))
 
 

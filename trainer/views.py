@@ -46,6 +46,7 @@ def register(request):
     uname = request.POST.get('usernameSignUp',False)
     firstpwd = request.POST.get('firstPasswordSignUp',False)
     secpwd = request.POST.get('secondPasswordSignUp',False)
+    fullName = request.POST.get('fullName',False)
     email = request.POST.get('emailAdressSignUp',False)
     views = request.POST.get('fullName',False)
     if(firstpwd != secpwd):
@@ -58,7 +59,7 @@ def register(request):
         messages.info(request, 'email address already exist')
         return render(request, "../templates/registration/sign-up.html")
     else:
-        ##DB_Action.insert_user(uname,firstpwd)
+        DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
         return render(request, "../templates/folder_trainer/trainer_web.html")
 
 
