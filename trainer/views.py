@@ -34,24 +34,26 @@ def loginBtn(request):
                 return render(request, "../templates/folder_trainer/trainer_web.html")
             if (user['role'] == 3):
                 return render(request, "../templates/folder_trainee/web_trainee.html")
-    return render(request,"login.html")
+    return render(request,"sign-in.html")
 
 def register(request):
     uname = request.POST.get('usernameSignUp',False)
     firstpwd = request.POST.get('firstPasswordSignUp',False)
     secpwd = request.POST.get('secondPasswordSignUp',False)
     email = request.POST.get('emailAdressSignUp',False)
+    views = request.POST.get('fullName',False)
     if(firstpwd != secpwd):
         ##x = forms.CharField(label="you entered same password twice")
         messages.info(request,'please enter same password')
-        ##return render(request, "../templates/registration/login.html",{'active_tab':'sign-up-htm'})
-        ##return render(request, "../templates/registration/login.html#signUpForm")
+        ##return render(request, "../templates/registration/sign-in.html",{'active_tab':'sign-up-htm'})
+        ##return render(request, "../templates/registration/sign-in.html#signUpForm")
         ##return HttpResponseRedirect("")
-        ##edirect('signup')
+        redirect(request,{'active_tab':'sign-up-htm'})
     elif(DB_Action.checkUserNameExistence(uname)):
         print("user name already exist")
     elif(DB_Action.checkEmailExistence(email)):
         print("email already exist")
+    else:
         return render(request, "../templates/folder_trainer/trainer_web.html")
 
 

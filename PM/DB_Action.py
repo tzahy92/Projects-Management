@@ -20,6 +20,7 @@ def insert_user(_id,userName,password,firstName,lastName,role):
         newUser = {"_id": _id,"userName" : userName,"password" : password, "firstName": firstName,"lastName":lastName, "role": role}
         usersCollection.insert_one((newUser))
 
+
 """"get user ID and returns all user details"""
 def get_user_by_ID(_ID):
     return usersCollection.find_one({"_id":_ID})

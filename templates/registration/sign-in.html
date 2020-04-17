@@ -250,6 +250,10 @@
                     <input id="pass" type="text" class="input" name = "emailAdressSignUp">
                 </div>
                 <div class="group">
+                    <label for="pass" class="label">full name</label>
+                    <input id="pass" type="text" class="input" name = "fullName">
+                </div>
+                <div class="group">
                     <input type="submit" class="button" value="Sign Up">
                 </div>
                     <font color="red"><div>
@@ -262,14 +266,7 @@
                         {% endif %}
                     </div></font>
                 <div class="hr"></div>
-                <div class="foot-lnk">
-                    <label for="tab-1">Already Member?</a> </label>
-                </div>
                 <div>
-
-                    {%  for message in messages %}
-                    <h4>{{ messages}}</h4>
-                    {% endfor %}
                 </div>
             </div>
         </form>
