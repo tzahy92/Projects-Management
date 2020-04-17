@@ -32,6 +32,7 @@ urlpatterns = [
     path('trainee/',views.trainee,name='trainee'),
     path('',views.showLogin,name='loginPage'),
     path('signUpBtn/', views.register, name = 'sign-up'),
+    path('sign-up/', views.showRegister, name = 'sign-up'),
 
 
 ]

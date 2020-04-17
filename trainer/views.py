@@ -23,6 +23,9 @@ def admin(request):
 def showLogin(request):
     return render(request,"../templates/registration/sign-in.html")
 
+def showRegister(request):
+    return render(request, "../templates/registration/sign-up.html")
+
 """sign button clicked action, gets username and password from sign in page, and navigate to the right page"""
 def loginBtn(request):
     uname = request.POST.get('username',False)
@@ -49,13 +52,14 @@ def register(request):
         messages.info(request,'please enter same password')
         return render(request,"../templates/registration/sign-up.html")
     elif(DB_Action.checkUserNameExistence(uname)):
-        messages.info(request, 'userNamealreadyExist')
+        messages.info(request, 'userName already Exist')
         return render(request, "../templates/registration/sign-up.html")
     elif(DB_Action.checkEmailExistence(email)):
         messages.info(request, 'email adress already exist')
         return render(request, "../templates/registration/sign-up.html")
     else:
-        return render(request, "../templates/folder_trainer/trainer_web.html")
+        print("")
+        ##return render(request, "../templates/folder_trainer/trainer_web.html")
 
 
 
