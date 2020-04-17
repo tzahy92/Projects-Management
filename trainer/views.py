@@ -5,6 +5,8 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from PM import DB_Action
+from templates import registration
+from django.contrib import messages
 def trainer(request):
     print("")
 
@@ -30,3 +32,18 @@ def loginBtn(request):
             if (user['role'] == 3):
                 return render(request, "../templates/folder_trainee/web_trainee.html")
     return render(request,"login.html")
+
+def register(request):
+    uname = request.POST.get('usernameSignUp',False)
+    firstpwd = request.POST.get('firstPasswordSignUp',False)
+    secpwd = request.POST.get('secondPasswordSignUp',False)
+    email = request.POST.get('emailAdressSignUp',False)
+    if(firstpwd != secpwd):
+        ##x = forms.CharField(label="you entered same password twice")
+        messages.info(request,'password1=password2')
+        return render(request, "../templates/registration/login.html")
+    else:
+        return render(request, "login.html")
+
+
+
