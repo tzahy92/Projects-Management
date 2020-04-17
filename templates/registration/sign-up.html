@@ -47,7 +47,7 @@
         background: rgba(40, 57, 101, .9);
     }
 
-
+    /*.login-html .sign-in-htm,
     .login-html .sign-up-htm {
         top: 0;
         left: 0;
@@ -57,13 +57,18 @@
         transform: rotateY(180deg);
         backface-visibility: hidden;
         transition: all .4s linear;
-    }
+    }*/
 
-    .login-html .tab,
+    .login-html .sign-up,
+    .login-form .group .check {
+        display: none;
+    }/*radio option hide*/
+
+    /*.login-html .tab,
     .login-form .group .label,
     .login-form .group .button {
         text-transform: uppercase;
-    }
+    }*/
 
     .login-html .tab {
         font-size: 22px;
@@ -74,10 +79,11 @@
         border-bottom: 2px solid transparent;
     }
 
+    /*.login-html .sign-in:checked + .tab,
     .login-html .sign-up:checked + .tab {
         color: #fff;
         border-color: #1161ee;
-    }
+    } the sign up tab press*/
 
     .login-form {
         min-height: 345px;
@@ -129,7 +135,7 @@
         background: rgba(255, 255, 255, .1);
     }
 
-    .login-form .group label .icon:before,
+    /*.login-form .group label .icon:before,
     .login-form .group label .icon:after {
         content: '';
         width: 10px;
@@ -137,22 +143,22 @@
         background: #fff;
         position: absolute;
         transition: all .2s ease-in-out 0s;
-    }
+    }*/
 
-    .login-form .group label .icon:before {
+    /*.login-form .group label .icon:before {
         left: 3px;
         width: 5px;
         bottom: 6px;
         transform: scale(0) rotate(0);
-    }
+    }*/
 
-    .login-form .group label .icon:after {
+    /*.login-form .group label .icon:after {
         top: 6px;
         right: 0;
         transform: scale(0) rotate(0);
-    }
+    }*/
 
-    .login-form .group .check:checked + label {
+    /*.login-form .group .check:checked + label {
         color: #fff;
     }
 
@@ -166,72 +172,62 @@
 
     .login-form .group .check:checked + label .icon:after {
         transform: scale(1) rotate(-45deg);
-    }
+    }*/
 
-    .login-html .sign-up + .tab + .login-form {
+    /*.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
         transform: rotate(0);
-    }
+    }*/
 
-    .login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+    /*.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
         transform: rotate(0);
-    }
+    }*/
 
-    .hr {
+    /*.hr {
         height: 2px;
         margin: 60px 0 50px 0;
         background: rgba(255, 255, 255, .2);
-    }
+    }*/
 
     .foot-lnk {
         text-align: center;
     }
 </style>
+
+
+
 <head>
     <title>Login shareball</title>
 </head>
+
 <body>
 <div class="login-wrap">
     <div class="login-html">
-        <label for="tab-2" class="tab">Sign Up</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
         <div class="login-form">
-        <form method="POST" action="/signUpBtn/" name = "signUpForm">
-        {% csrf_token %}
             <div class="sign-up-htm">
                 <div class="group">
                     <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input" name="usernameSignUp">
+                    <input id="user" type="text" class="input">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">Password</label>
-                    <input id="pass" type="password" class="input" data-type="password" name = "firstPasswordSignUp">
+                    <input id="pass" type="password" class="input" data-type="password">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">Repeat Password</label>
-                    <input id="pass" type="password" class="input" data-type="password" name = "secondPasswordSignUp">
+                    <input id="pass" type="password" class="input" data-type="password">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">Email Address</label>
-                    <input id="pass" type="text" class="input" name = "emailAdressSignUp">
-                </div>
-                <div class="group">
-                    <label for="pass" class="label">full name</label>
-                    <input id="pass" type="text" class="input" name = "fullName">
+                    <input id="pass" type="text" class="input">
                 </div>
                 <div class="group">
                     <input type="submit" class="button" value="Sign Up">
                 </div>
-                    <font color="red"><div>
-                        {% if messages %}
-                        <ul class="messages">
-                            {% for message in messages %}
-                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                    </div></font>
-                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <label for="tab-1"><a href="sign-in.html"> Already Member?</a> </label>
+                </div>
             </div>
-        </form>
         </div>
     </div>
 </div>

@@ -11,19 +11,22 @@ usersCollection = db["users"]  ##connect to collection
 
 
 """ get user details and insert a new user to database"""
-def insert_user(_id,userName,password,firstName,lastName,role):
+def insert_user(_id,userName,password,firstName,lastName,role,Email):
     if(get_user_by_userName(userName)!=None):
         raise Exception("this username is taken")
     if(get_user_by_ID(_id)!=None):
         raise Exception("this ID is taken")
     else:
-        newUser = {"_id": _id,"userName" : userName,"password" : password, "firstName": firstName,"lastName":lastName, "role": role}
+        newUser = {"_id": _id,"userName" : userName,"password" : password, "firstName": firstName,"lastName":lastName, "role": role,"E-mail":Email}
         usersCollection.insert_one((newUser))
 
 
 """"get user ID and returns all user details"""
 def get_user_by_ID(_ID):
     return usersCollection.find_one({"_id":_ID})
+
+def removeUserByUserNamer(userName):
+    usersCollection.remove({"userName":userName})
 
 """get user ID, field to update in DB and value to update, then makes the update in DB"""
 def update_user_by_ID(_ID,field,value):

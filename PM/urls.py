@@ -24,11 +24,14 @@ from django.conf.urls import include, url
 urlpatterns = [
     #path('admini/', admini.site.urls),
     path('login/',LoginView.as_view(),name='login'),
+    path('sign-in/',views.loginBtn,name='signin'),
     path('loginBtn/', views.loginBtn),
     path('trainer/', include('trainer.urls')),
     #path('trainer/',views.trainer,name='trainer'),
     path('admin/',views.admin,name='admin'),
     path('trainee/',views.trainee,name='trainee'),
-    path('signUpBtn/', views.register, name = 'signup'),
+    path('',views.showLogin,name='loginPage'),
+    path('signUpBtn/', views.register, name = 'sign-up'),
+
 
 ]
