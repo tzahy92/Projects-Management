@@ -7,6 +7,9 @@ from django.contrib.auth.models import User, auth
 from PM import DB_Action
 from templates import registration
 from django.contrib import messages
+from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+
 def trainer(request):
     print("")
 
@@ -40,10 +43,16 @@ def register(request):
     email = request.POST.get('emailAdressSignUp',False)
     if(firstpwd != secpwd):
         ##x = forms.CharField(label="you entered same password twice")
-        messages.info(request,'password1=password2')
-        return render(request, "../templates/registration/login.html")
-    else:
-        return render(request, "login.html")
+        messages.info(request,'please enter same password')
+        ##return render(request, "../templates/registration/login.html",{'active_tab':'sign-up-htm'})
+        ##return render(request, "../templates/registration/login.html#signUpForm")
+        ##return HttpResponseRedirect("")
+        ##edirect('signup')
+    elif(DB_Action.checkUserNameExistence(uname)):
+        print("user name already exist")
+    elif(DB_Action.checkEmailExistence(email)):
+        print("email already exist")
+        return render(request, "../templates/folder_trainer/trainer_web.html")
 
 
 

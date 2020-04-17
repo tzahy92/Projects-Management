@@ -230,9 +230,9 @@
                     </div>
                 </form>
             </div>
-            <div class="sign-up-htm">
-                <form method="POST" action="/signUpBtn/" name = "signUpForm">
-                    {% csrf_token %}
+        <form method="POST" action="/signUpBtn/" name = "signUpForm">
+        {% csrf_token %}
+            <div class="sign-up-htm {% if active_tab == 'sign-up-htm' %}active{% endif %}">
                 <div class="group">
                     <label for="user" class="label">Username</label>
                     <input id="user" type="text" class="input" name="usernameSignUp">
@@ -265,14 +265,14 @@
                 <div class="foot-lnk">
                     <label for="tab-1">Already Member?</a> </label>
                 </div>
-                </form>
-
                 <div>
+
                     {%  for message in messages %}
                     <h4>{{ messages}}</h4>
                     {% endfor %}
                 </div>
             </div>
+        </form>
         </div>
     </div>
 </div>

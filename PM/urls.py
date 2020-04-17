@@ -29,6 +29,6 @@ urlpatterns = [
     #path('trainer/',views.trainer,name='trainer'),
     path('admin/',views.admin,name='admin'),
     path('trainee/',views.trainee,name='trainee'),
-    path('signUpBtn/', views.register),
+    path('signUpBtn/', views.register, name = 'signup'),
 
 ]

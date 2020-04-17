@@ -9,6 +9,7 @@ cluster = MongoClient("mongodb+srv://yahelfr:29913051@cluster0-4iuqq.mongodb.net
 db = cluster["shareball"]  ##connect to database
 usersCollection = db["users"]  ##connect to collection
 
+
 """ get user details and insert a new user to database"""
 def insert_user(_id,userName,password,firstName,lastName,role):
     if(get_user_by_userName(userName)!=None):
@@ -33,4 +34,10 @@ def update_user_by_ID(_ID,field,value):
 """get user-name and return all user's details from DB"""
 def get_user_by_userName(username):
     return usersCollection.find_one({"userName": username})
+
+def checkUserNameExistence(username):
+    return  usersCollection.find_one({"userName": username}) != None
+
+def checkEmailExistence(email):
+    return  usersCollection.find_one({"E-mail": email}) != None
 
