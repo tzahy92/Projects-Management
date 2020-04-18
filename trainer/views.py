@@ -21,8 +21,11 @@ def trainee(request):
 def admin(request):
     print("")
 
+def showHomePage(request):
+    return render(request, "../templates/homepage.html")
+
 def showLogin(request):
-    return render(request,"homepage.html")
+    return render(request,"../templates/registration/sign-in.html")
 
 def showRegister(request):
     return render(request, "../templates/registration/sign-up.html")
