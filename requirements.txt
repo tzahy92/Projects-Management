@@ -1,11 +1,11 @@
-Djang	
+Django
 asgiref
 bson
 dataclasses
 djongo	
 dnspython	
 pip	
-pymongo	
+pymongo
 python-dateutil	
 pytz	
 setuptools	
