@@ -10,10 +10,9 @@ from PM import DB_Action
 class MyTestCase(unittest.TestCase):
 
     def test_insert_to_DB(self):
-        with self.assertRaisesRegex(Exception,"this ID is taken"): ##username already in the DB
-            DB_Action.insert_user("23", "tzahy", "1234", "lab", "ja", 1)
-        with self.assertRaisesRegex(Exception, "this username is taken"): #username already in the DB
-            DB_Action.insert_user("001", "king", "1234", "lab", "ja", 1)
+        with self.assertRaisesRegex(Exception,"this username is taken"): ##username already in the DB
+            DB_Action.insert_user("user0", "1234","tzahy","maymon", 1,"tza@gmail.com")
+
 
     def test_get_user_ID(self):
         self.assertEqual(DB_Action.get_user_by_ID("001"),None)
