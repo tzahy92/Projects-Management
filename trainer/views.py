@@ -63,7 +63,7 @@ def register(request):
     elif(re.search(regex,email)):
         messages.info(request, 'ilegal email adress')
         return render(request, "../templates/registration/sign-up.html")
-    elif (" " is not in fullName):
+    elif (" " not in fullName):
         messages.info(request, 'ilegal name')
         return render(request, "../templates/registration/sign-up.html")
     else:
