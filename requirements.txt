@@ -1,4 +1,4 @@
-Djang	
+Django
 asgiref
 bson
 dataclasses
