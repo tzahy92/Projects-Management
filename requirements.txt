@@ -11,4 +11,3 @@ pytz
 setuptools	
 six	
 sqlparse
-
