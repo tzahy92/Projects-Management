@@ -22,7 +22,7 @@ def admin(request):
     print("")
 
 def showLogin(request):
-    return render(request,"../templates/registration/sign-in.html")
+    return render(request,"homepage.html")
 
 def showRegister(request):
     return render(request, "../templates/registration/sign-up.html")
