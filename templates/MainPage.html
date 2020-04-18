@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    height: 722px;
+    background: url("https://mitkanim.co.il/wp-content/uploads/2017/05/mini-demo1.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(110,0,255,.7);
+}
+
+/* about the text & button design */
+.Image-text{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white;
+}
+.Image-text .h1{
+    font-size: 80px;
+    font-family: cursive;
+}
+.Image-text .btn{
+    background-color: rebeccapurple;
+    font-size: 20px;
+    color: black;
+    padding: 14px 40px;
+    border-radius: 4px;
+}
+
+</style>
+
+<head>
+    <title>HomePage</title>
+</head>
+
+<body>
+    <section>
+        <div class="overlay"></div>
+    </section>
+
+    <div class="Image-text">
+        <h1 class="h1">Welcome to ShareBall7</h1>
+        <button class="btn">Sign Up</button>
+        <button class="btn">Sign In</button>
+    </div>
+
+</body>
+</html>

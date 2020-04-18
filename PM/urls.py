@@ -23,16 +23,14 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     #path('admini/', admini.site.urls),
+    path('', views.showLogin, name='loginPage'),
     path('login/',LoginView.as_view(),name='login'),
-    path('sign-in/',views.loginBtn,name='signin'),
     path('loginBtn/', views.loginBtn),
+    path('sign-in/', views.loginBtn, name='signin'),
+    path('signUpBtn/', views.register, name='sign-up'),
+    path('sign-up/', views.showRegister, name='sign-up'),
+    path('admin/', views.admin, name='admin'),
     path('trainer/', include('trainer.urls')),
-    #path('trainer/',views.trainer,name='trainer'),
-    path('admin/',views.admin,name='admin'),
     path('trainee/',views.trainee,name='trainee'),
-    path('',views.showLogin,name='loginPage'),
-    path('signUpBtn/', views.register, name = 'sign-up'),
-    path('sign-up/', views.showRegister, name = 'sign-up'),
-
 
 ]
