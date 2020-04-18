@@ -25,7 +25,7 @@ urlpatterns = [
     #path('admini/', admini.site.urls),
     path('', views.showHomePage, name='loginPage'),
     path('login/',LoginView.as_view(),name='login'),
-    path('loginBtn/', views.loginBtn),
+    path('loginBtn/', views.loginBtn,name='loginBtn'),
     ##path('sign-in/', views.loginBtn, name='signin'),
     path('signUpBtn/', views.register, name='sign-up'),
     path('sign-up/', views.showRegister, name='sign-up'),

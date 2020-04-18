@@ -1,3 +1,4 @@
+import copy
 
 from django.contrib import admin
 from django.urls import path
@@ -45,3 +46,19 @@ def checkUserNameExistence(username):
 def checkEmailExistence(email):
     return  usersCollection.find_one({"E-mail": email}) != None
 
+def getAllUsers():
+    userlist = list(usersCollection.find({}))
+    newuser = {}
+    newusersList = []
+    for user in userlist:
+        newuser['id'] = user['_id']
+        newuser['userName'] = user['userName']
+        newuser['password'] = user['password']
+        newuser['firstName'] = user['firstName']
+        newuser['lastName'] = user['lastName']
+        newuser['role'] = user['role']
+        newuser['Email'] = user['E-mail']
+        usertoadd = copy.deepcopy(newuser)
+        newusersList.append(usertoadd)
+    return newusersList
+    #return userlist

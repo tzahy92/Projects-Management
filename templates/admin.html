@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+
+
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #267de1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #135095}
+
+.button:active {
+  background-color: #135095;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d0ddec;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <title>Temporary File</title>
 </head>
 <body>
+        Hello im an admin
+
+{% block content %}
+
+<table >
+    <tr>
+    <th>ID</th>
+    <th>user-name</th>
+    <th>password</th>
+    <th>first name</th>
+    <th>last name</th>
+    <th>role</th>
+    <th>E-mail</th>
+    <th>delete user</th>
+    <th>edit user</th>
+  </tr >
+        {% for instance in object_List %}
+            <tr>
+            <th>{{ instance.id}}</th>
+            <th>{{ instance.userName}}</th>
+            <th>{{ instance.password}}</th>
+            <th>{{ instance.firstName}}</th>
+            <th>{{ instance.lastName}}</th>
+            <th>{{ instance.role}}</th>
+            <th>{{ instance.Email}}</th>
+            <th><button class="button" type="button" onclick="alert('Hello world!')" >delete</button></th>
+            <th><button class="button" type="button" onclick="alert('Hello world!')">edit</button></th>
+            </tr>
+        {% endfor %}
+</table>
+{% endblock %}
 
 </body>
 </html>

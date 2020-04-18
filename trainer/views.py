@@ -19,7 +19,7 @@ def trainee(request):
     print("")
 
 def admin(request):
-    print("")
+    return render(request,"../templates/admin.html")
 
 def showHomePage(request):
     return render(request, "../templates/homepage.html")
@@ -38,13 +38,14 @@ def loginBtn(request):
     if(user!= None and uname != None and pwd != None):
         if(user['password']==pwd):
             if (user['role'] == '1'):
-                return render(request, "admin.html")
+                allusers = DB_Action.getAllUsers()
+                context = {"object_List" : allusers}
+                return render(request, "admin.html",context)
             if(user['role'] == '2'):
                 return render(request, "../templates/folder_trainer/trainer_web.html")
             if (user['role'] == '3'):
                 return render(request, "../templates/folder_trainee/web_trainee.html")
     return render(request,"sign-in.html")
-    ##return render(request, "../templates/folder_trainer/trainer_web.html")
 
 def register(request):
     regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
@@ -63,15 +64,15 @@ def register(request):
     elif(DB_Action.checkEmailExistence(email)):
         messages.info(request, 'email address already exist')
         return render(request, "../templates/registration/sign-up.html")
-    elif(re.search(regex,email)):
-        messages.info(request, 'ilegal email adress')
+    elif(not re.search(regex,email)):
+        messages.info(request, 'ilegal email address')
         return render(request, "../templates/registration/sign-up.html")
     elif (" " not in fullName):
         messages.info(request, 'ilegal name')
         return render(request, "../templates/registration/sign-up.html")
     else:
         DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
-        return render(request, "../templates/folder_trainer/trainer_web.html")
+        return render(request, "../templates/registration/sign-in.html")
 
 
 
