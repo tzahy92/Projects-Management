@@ -7,6 +7,7 @@ from django.contrib.auth.models import User, auth
 from PM import DB_Action
 from templates import registration
 from django.contrib import messages
+import re
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 
@@ -43,6 +44,7 @@ def loginBtn(request):
     ##return render(request, "../templates/folder_trainer/trainer_web.html")
 
 def register(request):
+    regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
     uname = request.POST.get('usernameSignUp',False)
     firstpwd = request.POST.get('firstPasswordSignUp',False)
     secpwd = request.POST.get('secondPasswordSignUp',False)
@@ -57,6 +59,12 @@ def register(request):
         return render(request, "../templates/registration/sign-up.html")
     elif(DB_Action.checkEmailExistence(email)):
         messages.info(request, 'email address already exist')
+        return render(request, "../templates/registration/sign-up.html")
+    elif(re.search(regex,email)):
+        messages.info(request, 'ilegal email adress')
+        return render(request, "../templates/registration/sign-up.html")
+    elif (" " is not in fullName):
+        messages.info(request, 'ilegal name')
         return render(request, "../templates/registration/sign-up.html")
     else:
         DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
