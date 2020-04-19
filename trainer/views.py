@@ -47,6 +47,11 @@ def loginBtn(request):
                 return render(request, "../templates/folder_trainee/web_trainee.html")
     return render(request,"sign-in.html")
 
+def delete_user(request,userID):
+    DB_Action.removeUserByID(userID)
+    return render(request,"../templates/admin.html")
+
+
 def register(request):
     regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
     uname = request.POST.get('usernameSignUp',False)

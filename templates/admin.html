@@ -69,8 +69,8 @@ tr:nth-child(even) {
             <th>{{ instance.lastName}}</th>
             <th>{{ instance.role}}</th>
             <th>{{ instance.Email}}</th>
-            <th><button class="button" type="button" onclick="alert('Hello world!')" >delete</button></th>
-            <th><button class="button" type="button" onclick="alert('Hello world!')">edit</button></th>
+            <th><button class="button" type="button" href="{% url 'delete_user' userID=instance.id %}" >delete</button></th>
+            <th><button class="button" type="button" onclick="">edit</button></th>
             </tr>
         {% endfor %}
 </table>

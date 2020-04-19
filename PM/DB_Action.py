@@ -29,6 +29,9 @@ def get_user_by_ID(_ID):
 def removeUserByUserNamer(userName):
     usersCollection.remove({"userName":userName})
 
+def removeUserByID(id):
+    usersCollection.remove({"_id":id})
+
 """get user ID, field to update in DB and value to update, then makes the update in DB"""
 def update_user_by_ID(_ID,field,value):
     if (field == "userName" and get_user_by_userName(value) != None):
