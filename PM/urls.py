@@ -25,7 +25,7 @@ urlpatterns = [
     #path('admini/', admini.site.urls),
     path('', views.showHomePage, name='loginPage'),
     path('login/',LoginView.as_view(),name='login'),
-    path('loginBtn/', views.loginBtn),
+    path('loginBtn/', views.loginBtn,name='loginBtn'),
     ##path('sign-in/', views.loginBtn, name='signin'),
     path('signUpBtn/', views.register, name='sign-up'),
     path('sign-up/', views.showRegister, name='sign-up'),
@@ -33,5 +33,9 @@ urlpatterns = [
     path('trainer/', include('trainer.urls')),
     path('sign-in/',views.showLogin,name='show-login'),
     path('trainee/',views.trainee,name='trainee'),
+    path('deleteUser/<str:userID>',views.delete_user,name="deleteUser"),
+    #url(r'^trainer/delete/(?P<value>.*)/$', views.delete_user, name='deleteUser'),
+    #path('delete_user',views.delete_user,name='delete_user'),
+
 
 ]
