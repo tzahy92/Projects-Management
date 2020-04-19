@@ -33,7 +33,7 @@ urlpatterns = [
     path('trainer/', include('trainer.urls')),
     path('sign-in/',views.showLogin,name='show-login'),
     path('trainee/',views.trainee,name='trainee'),
-    path('delete_user/<userID:id>',views.delete_user,name='delete_user'),
+    #path('delete_user',views.delete_user,name='delete_user'),
 
 
 ]
