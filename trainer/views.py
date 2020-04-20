@@ -51,9 +51,12 @@ def delete_user(request,userID):
     DB_Action.removeUserByID(userID)
     return render(request,"../templates/admin.html")
 
-def updateUserDetails(request,UserID):
-    DB_Action.update_user_by_ID(UserID)
-    return render(request,"../templates/admin.html")
+def showUpdateUser(request, UserID):
+    context = DB_Action.get_user_by_ID(UserID)
+    context['firstName']="{} {}".format(context['firstName'],context['lastName'])
+    context['id'] = context['_id']
+    context['Email'] = context['E-mail']
+    return render(request,"../templates/registration/update.html",{"user":context})
 
 
 def register(request):

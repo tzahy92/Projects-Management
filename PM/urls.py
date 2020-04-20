@@ -34,7 +34,7 @@ urlpatterns = [
     path('sign-in/',views.showLogin,name='show-login'),
     path('trainee/',views.trainee,name='trainee'),
     path('deleteUser/<str:userID>',views.delete_user,name="deleteUser"),
-    path('updateUserDetails/<str:userID>',views.updateUserDetails,name="updateUserDetails"),
+    path('updateUserDetails/<str:UserID>', views.showUpdateUser, name="updateUserDetails"),
     #url(r'^trainer/delete/(?P<value>.*)/$', views.delete_user, name='deleteUser'),
     #path('delete_user',views.delete_user,name='delete_user'),
 

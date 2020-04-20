@@ -196,40 +196,38 @@
 
 
 <head>
-    <title>Login shareball</title>
+    <title>update user</title>
 </head>
 
 <body>
 <div class="login-wrap">
     <div class="login-html">
-        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">UPDATE</label>
         <div class="login-form">
         <form method="POST" action="/signUpBtn/" name = "signUpForm">
         {% csrf_token %}
             <div class="sign-up-htm">
+            {% block content %}
                 <div class="group">
                     <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input" name="usernameSignUp">
+                    <input id="user" type="text" class="input" name="usernameSignUp" value="{{user.userName}}">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">Password</label>
-                    <input id="pass" type="password" class="input" data-type="password" name = "firstPasswordSignUp">
-                </div>
-                <div class="group">
-                    <label for="pass" class="label">Repeat Password</label>
-                    <input id="pass" type="password" class="input" data-type="password" name = "secondPasswordSignUp">
+                    <input id="pass" type="text" class="input"  name = "firstPasswordSignUp" value="{{ user.password}}">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">full name</label>
-                    <input id="pass" type="password" class="input" data-type="password" name = "fullName">
+                    <input id="pass" type="text" class="input"  name = "fullName" value="{{user.firstName}}">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">Email Address</label>
-                    <input id="pass" type="text" class="input" name = "emailAdressSignUp">
+                    <input id="pass" type="text" class="input" name = "emailAdressSignUp" value = "{{ user.Email}}">
                 </div>
                 <div class="group">
                     <input type="submit" class="button" value="UPDATE">
                 </div>
+              {% endblock %}
                 <font color="red">
                     {% if messages %}
                         <ul class="messages">
@@ -239,9 +237,6 @@
                         </ul>
                         {% endif %}
                 </font>
-                <div class="foot-lnk">
-                    <label for="tab-1"><a href="../sign-in"> Already Member?</a> </label>
-                </div>
             </div>
         </form>
         </div>
