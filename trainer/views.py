@@ -46,7 +46,7 @@ def loginBtn(request):
             if(user['role'] == '2'):
                 return render(request, "../templates/folder_trainer/trainer_web.html")
             if (user['role'] == '3'):
-                neighborhoddList = json_Action.lst_neighborho.keys()
+                neighborhoddList = json_Action.dict_neighborho.keys()
                 facilitiesList = json_Action.dict_Type.keys()
                 context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList}
                 return render(request, "../templates/folder_trainee/web_trainee.html",context)
@@ -67,8 +67,7 @@ def ShowCourts(request):
     selectedNeighbohood = request.POST.get("neighborhoods",False)
     facilityType = request.POST.get("facilitiesType",False)
     jsonObj = json_Action.Sports_facilities()
-    courts = jsonObj.get_by_type_neighborho_new(selectedNeighbohood,facilityType)
-    ##selectedNeighbohood = "yyy"
+    courts = jsonObj.get_by_type_neighborho(selectedNeighbohood, facilityType)
     return render(request,"../templates/folder_trainee/showCourts.html",{"courtsList":courts})
 
 
