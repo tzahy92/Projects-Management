@@ -51,6 +51,10 @@ def delete_user(request,userID):
     DB_Action.removeUserByID(userID)
     return render(request,"../templates/admin.html")
 
+def updateUserDetails(request,UserID):
+    DB_Action.update_user_by_ID(UserID)
+    return render(request,"../templates/admin.html")
+
 
 def register(request):
     regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
