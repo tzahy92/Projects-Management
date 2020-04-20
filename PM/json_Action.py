@@ -11,7 +11,7 @@ class Sports_facilities():
         with open(path,encoding="utf8") as f:
             self.distros_dict = json.load(f)
 
-
+mylist = {"":}
     def get_by_type_neighborho(self,facility_type,neighborho):
         lst_result = []
         lst_tmp = []
