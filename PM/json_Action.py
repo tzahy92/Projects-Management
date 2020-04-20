@@ -30,6 +30,7 @@ class Sports_facilities():
                 have_type = False
         return lst_result
 
+
     def get_by_neighborho(self,neighborho):
         lst_result = []
         lst_tmp = []

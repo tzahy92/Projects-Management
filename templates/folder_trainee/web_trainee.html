@@ -369,14 +369,21 @@ table tr td
         <form method="post" action="#" id="search_form">
           <p>
             <input class="search" type="text" name="search_field" value="Enter keywords....." />
-            <!--input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" >
           </p>
         </form>
       </div>
       <div id="content">
         <h1>Welcome to the Sport Site</h1>
 
-        <img src="https://previews.123rf.com/images/finevector/finevector1604/finevector160400027/55972831-fitness-young-sporty-couple-with-dumbbells-fit-couple-workout-partners-flat-vector-illustration-.jpg" alt="Italian Trulli" height="400" width="600">
+        <!--img src="https://previews.123rf.com/images/finevector/finevector1604/finevector160400027/55972831-fitness-young-sporty-couple-with-dumbbells-fit-couple-workout-partners-flat-vector-illustration-.jpg" alt="Italian Trulli" height="400" width="600"-->
+
+        <select id="cars" name="cars">
+         <option  selected disabled>שכונה</option>
+               {% for instance in neighborhoddList %}
+            <option value="neighborhood">{{ instance }}</option>
+             {% endfor %}
+        </select>
 
       </div>
     </div>

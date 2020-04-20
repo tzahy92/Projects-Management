@@ -8,6 +8,7 @@ from PM import DB_Action
 from templates import registration
 from django.contrib import messages
 import re
+from PM import json_Action
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 
@@ -44,7 +45,10 @@ def loginBtn(request):
             if(user['role'] == '2'):
                 return render(request, "../templates/folder_trainer/trainer_web.html")
             if (user['role'] == '3'):
-                return render(request, "../templates/folder_trainee/web_trainee.html")
+                neighborhoddList = json_Action.lst_neighborho.keys()
+                facilitiesList = json_Action.getFaciliies()
+                context = {"neighborhoddList":neighborhoddList}
+                return render(request, "../templates/folder_trainee/web_trainee.html",context)
     return render(request,"sign-in.html")
 
 def delete_user(request,userID):
