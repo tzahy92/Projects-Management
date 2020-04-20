@@ -9,6 +9,7 @@ from templates import registration
 from django.contrib import messages
 import re
 from PM import json_Action
+from django.template import RequestContext
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 
@@ -46,8 +47,8 @@ def loginBtn(request):
                 return render(request, "../templates/folder_trainer/trainer_web.html")
             if (user['role'] == '3'):
                 neighborhoddList = json_Action.lst_neighborho.keys()
-                facilitiesList = json_Action.getFaciliies()
-                context = {"neighborhoddList":neighborhoddList}
+                facilitiesList = json_Action.dict_Type.keys()
+                context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList}
                 return render(request, "../templates/folder_trainee/web_trainee.html",context)
     return render(request,"sign-in.html")
 
@@ -61,6 +62,14 @@ def showUpdateUser(request, UserID):
     context['id'] = context['_id']
     context['Email'] = context['E-mail']
     return render(request,"../templates/registration/update.html",{"user":context})
+
+def ShowCourts(request):
+    selectedNeighbohood = request.POST.get("neighborhoods",False)
+    facilityType = request.POST.get("facilitiesType",False)
+    jsonObj = json_Action.Sports_facilities()
+    courts = jsonObj.get_by_type_neighborho_new(selectedNeighbohood,facilityType)
+    ##selectedNeighbohood = "yyy"
+    return render(request,"../templates/folder_trainee/showCourts.html",{"courtsList":courts})
 
 
 def register(request):

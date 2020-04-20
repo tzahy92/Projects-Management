@@ -385,7 +385,7 @@ table tr td
                     <option value={{ instance }}>{{ instance }}</option>
                 {% endfor %}
         </select>
-        <select  name="facilitiesType">
+        <select id="facilitiesType" name="facilitiesType">
          <option  selected disabled>סוג מתקן</option>
                {% for instance in facilities %}
             <option value={{ instance }}>{{ instance }}</option>
@@ -393,6 +393,33 @@ table tr td
         </select>
         <input type="submit" class="button" value="OK">
  </form>
+
+
+      <table >
+    <tr>
+    <th>TYPE</th>
+    <th>NAME</th>
+    <th>NEIGHBORHOOD</th>
+    <th>OPERATOR</th>
+    <th>LIGHTNING</th>
+    <th>CONDITION</th>
+    <th>OWNER</th>
+  </tr >
+        {% for instance in courtsList %}
+            <tr>
+            <th>{{ instance.Type}}</th>
+            <th>{{ instance.Name}}</th>
+            <th>{{ instance.neighborho }}</th>
+            <th>{{ instance.Operator}}</th>
+            <th>{{ instance.lighting}}</th>
+            <th>{{ instance.condition}}</th>
+            <th>{{ instance.Owner}}</th>
+            </tr>
+        {% endfor %}
+</table>
+
+
+
       </div>
     </div>
     <div id="footer">
