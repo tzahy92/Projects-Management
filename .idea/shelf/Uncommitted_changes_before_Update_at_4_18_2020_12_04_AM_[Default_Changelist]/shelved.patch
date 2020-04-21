@@ -1,0 +1,47 @@
+Index: templates/dfsdfsdfs.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- templates/dfsdfsdfs.html	(date 1587156731622)
++++ templates/dfsdfsdfs.html	(date 1587156731622)
+@@ -0,0 +1,38 @@
++<!DOCTYPE html>
++<html lang="en">
++<style>
++body{
++    background-color: rebeccapurple;
++    background-size: cover;
++}
++
++.Image-text{
++    text-align: center;
++    position: absolute;
++    top: 50%;
++    left: 45%;
++    color: white;
++}
++.Image-text .btn{
++    background-color: rebeccapurple;
++    font-size: 20px;
++    color: black;
++    padding: 14px 40px;
++    border-radius: 4px;
++}
++
++</style>
++
++<head>
++    <title>HomePage</title>
++</head>
++
++<body>
++
++    <div class="Image-text">
++        <h1>Hi this is my home page</h1>
++        <button class="btn">Get Started</button>
++    </div>
++
++</body>
++</html>
+\ No newline at end of file
