@@ -49,6 +49,12 @@ def checkUserNameExistence(username):
 def checkEmailExistence(email):
     return  usersCollection.find_one({"E-mail": email}) != None
 
+def updateUser(ID,firstName,lastName,password,userName,Email,role):
+    print("$$$$$$$$$$$$$$$$$$$$$ {} {} {} {} {} {}".format(ID,firstName,lastName,password,userName,Email))
+    newValues = {"firstName":firstName,"lastName":lastName,"password":password,"userName":userName,"E-mail":Email,"role":role}
+    ##bulk.find({"_id":ID}).update({"$set":{"password":password}})
+    usersCollection.update({"_id":ID},newValues)
+
 def getAllUsers():
     userlist = list(usersCollection.find({}))
     newuser = {}

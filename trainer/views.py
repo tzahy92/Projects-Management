@@ -23,6 +23,24 @@ def trainee(request):
 def admin(request):
     return render(request,"../templates/admin.html")
 
+def adminAfterUpdate(request):
+    return render(request,"../templates/admin.html")
+
+def adminAfterUpdate(request):
+    id = request.POST.get('ID')
+    userName = request.POST.get('userName')
+    pwd = request.POST.get('password')
+    Email = request.POST.get('Email')
+    fullName = request.POST.get('fullName')
+    role = request.POST.get('role')
+    fullNameSplited = fullName.split(' ')
+    firstName = fullNameSplited[0]
+    lasttName = fullNameSplited[1]
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+    allusers = DB_Action.getAllUsers()
+    context = {"object_List": allusers}
+    return render(request, "admin.html", context)
+
 def showHomePage(request):
     return render(request, "../templates/homepage.html")
 
