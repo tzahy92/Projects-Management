@@ -35,6 +35,8 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
+    border: 1px solid red;
+
 }
 
 td, th {
@@ -46,16 +48,22 @@ td, th {
 tr:nth-child(even) {
   background-color: #d0ddec;
 }
+
+    .pane {
+    display: inline-block;
+    overflow-y: scroll;
+    max-height:200px;
+}
+
 </style>
 <head>
     <meta charset="UTF-8">
     <title>Temporary File</title>
 </head>
 <body>
-<div style="overflow-x:auto;">
+<div class = "pane">
 {% block content %}
-
-<table >
+<table style="border: 1px solid red">
     <tr>
     <th>ID</th>
     <th>user-name</th>
