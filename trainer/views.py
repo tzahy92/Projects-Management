@@ -82,11 +82,21 @@ def showUpdateUser(request, UserID):
     return render(request,"../templates/registration/update.html",{"user":context})
 
 def ShowCourts(request):
+    neighborhoddList = json_Action.dict_neighborho.keys()
+    facilitiesList = json_Action.dict_Type.keys()
     selectedNeighbohood = request.POST.get("neighborhoods",False)
     facilityType = request.POST.get("facilitiesType",False)
+    light = request.POST.get("lighting",False)
     jsonObj = json_Action.Sports_facilities()
-    courts = jsonObj.get_by_type_neighborho(selectedNeighbohood, facilityType)
-    return render(request,"../templates/folder_trainee/showCourts.html",{"courtsList":courts})
+    courts = []
+    try:
+        courts = jsonObj.get_by_type_neighborho(selectedNeighbohood, facilityType)
+        if(light == "on"):
+            courts = json_Action.modular_filtering(courts, "lighting", "כן")
+        msg = True
+    except KeyError as e:
+        msg = False
+    return render(request,"../templates/folder_trainee/web_trainee.html",{"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg})
 
 
 def register(request):
