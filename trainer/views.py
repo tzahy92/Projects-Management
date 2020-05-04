@@ -59,8 +59,9 @@ def loginBtn(request):
         if(user['password']==pwd):
             if (user['role'] == '1'):
                 allusers = DB_Action.getAllUsers()
-                context = {"object_List" : allusers}
-                return render(request, "admin.html",context)
+                facilities = json_Action.Sports_facilities()
+                context = {"object_List" : allusers,"facilities" : facilities.distros_dict}
+                return render(request, "admin2.html",context)
             if(user['role'] == '2'):
                 return render(request, "../templates/folder_trainer/trainer_web.html")
             if (user['role'] == '3'):
