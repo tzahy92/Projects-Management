@@ -1,6 +1,8 @@
 import json
 import os.path
 
+from dns._compat import xrange
+
 dict_Type = {"כדורסל":("כדורסל","מגרש משולב","מגרש ספורט משולב"),"כדורגל":("כדורגל","מגרש משולב","מגרש ספורט משולב"),"קט-רגל":("קט רגל","קטרגל"),"מגרש-מיני":("מגרש מיני"),"מגרש-טניס":("מגרש טניס"),"בריכת-שחיה":("בריכת שחיה"),"מגרש-חול":("מגרש חול"),"אתלטיקה-קלה":("אתלטיקה קלה"),"פארק-כושר":("פארק כושר","כושר גופני"),"אולם-ספורט":("אולם ספורט","מתקן ספורט כללי"),"כל-המתקנים":None}
 dict_neighborho = {"א":("שכונה א'", "א'", "א"), "ב":("ב'"), "ג":("ג'", "ג", "שכונה ג'"), "ד":("ד'", "שכ' ד'"), "ה":("ה' הישנה", "ה'"), "ו":("ו' החדשה", "ו' הישנה", "שכ' ו' הישנה"), "ט":("ט'", "שכ' ט'", "שכונה ט'"), "יא":("יא", "י\"א", "יי\"א", "יא'"), "עיר-עתיקה":("עיר עתיקה"), "נווה-זאב":("נווה זאב"), "נאות-לון":("נאות לון"), "נווה-נוי":("נווה נוי"), "רמות":("רמות"), "נחל-עשן":("נחל עשן"), "רמב\"ם":("רמב\"ם"), "נחל-בקע":("נחל בקע"), "פלח-7":("פלח 7")}
 dict_light = {"לא":("לא","אין","אין תאורה",""),"כן":("כן","קיימת תאורה")}
@@ -8,7 +10,7 @@ class Sports_facilities():
 
     def __init__(self):
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "sport.json")
+        path = os.path.join(my_path, "tempSport.json")
         with open(path,encoding="utf8") as f:
             self.distros_dict = json.load(f)
 
@@ -35,6 +37,19 @@ class Sports_facilities():
 
     def get_distros_dict(self):
         return self.distros_dict
+
+    def delete_facility(self,facility):
+        for obj in self.distros_dict:
+            if(obj['Type']== facility['Type'] and obj['Name']== facility['Name'] and
+                    obj['neighborho']== facility['neighborho'] and obj['Operator']== facility['Operator'] and obj['Owner']== facility['Owner']):
+                self.distros_dict.remove(obj)
+                break
+        my_path = os.path.abspath(os.path.dirname(__file__))
+        path = os.path.join(my_path, "tempSport.json")
+        jsonFile = open(path, "w+")
+        jsonFile.write(json.dumps(self.distros_dict))
+        jsonFile.close()
+
 
 def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
     tmp = []

@@ -73,7 +73,10 @@ def loginBtn(request):
 
 def delete_user(request,userID):
     DB_Action.removeUserByID(userID)
-    return render(request,"../templates/admin.html")
+    allusers = DB_Action.getAllUsers()
+    facilities = json_Action.Sports_facilities()
+    context = {"object_List": allusers, "facilities": facilities.distros_dict}
+    return render(request,"../templates/admin.html",context)
 
 def showUpdateUser(request, UserID):
     context = DB_Action.get_user_by_ID(UserID)
@@ -81,6 +84,13 @@ def showUpdateUser(request, UserID):
     context['id'] = context['_id']
     context['Email'] = context['E-mail']
     return render(request,"../templates/registration/update.html",{"user":context})
+
+
+def deleteFacility(request, facilityType,facilityName, facilityNeighborhood, facilityOperator, facilityOwner):
+    jsonAct = json_Action.Sports_facilities()
+    faciltyToDelete = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
+    jsonAct.delete_facility(faciltyToDelete)
+    return  render(request,"admin2.html")
 
 def ShowCourts(request):
     neighborhoddList = json_Action.dict_neighborho.keys()

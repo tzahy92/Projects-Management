@@ -38,6 +38,8 @@ urlpatterns = [
     path('deleteUser/<str:userID>',views.delete_user,name="deleteUser"),
     path('updateUserDetails/<str:UserID>', views.showUpdateUser, name="updateUserDetails"),
     path('ShowCourts/', views.ShowCourts, name="ShowCourts"),
+    path('updateUserDetails/<str:facilityType>/<str:facilityName>/<str:facilityNeighborhood>/<str:facilityOperator>/<str:facilityOwner>', views.deleteFacility, name="deleteFacility"),
+    ##facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner = instance.Owner
     #url(r'^trainer/delete/(?P<value>.*)/$', views.delete_user, name='deleteUser'),
     #path('delete_user',views.delete_user,name='delete_user'),
 ]
