@@ -23,6 +23,24 @@ def trainee(request):
 def admin(request):
     return render(request,"../templates/admin.html")
 
+def adminAfterUpdate(request):
+    return render(request,"../templates/admin.html")
+
+def adminAfterUpdate(request):
+    id = request.POST.get('ID')
+    userName = request.POST.get('userName')
+    pwd = request.POST.get('password')
+    Email = request.POST.get('Email')
+    fullName = request.POST.get('fullName')
+    role = request.POST.get('role')
+    fullNameSplited = fullName.split(' ')
+    firstName = fullNameSplited[0]
+    lasttName = fullNameSplited[1]
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+    allusers = DB_Action.getAllUsers()
+    context = {"object_List": allusers}
+    return render(request, "admin.html", context)
+
 def showHomePage(request):
     return render(request, "../templates/homepage.html")
 
@@ -64,11 +82,21 @@ def showUpdateUser(request, UserID):
     return render(request,"../templates/registration/update.html",{"user":context})
 
 def ShowCourts(request):
+    neighborhoddList = json_Action.dict_neighborho.keys()
+    facilitiesList = json_Action.dict_Type.keys()
     selectedNeighbohood = request.POST.get("neighborhoods",False)
     facilityType = request.POST.get("facilitiesType",False)
+    light = request.POST.get("lighting",False)
     jsonObj = json_Action.Sports_facilities()
-    courts = jsonObj.get_by_type_neighborho(selectedNeighbohood, facilityType)
-    return render(request,"../templates/folder_trainee/showCourts.html",{"courtsList":courts})
+    courts = []
+    try:
+        courts = jsonObj.get_by_type_neighborho(selectedNeighbohood, facilityType)
+        if(light == "on"):
+            courts = json_Action.modular_filtering(courts, "lighting", "כן")
+        msg = True
+    except KeyError as e:
+        msg = False
+    return render(request,"../templates/folder_trainee/web_trainee.html",{"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg})
 
 
 def register(request):

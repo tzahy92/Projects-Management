@@ -1,8 +1,9 @@
 import json
 import os.path
 
-dict_Type = {"כדורסל":("כדורסל","מגרש משולב","מגרש ספורט משולב"),"כדורגל":("כדורגל","מגרש משולב","מגרש ספורט משולב"),"קט-רגל":("קט רגל","קטרגל"),"מגרש-מיני":("מגרש מיני"),"מגרש טניס":("מגרש טניס"),"בריכת-שחיה":("בריכת שחיה"),"מגרש-חול":("מגרש חול"),"אתלטיקה-קלה":("אתלטיקה קלה"),"פארק-כושר":("פארק כושר","כושר גופני"),"אולם-ספורט":("אולם ספורט","מתקן ספורט כללי"),"כל-המתקנים":None}
+dict_Type = {"כדורסל":("כדורסל","מגרש משולב","מגרש ספורט משולב"),"כדורגל":("כדורגל","מגרש משולב","מגרש ספורט משולב"),"קט-רגל":("קט רגל","קטרגל"),"מגרש-מיני":("מגרש מיני"),"מגרש-טניס":("מגרש טניס"),"בריכת-שחיה":("בריכת שחיה"),"מגרש-חול":("מגרש חול"),"אתלטיקה-קלה":("אתלטיקה קלה"),"פארק-כושר":("פארק כושר","כושר גופני"),"אולם-ספורט":("אולם ספורט","מתקן ספורט כללי"),"כל-המתקנים":None}
 dict_neighborho = {"א":("שכונה א'", "א'", "א"), "ב":("ב'"), "ג":("ג'", "ג", "שכונה ג'"), "ד":("ד'", "שכ' ד'"), "ה":("ה' הישנה", "ה'"), "ו":("ו' החדשה", "ו' הישנה", "שכ' ו' הישנה"), "ט":("ט'", "שכ' ט'", "שכונה ט'"), "יא":("יא", "י\"א", "יי\"א", "יא'"), "עיר-עתיקה":("עיר עתיקה"), "נווה-זאב":("נווה זאב"), "נאות-לון":("נאות לון"), "נווה-נוי":("נווה נוי"), "רמות":("רמות"), "נחל-עשן":("נחל עשן"), "רמב\"ם":("רמב\"ם"), "נחל-בקע":("נחל בקע"), "פלח-7":("פלח 7")}
+dict_light = {"לא":("לא","אין","אין תאורה",""),"כן":("כן","קיימת תאורה")}
 class Sports_facilities():
 
     def __init__(self):
@@ -19,8 +20,12 @@ class Sports_facilities():
         for distro in self.distros_dict:
             if (distro['neighborho'] in lst_neig):
                 if(lst_f_type != None):
-                    for ty in lst_f_type:
-                        if(ty in distro['Type']):
+                    if(type(lst_f_type) is tuple):
+                        for ty in lst_f_type:
+                            if(ty in distro['Type']):
+                                lst_result.append(distro)
+                    else:
+                        if (lst_f_type in distro['Type']):
                             lst_result.append(distro)
                 else:
                     lst_result.append(distro)
@@ -31,4 +36,12 @@ class Sports_facilities():
     def get_distros_dict(self):
         return self.distros_dict
 
-
+def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
+    tmp = []
+    filtered_facilities = []
+    if(type_ == "lighting"):
+        tmp = dict_light[name_of_filter]
+    for facility in lst_of_dict_facility:
+        if(facility[type_] in tmp):
+            filtered_facilities.append(facility)
+    return filtered_facilities

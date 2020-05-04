@@ -219,6 +219,15 @@
                     </div>
                     <div class="hr"></div>
                 </form>
+                 <font color="red">
+                    {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                </font>
             </div>
             <div class="foot-lnk">
                     <label for="tab-2"><a href="../sign-up"> not a member yet?</a> </label>

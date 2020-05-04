@@ -204,25 +204,33 @@
     <div class="login-html">
         <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">UPDATE</label>
         <div class="login-form">
-        <form method="POST" action="/signUpBtn/" name = "signUpForm">
+        <form method="POST" action="/adminAfterUpdate/" name = "signUpForm">
         {% csrf_token %}
             <div class="sign-up-htm">
             {% block content %}
                 <div class="group">
+                    <label for="user" class="label">ID</label>
+                    <input id="user" type="text" class="input" name="ID" value="{{user.id}}" readonly>
+                </div>
+                <div class="group">
                     <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input" name="usernameSignUp" value="{{user.userName}}">
+                    <input id="user" type="text" class="input" name="userName" value="{{user.userName}}">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">Password</label>
-                    <input id="pass" type="text" class="input"  name = "firstPasswordSignUp" value="{{ user.password}}">
+                    <input id="pass" type="text" class="input"  name = "password" value="{{ user.password}}">
                 </div>
                 <div class="group">
                     <label for="pass" class="label">full name</label>
                     <input id="pass" type="text" class="input"  name = "fullName" value="{{user.firstName}}">
                 </div>
                 <div class="group">
+                    <label for="pass" class="label">role</label>
+                    <input id="pass" type="text" class="input"  name = "role" value="{{user.role}}">
+                </div>
+                <div class="group">
                     <label for="pass" class="label">Email Address</label>
-                    <input id="pass" type="text" class="input" name = "emailAdressSignUp" value = "{{ user.Email}}">
+                    <input id="pass" type="text" class="input" name = "Email" value = "{{ user.Email}}">
                 </div>
                 <div class="group">
                     <input type="submit" class="button" value="UPDATE">

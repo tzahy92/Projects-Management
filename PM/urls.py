@@ -30,6 +30,8 @@ urlpatterns = [
     path('signUpBtn/', views.register, name='sign-up'),
     path('sign-up/', views.showRegister, name='sign-up'),
     path('admin/', views.admin, name='admin'),
+    path('adminAfterUpdate/', views.adminAfterUpdate, name='admin'),
+    #path('admin/<str:ID>/<str:userName>/<str:password>/<str:Email>', views.adminAfterUpdate, name='adminAfterUpdate'),
     path('trainer/', include('trainer.urls')),
     path('sign-in/',views.showLogin,name='show-login'),
     path('trainee/',views.trainee,name='trainee'),
@@ -38,6 +40,4 @@ urlpatterns = [
     path('ShowCourts/', views.ShowCourts, name="ShowCourts"),
     #url(r'^trainer/delete/(?P<value>.*)/$', views.delete_user, name='deleteUser'),
     #path('delete_user',views.delete_user,name='delete_user'),
-
-
 ]
