@@ -402,7 +402,60 @@ select[id = Addresses]{
       <div id="content">
         <!-- insert the page content here -->
         <h1>Welcome to the sport Web Site</h1>
-          <img src="https://usathss.files.wordpress.com/2018/03/usatoday-personal-trainer.jpg?w=1000&h=429&crop=1" alt="Italian Trulli" height="400" width="900">
+          <form method="POST" action="../ShowCourts/">
+{% csrf_token %}
+          <input type=hidden  value={{ username }} name="username" />
+          <input type=hidden  value={{ id }} name="id" />
+          <input type=hidden  value={{ role }} name="role" />
+        <select  name="neighborhoods">
+         <option  selected disabled>שכונה</option>
+               {% for instance in neighborhoddList %}
+                    <option value={{ instance }}>{{ instance }}</option>
+                {% endfor %}
+        </select>
+        <select  name="facilitiesType">
+         <option  selected disabled>סוג מתקן</option>
+               {% for instance in facilities %}
+            <option value={{ instance }}>{{ instance }}</option>
+               {% endfor %}
+        </select>
+        Need light <input type="checkbox" name="lighting" >
+        <input type="submit" class="button" value="OK">
+ </form>
+      <table >
+
+    <tr>
+    <th>TYPE</th>
+    <th>NAME</th>
+    <th>NEIGHBORHOOD</th>
+    <th>OPERATOR</th>
+    <th>LIGHTNING</th>
+    <th>CONDITION</th>
+    <th>OWNER</th>
+  </tr >
+           {% if massege == False %}
+                <td colspan="5">Please select a neighborhood and type of facility</td>
+
+            {% elif courtsList != " " %}
+               <tbody>
+
+               {% for instance in courtsList %}
+                   <tr>
+                    <th>{{ instance.Type}}</th>
+                    <th>{{ instance.Name}}</th>
+                    <th>{{ instance.neighborho }}</th>
+                    <th>{{ instance.Operator}}</th>
+                    <th>{{ instance.lighting}}</th>
+                    <th>{{ instance.condition}}</th>
+                    <th>{{ instance.Owner}}</th>
+                   </tr>
+               {% empty %}
+                   <tr><td colspan="5">No sports facilities found</td></tr>
+               {% endfor %}
+               </tbody>
+           {% endif %}
+           </table>
+          <img src="https://usathss.files.wordpress.com/2018/03/usatoday-personal-trainer.jpg?w=1000&h=429&crop=1" alt="Italian Trulli" height="200" width="500">
 
       </div>
     </div>

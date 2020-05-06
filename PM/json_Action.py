@@ -10,7 +10,7 @@ class Sports_facilities():
 
     def __init__(self):
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "tempSport.json")
+        path = os.path.join(my_path, "Sport.json")
         with open(path,encoding="utf8") as f:
             self.distros_dict = json.load(f)
 
@@ -45,7 +45,7 @@ class Sports_facilities():
                 self.distros_dict.remove(obj)
                 break
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "tempSport.json")
+        path = os.path.join(my_path, "Sport.json")
         jsonFile = open(path, "w+")
         jsonFile.write(json.dumps(self.distros_dict))
         jsonFile.close()
@@ -60,3 +60,44 @@ def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
         if(facility[type_] in tmp):
             filtered_facilities.append(facility)
     return filtered_facilities
+
+
+def main():
+    x = Sports_facilities()
+    #for distro in x.get_distros_dict():
+        #if(distro['Owner'] == ""):
+            #print("עיריית באר שבע")
+            #continue
+        #print(distro['Type'])
+    tmp = []
+    for distro in x.get_distros_dict():
+        if (distro['neighborho'] not in tmp):
+            tmp.append(distro['neighborho'])
+    for i in x.get_by_type_neighborho("ג","קט-רגל"):
+        print(i)
+
+
+
+
+if __name__ == '__main__':
+    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

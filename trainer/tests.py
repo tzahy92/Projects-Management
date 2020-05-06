@@ -5,6 +5,10 @@ from django.test import TestCase
 
 # Create your tests here.
 from PM import DB_Action
+from PM import json_Action
+import json
+import os.path
+
 
 
               #   {"_id": "389", "userName": "admin89", "password": "1234", "firstName": "bar", "lastName": "butler",
@@ -34,5 +38,20 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaisesRegex(Exception, "this ID is taken"):
             DB_Action.update_user_by_ID("001","id","389")
 
+    def test_get_all_sport_facility(self):
+        my_path = os.path.abspath(os.path.dirname(__file__))
+        path = os.path.join(my_path, "../PM/Sport.json")
+        with open(path, encoding="utf8") as f:
+            distros_dict = json.load(f)
+        facility = json_Action.Sports_facilities()
+        self.assertEqual(facility.get_distros_dict(),distros_dict)
+
+    def test_get_filtered_sport_facility_(self):
+        my_path = os.path.abspath(os.path.dirname(__file__))
+        path = os.path.join(my_path, "../PM/Sport.json")
+        with open(path, encoding="utf8") as f:
+            distros_dict = json.load(f)
+        facility = json_Action.Sports_facilities()
+        self.assertEqual(facility.get_by_type_neighborho('ג','קט-רגל'),[{'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076'}])
 if __name__ == '__main__':
     unittest.main()

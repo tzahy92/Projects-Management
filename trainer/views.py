@@ -63,11 +63,15 @@ def loginBtn(request):
                 context = {"object_List" : allusers,"facilities" : facilities.distros_dict}
                 return render(request, "admin2.html",context)
             if(user['role'] == '2'):
-                return render(request, "../templates/folder_trainer/trainer_web.html")
+                neighborhoddList = json_Action.dict_neighborho.keys()
+                facilitiesList = json_Action.dict_Type.keys()
+
+                context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
+                return render(request, "../templates/folder_trainer/trainer_web.html",context)
             if (user['role'] == '3'):
                 neighborhoddList = json_Action.dict_neighborho.keys()
                 facilitiesList = json_Action.dict_Type.keys()
-                context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList}
+                context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
                 return render(request, "../templates/folder_trainee/web_trainee.html",context)
     return render(request,"sign-in.html")
 
@@ -93,6 +97,9 @@ def deleteFacility(request, facilityType,facilityName, facilityNeighborhood, fac
     return  render(request,"admin2.html")
 
 def ShowCourts(request):
+    username=request.POST.get("username")
+    id=request.POST.get("id")
+    role=request.POST.get("role")
     neighborhoddList = json_Action.dict_neighborho.keys()
     facilitiesList = json_Action.dict_Type.keys()
     selectedNeighbohood = request.POST.get("neighborhoods",False)
@@ -107,7 +114,13 @@ def ShowCourts(request):
         msg = True
     except KeyError as e:
         msg = False
-    return render(request,"../templates/folder_trainee/web_trainee.html",{"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg})
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role}
+    if (role == "2"):
+
+        return render(request,"../templates/folder_trainer/trainer_web.html",context)
+
+
+    return render(request,"../templates/folder_trainee/web_trainee.html",context)
 
 
 def register(request):
