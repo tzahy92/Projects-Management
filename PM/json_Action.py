@@ -62,25 +62,6 @@ def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
     return filtered_facilities
 
 
-def main():
-    x = Sports_facilities()
-    #for distro in x.get_distros_dict():
-        #if(distro['Owner'] == ""):
-            #print("עיריית באר שבע")
-            #continue
-        #print(distro['Type'])
-    tmp = []
-    for distro in x.get_distros_dict():
-        if (distro['neighborho'] not in tmp):
-            tmp.append(distro['neighborho'])
-    for i in x.get_by_type_neighborho("ג","קט-רגל"):
-        print(i)
-
-
-
-
-if __name__ == '__main__':
-    main()
 
 
 
