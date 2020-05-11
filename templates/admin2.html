@@ -47,7 +47,7 @@ table {
 
 td, th {
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
@@ -58,15 +58,18 @@ tr:nth-child(even) {
 .table-wrapper
 {
     border: 1px solid white;
-    width: 1000px;
+    width: 1200px;
     height: 500px;
     overflow: auto;
+
+
 }
 
 table
 {
     border: 1px solid black;
-    margin-right: 15px;
+    width: 100%;
+
 }
 
 td
@@ -74,6 +77,7 @@ td
     width: 30px;
     height: 30px;
     background-color: #ccc;
+    text-align: center;
 }
 
     .pane {
@@ -111,7 +115,7 @@ td
               <li><a href="#">HOME</a></li>
               <li><a href="#">TESTIMONIALS</a></li>
               <li><a href="#">ABOUT</a></li>
-              <li><a href="sign-in/">LOGIN</a></li>
+              <li><a href="sign-in/">LOGOUT</a></li>
             </ul>
           </div>
         </nav>
@@ -191,14 +195,15 @@ td
                 </tr >
             {% for instance in facilities %}
             <tr>
-            <th>{{ instance.Type}}</th>
+                    <th>{{ instance.Type}}</th>
                     <th>{{ instance.Name}}</th>
                     <th>{{ instance.neighborho }}</th>
                     <th>{{ instance.Operator}}</th>
                     <th>{{ instance.Owner}}</th>
+                    {% if instance.Type and instance.neighborho and instance.Operator and instance.Owner %}
                     <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'deleteFacility' facilityType=instance.Type facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner=instance.Owner %}  formmethod="post">delete</a></button></th>
-                    <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'deleteFacility' facilityType=instance.Type facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner=instance.Owner %}  formmethod="post">edit</a></button></th>
-
+                    <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'editFacility' facilityType=instance.Type facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner=instance.Owner %}  formmethod="post">edit</a></button></th>
+                    {% endif %}
             </tr>
         {% endfor %}
 </table>

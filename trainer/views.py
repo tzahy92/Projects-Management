@@ -38,8 +38,9 @@ def adminAfterUpdate(request):
     lasttName = fullNameSplited[1]
     DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
     allusers = DB_Action.getAllUsers()
-    context = {"object_List": allusers}
-    return render(request, "admin.html", context)
+    facilities = json_Action.Sports_facilities()
+    context = {"object_List": allusers, "facilities": facilities.distros_dict}
+    return render(request, "admin2.html", context)
 
 def showHomePage(request):
     return render(request, "../templates/homepage.html")
@@ -80,7 +81,7 @@ def delete_user(request,userID):
     allusers = DB_Action.getAllUsers()
     facilities = json_Action.Sports_facilities()
     context = {"object_List": allusers, "facilities": facilities.distros_dict}
-    return render(request,"../templates/admin.html",context)
+    return render(request,"../templates/admin2.html",context)
 
 def showUpdateUser(request, UserID):
     context = DB_Action.get_user_by_ID(UserID)
@@ -94,7 +95,16 @@ def deleteFacility(request, facilityType,facilityName, facilityNeighborhood, fac
     jsonAct = json_Action.Sports_facilities()
     faciltyToDelete = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
     jsonAct.delete_facility(faciltyToDelete)
-    return  render(request,"admin2.html")
+    allusers = DB_Action.getAllUsers()
+    facilities = json_Action.Sports_facilities()
+    context = {"object_List": allusers, "facilities": facilities.distros_dict}
+    return render(request, "admin2.html", context)
+
+def showUpdateFacility(request, facilityType, facilityName, facilityNeighborhood, facilityOperator, facilityOwner):
+   facilityToUpdate = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
+   context = {"myFacility":facilityToUpdate}
+   return render(request,"updateFacility/updateFacility.html",context)
+
 
 def ShowCourts(request):
     username=request.POST.get("username")

@@ -1,0 +1,42 @@
+[
+    {
+        "Type": "\u05de\u05d2\u05e8\u05e9 \u05e1\u05e4\u05d5\u05e8\u05d8 \u05de\u05e9\u05d5\u05dc\u05d1 \u2013 43X32 \u05de'",
+        "Name": "\u05d0\u05d5\u05e8\u05d9\u05d9\u05df",
+        "street": "\u05d8\u05d1\u05e0\u05e7\u05d9\u05df",
+        "HouseNumbe": "0.0",
+        "neighborho": "\u05d4'",
+        "Operator": "\u05e0\u05d9\u05d4\u05d5\u05dc \u05e2\u05e6\u05de\u05d9",
+        "Seats": "0.0",
+        "Activity": "\u05e4\u05ea\u05d5\u05d7 \u05dc\u05dc\u05d0 \u05d4\u05d2\u05d1\u05dc\u05d4",
+        "fencing": "\u05e7\u05d9\u05d9\u05dd \u05d2\u05d9\u05d3\u05d5\u05e8",
+        "lighting": "\u05e7\u05d9\u05d9\u05de\u05ea \u05ea\u05d0\u05d5\u05e8\u05d4",
+        "handicappe": "\u05e0\u05d2\u05d9\u05e9 \u05dc\u05e0\u05db\u05d9\u05dd",
+        "condition": "\u05ea\u05e7\u05d9\u05df \u05d5\u05e4\u05e2\u05d9\u05dc",
+        "Owner": "\u05e2\u05d9\u05e8\u05d9\u05d9\u05ea \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+        "ForSchool": "\u05d0\u05d5\u05e8\u05d9\u05d9\u05df",
+        "associatio": "",
+        "SportType": "",
+        "lat": "31.255161367000028",
+        "lon": "34.77513006300006"
+    },
+    {
+        "Type": "\u05d0\u05d5\u05dc\u05dd \u05e1\u05e4\u05d5\u05e8\u05d8 \u05e7\u05d8\u05df \u2013 15x24 \u05de'",
+        "Name": "\u05d0\u05d5\u05e8\u05d9\u05d9\u05df",
+        "street": "\u05d8\u05d1\u05e0\u05e7\u05d9\u05df",
+        "HouseNumbe": "0.0",
+        "neighborho": "\u05d4'",
+        "Operator": "\u05e0\u05d9\u05d4\u05d5\u05dc \u05e2\u05e6\u05de\u05d9",
+        "Seats": "0.0",
+        "Activity": "\u05d1\u05ea\u05d9\u05d0\u05d5\u05dd \u05d1\u05dc\u05d1\u05d3",
+        "fencing": "\u05e7\u05d9\u05d9\u05dd \u05d2\u05d9\u05d3\u05d5\u05e8",
+        "lighting": "\u05e7\u05d9\u05d9\u05de\u05ea \u05ea\u05d0\u05d5\u05e8\u05d4",
+        "handicappe": "\u05e0\u05d2\u05d9\u05e9 \u05dc\u05e0\u05db\u05d9\u05dd",
+        "condition": "\u05ea\u05e7\u05d9\u05df \u05d5\u05e4\u05e2\u05d9\u05dc",
+        "Owner": "\u05e2\u05d9\u05e8\u05d9\u05d9\u05ea \u05d1\u05d0\u05e8 \u05e9\u05d1\u05e2",
+        "ForSchool": "\u05d0\u05d5\u05e8\u05d9\u05d9\u05df",
+        "associatio": "\u05db\u05d9\u05d5\u05d5\u05e0\u05d9\u05dd",
+        "SportType": "\u05d7\u05d5\u05d2\u05d9 \u05e1\u05e4\u05d5\u05e8\u05d8",
+        "lat": "31.25485603100003",
+        "lon": "34.775263523000035"
+    }
+]

@@ -10,7 +10,7 @@ class Sports_facilities():
 
     def __init__(self):
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "Sport.json")
+        path = os.path.join(my_path, "temp.json")
         with open(path,encoding="utf8") as f:
             self.distros_dict = json.load(f)
 
@@ -44,11 +44,17 @@ class Sports_facilities():
                     obj['neighborho']== facility['neighborho'] and obj['Operator']== facility['Operator'] and obj['Owner']== facility['Owner']):
                 self.distros_dict.remove(obj)
                 break
+        print(self.distros_dict)
+        ##x= self.distros_dict
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "Sport.json")
-        jsonFile = open(path, "w+")
-        jsonFile.write(json.dumps(self.distros_dict))
+        path = os.path.join(my_path, "temp.json")
+        ##with open(path, 'w') as fp:
+         ##   json.dump(x, fp, indent=4)
+        jsonFile = open(path, "w+",encoding='utf-8')
+        x= json.dumps(self.distros_dict,indent=4)
+        jsonFile.write(x)
         jsonFile.close()
+
 
 
 def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
