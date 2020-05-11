@@ -493,7 +493,8 @@ input {
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">update facility details</h2>
-                    <form method="POST">
+                    <form method="POST" action="/adminAfterUpdate/">
+                        {% csrf_token %}
                         <div class="input-group">
                             <a>name</a>
                             <input class="input--style-1" type="text" value="{{ myFacility.Name }}" name="name">
@@ -521,8 +522,9 @@ input {
                                     </div>
                                 </div>
                         <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit" style="margin-left: 140px; background-color: white;color:#0F81F8; border: 3px solid #0F81F8">Update</button>
-                            <button class="btn btn--radius btn--green" type="submit" style="margin-left: 60px;  background-color: white;color:#0F81F8; border: 3px solid #0F81F8">cancel</button>
+                            <button name="updateBT" class="btn btn--radius btn--green" type="submit" style="margin-left: 140px; background-color: white;color:#0F81F8; border: 3px solid #0F81F8" >Update</button>
+                            <button name="cancelBT" class="btn btn--radius btn--green" type="submit" style="margin-left: 60px;  background-color: white;color:#0F81F8; border: 3px solid #0F81F8" href ={% url 'backtoAdmin' %}>cancel</button>
+
                         </div>
                     </form>
                 </div>

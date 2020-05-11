@@ -100,9 +100,18 @@ def deleteFacility(request, facilityType,facilityName, facilityNeighborhood, fac
     context = {"object_List": allusers, "facilities": facilities.distros_dict}
     return render(request, "admin2.html", context)
 
+
+def backtoAdmin(request, facilityType,facilityName, facilityNeighborhood, facilityOperator, facilityOwner):
+    print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+    allusers = DB_Action.getAllUsers()
+    facilities = json_Action.Sports_facilities()
+    context = {"object_List": allusers, "facilities": facilities.distros_dict}
+    return render(request, "admin2.html", context)
+
 def showUpdateFacility(request, facilityType, facilityName, facilityNeighborhood, facilityOperator, facilityOwner):
    facilityToUpdate = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
-   context = {"myFacility":facilityToUpdate}
+   users = DB_Action.getAllUsers()
+   context = {"myFacility":facilityToUpdate,"users":users}
    return render(request,"updateFacility/updateFacility.html",context)
 
 
