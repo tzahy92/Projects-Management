@@ -44,7 +44,7 @@ class MyTestCase(unittest.TestCase):
         with open(path, encoding="utf8") as f:
             distros_dict = json.load(f)
         facility = json_Action.Sports_facilities()
-        #self.assertEqual(facility.get_distros_dict(),distros_dict)
+        self.assertEqual(facility.get_distros_dict(),distros_dict)
 
     def test_get_filtered_sport_facility_(self):
         my_path = os.path.abspath(os.path.dirname(__file__))
@@ -52,6 +52,6 @@ class MyTestCase(unittest.TestCase):
         with open(path, encoding="utf8") as f:
             distros_dict = json.load(f)
         facility = json_Action.Sports_facilities()
-        #self.assertEqual(facility.get_by_type_neighborho('ג','קט-רגל'),[{'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076'}])
+        self.assertEqual(facility.get_by_type_neighborho('ג','קט-רגל'),[{'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076'}])
 if __name__ == '__main__':
     unittest.main()
