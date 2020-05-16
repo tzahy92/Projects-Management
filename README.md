@@ -16,10 +16,10 @@ Elhanan Ben-Shabu
 <div/>*dataclasses
 <div/>*djongo	
 <div/>*dnspython	
-<div/>*pip	
+<div/>*pip
 <div/>*pymongo
-<div/>*python-dateutil	
-<div/>*pytz	
-<div/>*setuptools	
-<div/>*six	
+<div/>*python-dateutil
+<div/>*pytz
+<div/>*setuptools
+<div/>*six
 <div/>*sqlparse
