@@ -4,6 +4,7 @@ from django import forms
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
+from django.contrib.auth import login,logout
 from PM import DB_Action
 from templates import registration
 from django.contrib import messages
@@ -47,6 +48,12 @@ def showHomePage(request):
 
 def showLogin(request):
     return render(request,"../templates/registration/sign-in.html")
+
+def logout(request):
+    auth.logout(request)
+    messages.info(request,"You are now logout!")
+    return redirect('/')
+
 
 def showRegister(request):
     return render(request, "../templates/registration/sign-up.html")
