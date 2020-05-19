@@ -377,60 +377,8 @@ table tr td
         <h1>Welcome to the Sport Site</h1>
 
         <!--img src="https://previews.123rf.com/images/finevector/finevector1604/finevector160400027/55972831-fitness-young-sporty-couple-with-dumbbells-fit-couple-workout-partners-flat-vector-illustration-.jpg" alt="Italian Trulli" height="400" width="600"-->
-<form method="POST" action="../ShowCourts/">
-{% csrf_token %}
-        <select  name="neighborhoods">
-         <option  selected disabled>שכונה</option>
-               {% for instance in neighborhoddList %}
-                    <option value={{ instance }}>{{ instance }}</option>
-                {% endfor %}
-        </select>
-        <select  name="facilitiesType">
-         <option  selected disabled>סוג מתקן</option>
-               {% for instance in facilities %}
-            <option value={{ instance }}>{{ instance }}</option>
-               {% endfor %}
-        </select>
-        Need light <input type="checkbox" name="lighting" >
-        <input type="submit" class="button" value="OK">
- </form>
-           <table >
-
-    <tr>
-    <th>TYPE</th>
-    <th>NAME</th>
-    <th>NEIGHBORHOOD</th>
-    <th>OPERATOR</th>
-    <th>LIGHTNING</th>
-    <th>CONDITION</th>
-    <th>OWNER</th>
-  </tr >
-           {% if massege == False %}
-                <td colspan="5">Please select a neighborhood and type of facility</td>
-
-            {% elif courtsList != " " %}
-               <tbody>
-
-               {% for instance in courtsList %}
-                   <tr>
-                    <th>{{ instance.Type}}</th>
-                    <th>{{ instance.Name}}</th>
-                    <th>{{ instance.neighborho }}</th>
-                    <th>{{ instance.Operator}}</th>
-                    <th>{{ instance.lighting}}</th>
-                    <th>{{ instance.condition}}</th>
-                    <th>{{ instance.Owner}}</th>
-                   </tr>
-               {% empty %}
-                   <tr><td colspan="5">No sports facilities found</td></tr>
-               {% endfor %}
-               </tbody>
-           {% endif %}
-           </table>
 
 
-      </div>
-    </div>
     <div id="footer">
       <p><a href="web_trainee.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Us</a></p>
       <p>Copyright &copy; night_sky_2 | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Website templates</a></p>
