@@ -54,21 +54,19 @@ def logout(request):
     return redirect('/')
 
 def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator):
-    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-    print(origName)
-    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-    name = request.POST.get("name")
+    name = request.POST.get('name')
     type = request.POST.get("type")
     neighborhood = request.POST.get("neighborhood")
     Operator = request.POST.get("Operator")
     Owner = request.POST.get("Owner")
     facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood}
     originalFacility={"Type":origType,"Name":origName,"Operator":origOperator,"Owner":origOwner,"neighborho":origNeighborhood}
-    ##json_Action.updateFacility(originalFacility,facilityToUpdate)
-
-
-
-
+    facilities = json_Action.Sports_facilities()
+    facilities.updateFacility(originalFacility,facilityToUpdate)
+    allusers = DB_Action.getAllUsers()
+    facilities = json_Action.Sports_facilities()
+    context = {"object_List": allusers, "facilities": facilities.distros_dict}
+    return render(request, "admin2.html", context)
 
 def showRegister(request):
     return render(request, "../templates/registration/sign-up.html")

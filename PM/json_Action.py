@@ -55,6 +55,22 @@ class Sports_facilities():
         jsonFile.write(x)
         jsonFile.close()
 
+    def updateFacility(self, originalFacility, newFacility):
+        for obj in self.distros_dict:
+            if (obj['Type'] == originalFacility['Type'] and obj['Name'] == originalFacility['Name'] and
+                    obj['neighborho'] == originalFacility['neighborho'] and obj['Operator'] == originalFacility[
+                        'Operator'] and obj[
+                        'Owner'] == originalFacility['Owner']):
+                obj.update(newFacility)
+                break
+        my_path = os.path.abspath(os.path.dirname(__file__))
+        path = os.path.join(my_path, "temp.json")
+        ##with open(path, 'w') as fp:
+        ##   json.dump(x, fp, indent=4)
+        jsonFile = open(path, "w+", encoding='utf-8')
+        x = json.dumps(self.distros_dict, indent=4)
+        jsonFile.write(x)
+        jsonFile.close()
 
 
 def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
@@ -69,23 +85,7 @@ def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
 
 
 
-def updateFacility(self, originalFacility,newFacility):
-    for obj in self.distros_dict:
-        if (obj['Type'] == originalFacility['Type'] and obj['Name'] == originalFacility['Name'] and
-                obj['neighborho'] == originalFacility['neighborho'] and obj['Operator'] == originalFacility['Operator'] and obj[
-                    'Owner'] == originalFacility['Owner']):
-            self.distros_dict.remove(obj)
-            break
-    print(self.distros_dict)
-    ##x= self.distros_dict
-    my_path = os.path.abspath(os.path.dirname(__file__))
-    path = os.path.join(my_path, "temp.json")
-    ##with open(path, 'w') as fp:
-    ##   json.dump(x, fp, indent=4)
-    jsonFile = open(path, "w+", encoding='utf-8')
-    x = json.dumps(self.distros_dict, indent=4)
-    jsonFile.write(x)
-    jsonFile.close()
+
 
 
 
