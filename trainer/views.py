@@ -122,7 +122,6 @@ def deleteFacility(request, facilityType,facilityName, facilityNeighborhood, fac
 
 
 def backtoAdmin(request):
-    print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     allusers = DB_Action.getAllUsers()
     facilities = json_Action.Sports_facilities()
     context = {"object_List": allusers, "facilities": facilities.distros_dict}
