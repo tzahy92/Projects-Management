@@ -38,7 +38,8 @@ urlpatterns = [
     path('deleteUser/<str:userID>',views.delete_user,name="deleteUser"),
     path('updateUserDetails/<str:UserID>', views.showUpdateUser, name="updateUserDetails"),
     path('ShowCourts/', views.ShowCourts, name="ShowCourts"),
-    path('adminAfterUpdate/', views.backtoAdmin, name="backtoAdmin"),
+    path('backToAdmin/', views.backtoAdmin, name="backtoAdmin"),
+    path('adminAfterFacilityUpdate/<str:origName>/<str:origType>/<str:origOwner>/<str:origNeighborhood>/<str:origOperator>', views.afterFacilityUpdate, name="afterFacilityUpdate"),
     path('delteFacilty/<str:facilityType>/<str:facilityName>/<str:facilityNeighborhood>/<str:facilityOperator>/<str:facilityOwner>', views.deleteFacility, name="deleteFacility"),
     path('updateFacilityDetails/<str:facilityType>/<str:facilityName>/<str:facilityNeighborhood>/<str:facilityOperator>/<str:facilityOwner>', views.showUpdateFacility, name="editFacility"),
     ##facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner = instance.Owner
