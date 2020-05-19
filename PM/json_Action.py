@@ -61,6 +61,7 @@ class Sports_facilities():
                     obj['neighborho'] == originalFacility['neighborho'] and obj['Operator'] == originalFacility[
                         'Operator'] and obj[
                         'Owner'] == originalFacility['Owner']):
+
                 obj.update(newFacility)
                 break
         my_path = os.path.abspath(os.path.dirname(__file__))
