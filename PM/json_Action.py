@@ -10,7 +10,7 @@ class Sports_facilities():
 
     def __init__(self):
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "temp.json")
+        path = os.path.join(my_path, "Sport.json")
         with open(path,encoding="utf8") as f:
             self.distros_dict = json.load(f)
 
@@ -44,7 +44,7 @@ class Sports_facilities():
                     obj['neighborho']== facility['neighborho'] and obj['Operator']== facility['Operator'] and obj['Owner']== facility['Owner']):
                 self.distros_dict.remove(obj)
                 break
-        print(self.distros_dict)
+        # print(self.distros_dict)
         ##x= self.distros_dict
         my_path = os.path.abspath(os.path.dirname(__file__))
         path = os.path.join(my_path, "temp.json")

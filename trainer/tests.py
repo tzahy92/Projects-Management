@@ -2,20 +2,25 @@
 
 import unittest
 from django.test import TestCase
-
+from django.test import Client
 # Create your tests here.
 from PM import DB_Action
 from PM import json_Action
 import json
 import os.path
+from django.test.utils import setup_test_environment, teardown_test_environment
 
 
-
-              #   {"_id": "389", "userName": "admin89", "password": "1234", "firstName": "bar", "lastName": "butler",
+#   {"_id": "389", "userName": "admin89", "password": "1234", "firstName": "bar", "lastName": "butler",
                   #"role": "1","E-mail":"admin89@gmail.com"}
 
 
 class MyTestCase(unittest.TestCase):
+    def setUp(self) -> None:
+        my_path = os.path.abspath(os.path.dirname(__file__))
+        self.path = os.path.join(my_path, "../PM/Sport.json")
+        with open(self.path, encoding="utf8") as f:
+            self.distros_dict = json.load(f)
 
     def test_insert_to_DB(self):
         with self.assertRaisesRegex(Exception,"this username is taken"): ##username already in the DB
@@ -39,19 +44,17 @@ class MyTestCase(unittest.TestCase):
             DB_Action.update_user_by_ID("001","id","389")
 
     def test_get_all_sport_facility(self):
-        my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "../PM/Sport.json")
-        with open(path, encoding="utf8") as f:
-            distros_dict = json.load(f)
+
         facility = json_Action.Sports_facilities()
-        #self.assertEqual(facility.get_distros_dict(),distros_dict)
+        self.assertEqual(facility.get_distros_dict(),self.distros_dict)
 
     def test_get_filtered_sport_facility_(self):
-        my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "../PM/Sport.json")
-        with open(path, encoding="utf8") as f:
-            distros_dict = json.load(f)
+
         facility = json_Action.Sports_facilities()
-        #self.assertEqual(facility.get_by_type_neighborho('ג','קט-רגל'),[{'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076'}])
+        self.assertEqual(facility.get_by_type_neighborho('ג','קט-רגל'),[{'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076'}])
+
+
+
+
 if __name__ == '__main__':
     unittest.main()
