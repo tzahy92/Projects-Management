@@ -106,6 +106,7 @@ class Sports_facilities():
         for sport in data['Sports']:
             print(sport)
 
+
 def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
     tmp = []
     filtered_facilities = []
