@@ -72,6 +72,39 @@ class Sports_facilities():
         jsonFile.write(x)
         jsonFile.close()
 
+    def Add_New_Facility(self,New_Facilities ):
+        with open('Sport.json', encoding="utf-8") as Sport_Json:
+            data = json.load(Sport_Json)
+
+        temp = data['Sports']
+        y = {
+            'Type': New_Facilities['Type'],
+            'Name': 'ניס',
+            'street': '',
+            'HouseNumbe': '0.0',
+            'neighborho': "None",
+            'Operator': 'כיוונים',
+            'Seats': '0.0',
+            'Activity': 'כן',
+            'fencing': 'כן',
+            'lighting': 'כן',
+            'handicappe': 'כן',
+            'condition': '7777',
+            'Owner': 'כיוונים',
+            'ForSchool': '777',
+            'associatio': '77',
+            'SportType': '777',
+            'lat': '7777',
+            'lon': '7777'
+        }
+
+        temp.append(y)
+
+        with open('Sport.json', 'w') as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+
+        for sport in data['Sports']:
+            print(sport)
 
 def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
     tmp = []
@@ -85,20 +118,40 @@ def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
 
 
 
+"""""
+####try to add
+with open('Sport.json', encoding='utf-8') as Sport_Json:
+    data = json.load(Sport_Json)
 
+temp = data['Sports']
+y = {
+    'Type': 'New_Facilities',
+    'Name': 'ניס',
+    'street': '',
+    'HouseNumbe': '0.0',
+    'neighborho': "None",
+    'Operator': 'כיוונים',
+    'Seats': '0.0',
+    'Activity': 'כן',
+    'fencing': 'כן',
+    'lighting': 'כן',
+    'handicappe': 'כן',
+    'condition': '7777',
+    'Owner': 'כיוונים',
+    'ForSchool': '777',
+    'associatio': '77',
+    'SportType': '777',
+    'lat': '7777',
+    'lon': '7777'
+}
 
+temp.append(y)
 
+with open('Sport.json', 'w') as f:
+    json.dump(data, f, indent=4)
 
-
-
-
-
-
-
-
-
-
-
-
+for sport in data['Sports']:
+    print(sport)
+"""""
 
 
