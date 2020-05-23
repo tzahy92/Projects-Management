@@ -95,9 +95,11 @@ def Add_New_Facility(new_Facilities):
     temp.append(new_Facilities)
 
     with open('PM/Sport.json', 'w', encoding="utf-8") as file:
-        json.dump(data, file, indent=4, encoding="utf-8", ensure_ascii=False)
+        json.dump(data, file, indent=4, ensure_ascii=False)
     """for sport in data['Sports']:
         print(sport)"""
+    Sport_Json.close()
+    file.close()
 
 
 
