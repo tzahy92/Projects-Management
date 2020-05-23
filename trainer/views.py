@@ -5,11 +5,10 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from django.contrib.auth import login,logout
-from PM import DB_Action
+from PM import DB_Action, json_Action
 from templates import registration
 from django.contrib import messages
 import re
-from PM import json_Action
 from django.template import RequestContext
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -94,7 +93,7 @@ def loginBtn(request):
                 facilitiesList = json_Action.dict_Type.keys()
                 context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
                 return render(request, "../templates/folder_trainee/web_trainee.html",context)
-    return render(request,"sign-in.html")
+    return render(request,"registration/sign-in.html")
 
 def delete_user(request,userID):
     DB_Action.removeUserByID(userID)
@@ -109,6 +108,51 @@ def showUpdateUser(request, UserID):
     context['id'] = context['_id']
     context['Email'] = context['E-mail']
     return render(request,"../templates/registration/update.html",{"user":context})
+
+def addNewFacilities(request):
+    if request.method == "POST":
+        facilityType = request.POST.get("Field Type")
+        print("dg,la;dgadgkad'lkgafdkh===================  ",facilityType)
+        facilityName = request.POST.get('Field Name')
+        facilityStreet = request.POST.get('Field Street')
+        facilityHouseNumbe = request.POST.get('Field HouseNumbe')
+        facilityNeighborho = request.POST.get('Field Neighborho')
+        facilityOperator = request.POST.get('Field Operator')
+        facilitySeats = request.POST.get('Field Seats')
+        facilityActivity = request.POST.get('Field Activity')
+        facilityFencing = request.POST.get('Field Fencing')
+        facilityLighting = request.POST.get('Field Lighting')
+        facilityHandicappe = request.POST.get('Field Handicappe')
+        facilityCondition = request.POST.get('Field Condition')
+        facilityOwner = request.POST.get('Field Owner')
+        facilityForSchool = request.POST.get('Field ForSchool')
+        facilityAssociatio = request.POST.get('Field Associatio')
+        facilitySportType = request.POST.get('Field SportType')
+        facilitylat = request.POST.get('Field lat')
+        facilitylon = request.POST.get('Field lon')
+        NewFacili = {
+            'Type': facilityType,
+            'Name': facilityName,
+            'street': facilityStreet,
+            'HouseNumbe': facilityHouseNumbe,
+            'neighborho': facilityNeighborho,
+            'Operator': facilityOperator,
+            'Seats': facilitySeats,
+            'Activity': facilityActivity,
+            'fencing': facilityFencing,
+            'lighting': facilityLighting,
+            'handicappe': facilityHandicappe,
+            'condition': facilityCondition,
+            'Owner': facilityOwner,
+            'ForSchool': facilityForSchool,
+            'associatio': facilityAssociatio,
+            'SportType': facilitySportType,
+            'lat': facilitylat,
+            'lon': facilitylon
+        }
+        json_Action.Add_New_Facility(NewFacili)
+    return render(request, "admin2.html")
+
 
 
 def deleteFacility(request, facilityType,facilityName, facilityNeighborhood, facilityOperator, facilityOwner):

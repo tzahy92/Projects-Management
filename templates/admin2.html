@@ -236,60 +236,61 @@ td
             </div>
             <p class="page-section__subtitle page-section__subtitle--white">Here You can Insert new Fields</p>
           </div>
-          <form action="#">
+          <form method="POST" action="{% url 'newFacilities' %}">
+              {% csrf_token %}
             <div class="form-group">
-              <input class="form-control" type="text" placeholder="Field Type">
+              <input class="form-control" type="text" placeholder="Field Type" name="Field Type">
             </div>
             <div class="form-group">
-              <input class="form-control" type="text" placeholder="Field Name">
+              <input class="form-control" type="text" placeholder="Field Name" name="Field Name">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Street">
+               <input class="form-control" type="text" placeholder="Field Street" name="Field Street">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field HouseNumbe">
+               <input class="form-control" type="number" placeholder="Field HouseNumbe" name="Field HouseNumbe">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Neighborho">
+               <input class="form-control" type="text" placeholder="Field Neighborho" name="Field Neighborho">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Operator">
+               <input class="form-control" type="text" placeholder="Field Operator" name="Field Operator">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Seats">
+               <input class="form-control" type="number" placeholder="Field Seats" name="Field Seats">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Activity">
+               <input class="form-control" type="text" placeholder="Field Activity" name="Field Activity">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Fencing">
+               <input class="form-control" type="text" placeholder="Field Fencing" name="Field Fencing">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Lighting">
+               <input class="form-control" type="text" placeholder="Field Lighting" name="Field Lighting">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Handicappe">
+               <input class="form-control" type="text" placeholder="Field Handicappe" name="Field Handicappe">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Condition">
+               <input class="form-control" type="text" placeholder="Field Condition" name="Field Condition">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Owner">
+               <input class="form-control" type="text" placeholder="Field Owner" name="Field Owner">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field ForSchool">
+               <input class="form-control" type="text" placeholder="Field ForSchool" name="Field ForSchool">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field Associatio">
+               <input class="form-control" type="text" placeholder="Field Associatio" name="Field Associatio">
             </div>
             <div class="form-group">
-               <input class="form-control" type="text" placeholder="Field SportType">
+               <input class="form-control" type="text" placeholder="Field SportType" name="Field SportType">
             </div>
             <div class="form-group">
-               <input class="form-control" type="number" placeholder="Field lat">
+               <input class="form-control" type="number" placeholder="Field lat" name="Field lat">
             </div>
             <div class="form-group">
-               <input class="form-control" type="number" placeholder="Field lon">
+               <input class="form-control" type="number" placeholder="Field lon" name="Field lon">
             </div>
             <div class="row">
               <div class="col-md-6 form-button">

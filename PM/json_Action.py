@@ -72,40 +72,6 @@ class Sports_facilities():
         jsonFile.write(x)
         jsonFile.close()
 
-    def Add_New_Facility(self,New_Facilities ):
-        with open('Sport.json', encoding="utf-8") as Sport_Json:
-            data = json.load(Sport_Json)
-
-        temp = data['Sports']
-        y = {
-            'Type': New_Facilities['Type'],
-            'Name': 'ניס',
-            'street': '',
-            'HouseNumbe': '0.0',
-            'neighborho': "None",
-            'Operator': 'כיוונים',
-            'Seats': '0.0',
-            'Activity': 'כן',
-            'fencing': 'כן',
-            'lighting': 'כן',
-            'handicappe': 'כן',
-            'condition': '7777',
-            'Owner': 'כיוונים',
-            'ForSchool': '777',
-            'associatio': '77',
-            'SportType': '777',
-            'lat': '7777',
-            'lon': '7777'
-        }
-
-        temp.append(y)
-
-        with open('Sport.json', 'w') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-
-        for sport in data['Sports']:
-            print(sport)
-
 
 def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
     tmp = []
@@ -116,6 +82,22 @@ def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
         if(facility[type_] in tmp):
             filtered_facilities.append(facility)
     return filtered_facilities
+
+
+
+
+def Add_New_Facility(new_Facilities):
+    print(new_Facilities)
+    with open('PM/Sport.json', encoding="utf-8") as Sport_Json:
+        data = json.load(Sport_Json)
+
+    temp = data['Sports']
+    temp.append(new_Facilities)
+
+    with open('PM/Sport.json', 'w', encoding="utf-8") as file:
+        json.dump(data, file, indent=4, encoding="utf-8", ensure_ascii=False)
+    """for sport in data['Sports']:
+        print(sport)"""
 
 
 
