@@ -10,7 +10,7 @@ class Sports_facilities():
 
     def __init__(self):
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "temp.json")
+        path = os.path.join(my_path, "Sport.json")
         with open(path,encoding="utf8") as f:
             self.distros_dict = json.load(f)
 
@@ -44,7 +44,7 @@ class Sports_facilities():
                     obj['neighborho']== facility['neighborho'] and obj['Operator']== facility['Operator'] and obj['Owner']== facility['Owner']):
                 self.distros_dict.remove(obj)
                 break
-        print(self.distros_dict)
+        # print(self.distros_dict)
         ##x= self.distros_dict
         my_path = os.path.abspath(os.path.dirname(__file__))
         path = os.path.join(my_path, "temp.json")
@@ -87,19 +87,57 @@ def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
 
 
 
+def Add_New_Facility(new_Facilities):
+    print(new_Facilities)
+    with open('PM/Sport.json', encoding="utf-8") as Sport_Json:
+        data = json.load(Sport_Json)
+
+    temp = data['Sports']
+    temp.append(new_Facilities)
+
+    with open('PM/Sport.json', 'w', encoding="utf-8") as file:
+        json.dump(data, file, indent=4, ensure_ascii=False)
+    """for sport in data['Sports']:
+        print(sport)"""
+    Sport_Json.close()
+    file.close()
 
 
 
+"""""
+####try to add
+with open('Sport.json', encoding='utf-8') as Sport_Json:
+    data = json.load(Sport_Json)
 
+temp = data['Sports']
+y = {
+    'Type': 'New_Facilities',
+    'Name': 'ניס',
+    'street': '',
+    'HouseNumbe': '0.0',
+    'neighborho': "None",
+    'Operator': 'כיוונים',
+    'Seats': '0.0',
+    'Activity': 'כן',
+    'fencing': 'כן',
+    'lighting': 'כן',
+    'handicappe': 'כן',
+    'condition': '7777',
+    'Owner': 'כיוונים',
+    'ForSchool': '777',
+    'associatio': '77',
+    'SportType': '777',
+    'lat': '7777',
+    'lon': '7777'
+}
 
+temp.append(y)
 
+with open('Sport.json', 'w') as f:
+    json.dump(data, f, indent=4)
 
-
-
-
-
-
-
-
+for sport in data['Sports']:
+    print(sport)
+"""""
 
 

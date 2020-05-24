@@ -86,6 +86,11 @@ td
     max-height:200px;
 }
 
+.container .add_facilities{
+    position: absolute;
+
+}
+
 </style>
 <head>
   <meta charset="UTF-8">
@@ -113,8 +118,9 @@ td
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav pull-right">
               <li><a href="#">HOME</a></li>
-              <li><a href="#">TESTIMONIALS</a></li>
-              <li><a href="#">ABOUT</a></li>
+              <li><a href="#manage">MANAGE USERS</a></li>
+              <li><a href="#manage_facili">MANAGE FACILITIES</a></li>
+              <li><a href="#new_facilities">NEW FACILITIES</a></li>
               <li><a href="/">LOGOUT</a></li>
             </ul>
           </div>
@@ -137,6 +143,7 @@ td
       <div class="container">
         <div class="page-section text-center">
           <h2 class="page-section__title">manage users</h2>
+          <a id="manage"></a>
           <div class="page-section__title-style">
             <span class="first-line"></span>
             <span class="second-line"></span>
@@ -179,6 +186,7 @@ td
       <div class="container">
         <div class="page-section text-center">
           <h2 class="page-section__title">manage facilities</h2>
+          <a id="manage_facili"></a>
           <div class="page-section__title-style">
             <span class="first-line"></span>
             <span class="second-line"></span>
@@ -216,50 +224,84 @@ td
       </div>
     </section>
 
-
-
-    <section class="video video--bg">
+    <section class="form form--bg">
       <div class="container">
+        <a id="new_facilities"></a>
         <div class="page-section">
-          <div class="row">
-            <div class="col-md-7 video__left">
-              <a data-toggle="modal" data-target="#myModal" href="#"><i class="material-icons">play_circle_filled</i></a>
+          <div class="text-center">
+            <h2 class="page-section__title page-section__title--white">Add New Facilities</h2>
+            <div class="form__title-style">
+              <span class="first-line"></span>
+              <span class="second-line"></span>
             </div>
-            <div class="col-md-5">
-              <div class="video__right text-center">
-                <h2 class="video__title">Watch the video</h2>
-                <div class="video__title-style">
-                  <span class="first-line"></span>
-                  <span class="second-line"></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <a class="button button--white" href="#">TRY NOW</a>
+            <p class="page-section__subtitle page-section__subtitle--white">Here You can Insert new Fields</p>
+          </div>
+          <form method="POST" action="{% url 'newFacilities' %}">
+              {% csrf_token %}
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Field Type" name="Field Type">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Field Name" name="Field Name">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Street" name="Field Street">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="number" placeholder="Field HouseNumbe" name="Field HouseNumbe">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Neighborho" name="Field Neighborho">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Operator" name="Field Operator">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="number" placeholder="Field Seats" name="Field Seats">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Activity" name="Field Activity">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Fencing" name="Field Fencing">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Lighting" name="Field Lighting">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Handicappe" name="Field Handicappe">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Condition" name="Field Condition">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Owner" name="Field Owner">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field ForSchool" name="Field ForSchool">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field Associatio" name="Field Associatio">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="text" placeholder="Field SportType" name="Field SportType">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="number" placeholder="Field lat" name="Field lat">
+            </div>
+            <div class="form-group">
+               <input class="form-control" type="number" placeholder="Field lon" name="Field lon">
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-button">
+                <input class="button--form" type="submit" value="ADD">
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
 
-    <!-- video-popup -->
-    <div class="container">
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="420" height="315" class="embed-responsive-item" src="https://www.youtube.com/watch?v=k6mw06VtmnY" frameborder="0" allowfullscreen="" id="video"  allowscriptaccess="always"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- video-popup-end -->
 
     <section class="sponsors sponsors--bg">
       <div class="container">
@@ -280,116 +322,6 @@ td
       </div>
     </section>
 
-    <!-- <section class="testimonial  ">
-      <div class="container">
-        <div class="page-section">
-          <div class="text-center">
-            <h2 class="page-section__title">Testimonials</h2>
-            <div class="testimonial__title-style">
-              <span class="first-line"></span>
-              <span class="second-line"></span>
-            </div>
-            <p class="page-section__subtitle">Lorem ipsum dolor sit amet, consectetur <a href="#">450</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-          </div>
-          <div class="row">
-            <div class="col-md-8">
-              <div class="accordion-group">
-                <div class="collapse in indent" id="one">
-                  <div class="collapse__wrapper">
-                    <div class="bio bio-1">
-                      <h2>Tyrion Lannister</h2>
-                      <p>Company Name</p>
-                    </div>
-                    <div class="star">
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                    </div>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
-                  </div>
-                </div>
-                <div class="collapse" id="two">
-                  <div class="collapse__wrapper">
-                    <div class="bio bio-2">
-                      <h2>Sansa Stark</h2>
-                      <p>Company Name</p>
-                    </div>
-                    <div class="star">
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                    </div>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
-                  </div>
-                </div>
-                <div class="collapse" id="three">
-                  <div class="collapse__wrapper">
-                    <div class="bio bio-3">
-                      <h2>Khal Drogo</h2>
-                      <p>Company Name</p>
-                    </div>
-                    <div class="star">
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                    </div>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
-                  </div>
-                </div>
-                <div class="collapse" id="four">
-                  <div class="collapse__wrapper">
-                    <div class="bio bio-4">
-                      <h2>Jon Snow</h2>
-                      <p>Company Name</p>
-                    </div>
-                    <div class="star">
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                      <li><i class="material-icons">star</i></li>
-                    </div>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 testimonial-right open-default">
-              <button class="button-testimonial button-testimonial-1" data-toggle="collapse" data-target="#one">
-                <div class="bio">
-                  <h2>Tyrion Lannister</h2>
-                  <p>Company Name</p>
-                </div>
-              </button>
-              <button class="button-testimonial button-testimonial-2" data-toggle="collapse" data-target="#two">
-                <div class="bio">
-                  <h2>Sansa Stark</h2>
-                  <p>Company Name</p>
-                </div>
-              </button>
-              <button class="button-testimonial button-testimonial-3" data-toggle="collapse" data-target="#three">
-                <div class="bio">
-                  <h2>Khal Drogo</h2>
-                  <p>Company Name</p>
-                </div>
-              </button>
-              <button class="button-testimonial button-testimonial-4" data-toggle="collapse" data-target="#four">
-                <div class="bio">
-                  <h2>Jon Snow</h2>
-                  <p>Company Name</p>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="team team--bg">
       <div class="container">
@@ -476,41 +408,6 @@ td
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="form form--bg">
-      <div class="container">
-        <div class="page-section">
-          <div class="text-center">
-            <h2 class="page-section__title page-section__title--white">Contact us</h2>
-            <div class="form__title-style">
-              <span class="first-line"></span>
-              <span class="second-line"></span>
-            </div>
-            <p class="page-section__subtitle page-section__subtitle--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-          </div>
-          <form action="#">
-            <div class="form-group">
-              <input class="form-control" type="text" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <input class="form-control" type="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-               <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-            </div>
-            <div class="row">
-              <div class="col-md-6 checkbox">
-                <input type="checkbox" id="checkbox-1">
-                <label for="checkbox-1"> Subscribe to newslatter</label>
-              </div>
-              <div class="col-md-6 form-button">
-                <input class="button--form" type="submit" value="SEND">
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </section>
