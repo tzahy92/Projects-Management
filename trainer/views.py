@@ -75,23 +75,26 @@ def loginBtn(request):
     uname = request.POST.get('username',False)
     pwd = request.POST.get('password',False)
     user = DB_Action.get_user_by_userName(uname)
+    user["Email"] = user["E-mail"]
     if(user!= None and uname != None and pwd != None):
         if(user['password']==pwd):
             if (user['role'] == '1'):
                 allusers = DB_Action.getAllUsers()
                 facilities = json_Action.Sports_facilities()
-                context = {"object_List" : allusers,"facilities" : facilities.distros_dict}
+                user["Email"] = user["E-mail"]
+                context = {"user":user,"object_List" : allusers,"facilities" : facilities.distros_dict,"user":user}
                 return render(request, "admin2.html",context)
             if(user['role'] == '2'):
                 neighborhoddList = json_Action.dict_neighborho.keys()
                 facilitiesList = json_Action.dict_Type.keys()
-
-                context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
+                user["Email"] = user["E-mail"]
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
                 return render(request, "../templates/folder_trainer/trainer_web.html",context)
             if (user['role'] == '3'):
                 neighborhoddList = json_Action.dict_neighborho.keys()
                 facilitiesList = json_Action.dict_Type.keys()
-                context = {"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
+                user["Email"] = user["E-mail"]
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
                 return render(request, "../templates/folder_trainee/web_trainee.html",context)
     return render(request,"registration/sign-in.html")
 

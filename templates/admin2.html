@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <style>
 
 
@@ -90,6 +91,21 @@ td
     position: absolute;
 
 }
+    .topBtn:hover{
+        !important;
+    }
+    .collapse navbar-collapse:hover{
+        !important;
+    }
+    .nav navbar-nav pull-right:hover{
+         !important;
+    }
+    ::placeholder{
+        color:white !important;
+    }
+    a:hover, a:focus {
+    color: @nonhoovercolor;
+}
 
 </style>
 <head>
@@ -102,6 +118,12 @@ td
   <link href="{% static 'HomePage/assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" >
   <link href="{% static 'HomePage/assets/fonts/flat-icon/flaticon.css' %}" rel="stylesheet" >
   <link href="{% static 'HomePage/css/style.css' %}" rel="stylesheet" >
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div id="content-wrapper">
@@ -117,11 +139,11 @@ td
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav pull-right">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#manage">MANAGE USERS</a></li>
-              <li><a href="#manage_facili">MANAGE FACILITIES</a></li>
-              <li><a href="#new_facilities">NEW FACILITIES</a></li>
-              <li><a href="/">LOGOUT</a></li>
+              <li ><a class="topBtn" href="#" data-toggle="modal" data-target="#exampleModalCenter">MY Info</a></li>
+              <li class="topBtn"><a href="#manage" >MANAGE USERS</a></li>
+              <li class="topBtn"><a href="#manage_facili">MANAGE FACILITIES</a></li>
+              <li class="topBtn"><a href="#new_facilities">NEW FACILITIES</a></li>
+              <li class="topBtn"><a href="/" >LOGOUT</a></li>
             </ul>
           </div>
         </nav>
@@ -216,14 +238,10 @@ td
         {% endfor %}
 </table>
 {% endblock %}
-
-
 </div>
-
         </div>
       </div>
     </section>
-
     <section class="form form--bg">
       <div class="container">
         <a id="new_facilities"></a>
@@ -239,7 +257,7 @@ td
           <form method="POST" action="{% url 'newFacilities' %}">
               {% csrf_token %}
             <div class="form-group">
-              <input class="form-control" type="text" placeholder="Field Type" name="Field Type">
+              <input class="form-control"  type="text" placeholder="Field Type" name="Field Type">
             </div>
             <div class="form-group">
               <input class="form-control" type="text" placeholder="Field Name" name="Field Name">
@@ -321,7 +339,6 @@ td
         </div>
       </div>
     </section>
-
 
     <section class="team team--bg">
       <div class="container">
@@ -442,11 +459,6 @@ td
 
   </div>
 
-
-
-
-
-
   <script src="{% static 'HomePage/assets/jquery/jquery-3.2.1.min.js' %}"></script>
   <script src="{% static 'HomePage/assets/bootstrap/js/bootstrap.min.js' %}"></script>
   <!-- <script src="assets/owl-slider/owl.carousel.min.js"></script> -->
@@ -457,12 +469,47 @@ td
       $('button').click( function(e) {
         $('.collapse').collapse('hide');
       });
-
-
-
     });
   </script>
 </body>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <div class="text-center">
+                <h5 class="modal-title" style = "font-size: 25px;" id="exampleModalLongTitle">my Info</h5>
+          </div>
+
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="text-center">
+           <div class="row h-100 justify-content-center align-items-center">
+              <h1 style="font-size: 20px; margin-left: 15px; color: black">userName: {{ user.userName }}</h1>
+          </div>
+          <div class="row h-100 justify-content-center align-items-center">
+              <h1 style="font-size: 20px; margin-left: 25px; color: black">first name: {{ user.firstName }}</h1>
+          </div>
+           <div class="row">
+               <h1 style="font-size: 20px; margin-left: 25px; color: black">last name: {{ user.lastName }}</h1>
+           </div>
+           <div class="row">
+               <h1 style="font-size: 20px; margin-left: 25px; color: black">password: {{ user.password }}</h1>
+           </div>
+          <div class="row">
+              <h1 style="font-size: 20px; margin-left: 25px; color: black">E-mail: {{ user.Email }}</h1>
+          </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="text-center">
+        <button type="button" class="btn btn-secondary" style="width:120px; height: 50px; color:white; border-radius: 20px; background: #0F81F8" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 </html>
 
 
