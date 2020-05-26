@@ -10,9 +10,9 @@ class Sports_facilities():
 
     def __init__(self):
         my_path = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(my_path, "Sport.json")
+        path = os.path.join(my_path, "temp.json")
         with open(path,encoding="utf8") as f:
-            self.distros_dict = json.load(f)
+            self.distros_dict = json.load(f)["Sports"]
 
     def get_by_type_neighborho(self, neighborho, facility_type):
         lst_result = []
@@ -38,20 +38,24 @@ class Sports_facilities():
     def get_distros_dict(self):
         return self.distros_dict
 
-    def delete_facility(self,facility):
+    def delete_facility(self,facilityId):
+
         for obj in self.distros_dict:
-            if(obj['Type']== facility['Type'] and obj['Name']== facility['Name'] and
-                    obj['neighborho']== facility['neighborho'] and obj['Operator']== facility['Operator'] and obj['Owner']== facility['Owner']):
+            if(obj["id"] == facilityId):
+                print(obj)
                 self.distros_dict.remove(obj)
                 break
+        sport = {}
+        sport["Sports"] = self.distros_dict
         # print(self.distros_dict)
         ##x= self.distros_dict
         my_path = os.path.abspath(os.path.dirname(__file__))
         path = os.path.join(my_path, "temp.json")
         ##with open(path, 'w') as fp:
          ##   json.dump(x, fp, indent=4)
+
         jsonFile = open(path, "w+",encoding='utf-8')
-        x= json.dumps(self.distros_dict,indent=4)
+        x= json.dumps(sport,indent=4)
         jsonFile.write(x)
         jsonFile.close()
 
@@ -88,7 +92,6 @@ def modular_filtering(lst_of_dict_facility,type_,name_of_filter):
 
 
 def Add_New_Facility(new_Facilities):
-    print(new_Facilities)
     with open('PM/Sport.json', encoding="utf-8") as Sport_Json:
         data = json.load(Sport_Json)
 
@@ -102,8 +105,32 @@ def Add_New_Facility(new_Facilities):
     Sport_Json.close()
     file.close()
 
+def insert_id():
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "Sport.json")
+    with open(path, encoding="utf8") as f:
+        distros_dict = json.load(f)["Sports"]
+    for i in range(len(distros_dict)):
+        distros_dict[i]["id"] = str(i)
+    print(distros_dict)
+    sport={}
+    sport["Sports"] = distros_dict
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "temp.json")
+    ##with open(path, 'w') as fp:
+    ##   json.dump(x, fp, indent=4)
+    jsonFile = open(path, "w+", encoding='utf-8')
+    x = json.dumps(sport, indent=4)
+    jsonFile.write(x)
+    jsonFile.close()
 
 
+def main():
+    insert_id()
+
+
+if __name__ == '__main__':
+    main()
 """""
 ####try to add
 with open('Sport.json', encoding='utf-8') as Sport_Json:

@@ -230,10 +230,9 @@ td
                     <th>{{ instance.neighborho }}</th>
                     <th>{{ instance.Operator}}</th>
                     <th>{{ instance.Owner}}</th>
-                    {% if instance.Type and instance.neighborho and instance.Operator and instance.Owner %}
-                    <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'deleteFacility' facilityType=instance.Type facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner=instance.Owner %}  formmethod="post">delete</a></button></th>
-                    <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'editFacility' facilityType=instance.Type facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner=instance.Owner %}  formmethod="post">edit</a></button></th>
-                    {% endif %}
+                    <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'deleteFacility' facilityId=instance.id %}  formmethod="post">delete</a></button></th>
+                    <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'editFacility' facilityId=instance.id %}  formmethod="post">edit</a></button></th>
+
             </tr>
         {% endfor %}
 </table>

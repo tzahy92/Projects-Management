@@ -40,8 +40,8 @@ urlpatterns = [
     path('ShowCourts/', views.ShowCourts, name="ShowCourts"),
     path('backToAdmin/', views.backtoAdmin, name="backtoAdmin"),
     path('adminAfterFacilityUpdate/<str:origName>/<str:origType>/<str:origOwner>/<str:origNeighborhood>/<str:origOperator>', views.afterFacilityUpdate, name="afterFacilityUpdate"),
-    path('delteFacilty/<str:facilityType>/<str:facilityName>/<str:facilityNeighborhood>/<str:facilityOperator>/<str:facilityOwner>', views.deleteFacility, name="deleteFacility"),
-    path('updateFacilityDetails/<str:facilityType>/<str:facilityName>/<str:facilityNeighborhood>/<str:facilityOperator>/<str:facilityOwner>', views.showUpdateFacility, name="editFacility"),
+    path('delteFacilty/<str:facilityId>', views.deleteFacility, name="deleteFacility"),
+    path('updateFacilityDetails/<str:facilityId>', views.showUpdateFacility, name="editFacility"),
     path('newFacilities/', views.addNewFacilities, name="newFacilities"),
     #path('newFacilities/<str:facilityType>/<str:facilityName>/<str:facilityStreet>/<str:facilityHouseNumbe>/<str:facilityNeighborho>/<str:facilityOperator>/<str:facilitySeats>/<str:facilityActivity>/<str:facilityFencing>/<str:facilityLighting>/<str:facilityHandicappe>/<str:facilityCondition>/<str:facilityOwner><str:facilityForSchool>/<str:facilityAssociatio>/<str:facilitySportType>/<str:facilitylat>/<str:facilitylon>', views.addNewFacilities, name="newFacilities"),
     ##facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner = instance.Owner

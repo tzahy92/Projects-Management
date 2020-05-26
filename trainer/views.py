@@ -158,10 +158,10 @@ def addNewFacilities(request):
 
 
 
-def deleteFacility(request, facilityType,facilityName, facilityNeighborhood, facilityOperator, facilityOwner):
+def deleteFacility(request, facilityId):
     jsonAct = json_Action.Sports_facilities()
-    faciltyToDelete = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
-    jsonAct.delete_facility(faciltyToDelete)
+    # faciltyToDelete = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
+    jsonAct.delete_facility(facilityId)
     allusers = DB_Action.getAllUsers()
     facilities = json_Action.Sports_facilities()
     context = {"object_List": allusers, "facilities": facilities.distros_dict}
@@ -174,10 +174,18 @@ def backtoAdmin(request):
     context = {"object_List": allusers, "facilities": facilities.distros_dict}
     return render(request, "admin2.html", context)
 
-def showUpdateFacility(request, facilityType, facilityName, facilityNeighborhood, facilityOperator, facilityOwner):
-   facilityToUpdate = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
+def showUpdateFacility(request, facilityId):
+   # facilityToUpdate = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
    users = DB_Action.getAllUsers()
-   context = {"myFacility":facilityToUpdate,"users":users}
+   tmp = json_Action.Sports_facilities()
+   tmp=tmp.distros_dict
+   s = {}
+   for obf in tmp:
+       if(obf["id"]==facilityId):
+           s= obf
+           break
+
+   context = {"myFacility":s,"users":users}
    return render(request,"updateFacility/updateFacility.html",context)
 
 
