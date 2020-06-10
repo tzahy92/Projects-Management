@@ -1,0 +1,29 @@
+..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\__init__.py:1:1 'from django.contrib.messages.api import *' used; unable to detect undefined names
+..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\__init__.py:1:1 'django.contrib.messages.api.*' imported but unused
+..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\__init__.py:2:1 'from django.contrib.messages.constants import *' used; unable to detect undefined names
+..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\__init__.py:2:1 'django.contrib.messages.constants.*' imported but unused
+PM\DB_Action.py:3:1 'django.contrib.admin' imported but unused
+PM\DB_Action.py:4:1 'django.urls.path' imported but unused
+PM\json_Action.py:4:1 'dns._compat.xrange' imported but unused
+PM\json_Action.py:19:9 local variable 'lst_tmp' is assigned to but never used
+PM\urls.py:16:1 'django.contrib.admin' imported but unused
+PM\urls.py:17:1 'django.urls.re_path' imported but unused
+PM\urls.py:20:1 'django.conf.urls.url' imported but unused
+PM\__init__.py:1:1 'PM.json_Action' imported but unused
+PM\__init__.py:2:1 'PM.DB_Action' imported but unused
+trainer\admin.py:1:1 'django.contrib.admin' imported but unused
+trainer\models.py:1:1 'django.db.models' imported but unused
+trainer\tests.py:4:1 'django.test.TestCase' imported but unused
+trainer\urls.py:3:1 'django.urls.path' imported but unused
+trainer\views.py:3:1 'django.forms' imported but unused
+trainer\views.py:4:1 redefinition of unused 'render' from line 1
+trainer\views.py:6:1 'django.contrib.auth.models.User' imported but unused
+trainer\views.py:7:1 'django.contrib.auth.login' imported but unused
+trainer\views.py:9:1 'templates.registration' imported but unused
+trainer\views.py:10:1 redefinition of unused 'messages' from line 5
+trainer\views.py:12:1 'django.template.RequestContext' imported but unused
+trainer\views.py:13:1 'django.http.HttpResponse' imported but unused
+trainer\views.py:14:1 'django.http.HttpResponseRedirect' imported but unused
+trainer\views.py:50:1 redefinition of unused 'logout' from line 7
+trainer\views.py:216:5 local variable 'e' is assigned to but never used
+trainer\views.py:234:5 local variable 'views' is assigned to but never used
