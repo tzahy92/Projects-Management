@@ -52,13 +52,14 @@ def logout(request):
     messages.info(request,"You are now logout!")
     return redirect('/')
 
-def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator):
+def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator,origOpenHours):
     name = request.POST.get('name')
     type = request.POST.get("type")
     neighborhood = request.POST.get("neighborhood")
     Operator = request.POST.get("Operator")
     Owner = request.POST.get("Owner")
-    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood}
+    OpenHours = request.POST.get("OpenHours")
+    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood,"OpenHours":OpenHours}
     originalFacility={"Type":origType,"Name":origName,"Operator":origOperator,"Owner":origOwner,"neighborho":origNeighborhood}
     facilities = json_Action.Sports_facilities()
     facilities.updateFacility(originalFacility,facilityToUpdate)
@@ -82,7 +83,7 @@ def loginBtn(request):
                 allusers = DB_Action.getAllUsers()
                 facilities = json_Action.Sports_facilities()
                 user["Email"] = user["E-mail"]
-                context = {"user":user,"object_List" : allusers,"facilities" : facilities.distros_dict,"user":user}
+                context = {"user":user,"object_List" : allusers,"facilities" : facilities.distros_dict}
                 return render(request, "admin2.html",context)
             if(user['role'] == '2'):
                 neighborhoddList = json_Action.dict_neighborho.keys()
@@ -175,24 +176,31 @@ def backtoAdmin(request):
     return render(request, "admin2.html", context)
 
 def showUpdateFacility(request, facilityId):
-   # facilityToUpdate = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
-   users = DB_Action.getAllUsers()
-   tmp = json_Action.Sports_facilities()
-   tmp=tmp.distros_dict
-   s = {}
-   for obf in tmp:
-       if(obf["id"]==facilityId):
-           s= obf
-           break
-
-   context = {"myFacility":s,"users":users}
-   return render(request,"updateFacility/updateFacility.html",context)
+       # facilityToUpdate = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
+       users = DB_Action.getAllUsers()
+       tmp = json_Action.Sports_facilities()
+       tmp=tmp.distros_dict
+       s = {}
+       for obf in tmp:
+           if(obf["id"]==facilityId):
+               s= obf
+               break
+       if("OpenHours" not in s.keys()):
+            s["OpenHours"] = " "
+       context = {"myFacility":s,"users":users}
+       return render(request,"updateFacility/updateFacility.html",context)
 
 
 def ShowCourts(request):
-    username=request.POST.get("username")
+    username=request.POST.get("userName")
+    firstName=request.POST.get("firstName")
+    lastName=request.POST.get("lastName")
+    password=request.POST.get("password")
+    Email=request.POST.get("Email")
     id=request.POST.get("id")
     role=request.POST.get("role")
+    user={"userName":username,"firstName":firstName,"lastName":lastName,"password":password,"Email":Email,"role":role}
+    role=user["role"]
     neighborhoddList = json_Action.dict_neighborho.keys()
     facilitiesList = json_Action.dict_Type.keys()
     selectedNeighbohood = request.POST.get("neighborhoods",False)
@@ -207,7 +215,7 @@ def ShowCourts(request):
         msg = True
     except KeyError as e:
         msg = False
-    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role}
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
     if (role == "2"):
 
         return render(request,"../templates/folder_trainer/trainer_web.html",context)

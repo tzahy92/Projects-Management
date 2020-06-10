@@ -20,7 +20,7 @@ def insert_user(userName,password,firstName,lastName,role,Email):
     else:
         newUser = {"userName" : userName,"password" : password, "firstName": firstName,"lastName":lastName, "role": role,"E-mail":Email}
         usersCollection.insert_one((newUser))
-
+    return True
 
 """"get user ID and returns all user details"""
 def get_user_by_ID(_ID):
