@@ -54,8 +54,8 @@ pipeline {
                }
             }
             steps{
-                  sh 'npm lighthouse-ci https://www.example.com --jsonReport --report=.'
-                  lighthouseReport('./report.json')
+                  sh 'npm lighthouse-ci https://http://127.0.0.1:8080/ --jsonReport --report=PM'
+                  lighthouseReport('PM/report.json')
             }
       }
    } //Stages
