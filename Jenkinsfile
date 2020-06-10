@@ -52,7 +52,7 @@ pipeline {
                }
             }
             steps{
-                  sh 'npx lighthouse-ci https://www.example.com --jsonReport --report=.'
+                  sh 'npm lighthouse-ci https://www.example.com --jsonReport --report=.'
                   lighthouseReport('./report.json')
             }
       }
