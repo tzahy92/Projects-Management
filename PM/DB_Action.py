@@ -9,6 +9,27 @@ from pymongo import MongoClient
 cluster = MongoClient("mongodb+srv://yahelfr:29913051@cluster0-4iuqq.mongodb.net/test?retryWrites=true&w=majority")  ## connect to cluster
 db = cluster["shareball"]  ##connect to database
 usersCollection = db["users"]  ##connect to collection
+coachRatingCollection = db["coachRating"]
+facilityRatingCollection = db["facilityRating"]
+
+def insertCoachRate(rate,coach):
+    print("********************************************************")
+    print(rate)
+    print("********************************************************")
+    coachRate = coachRatingCollection.find_one({"coach_id":coach["_id"]})
+    if (coachRate != None):
+        ##y= coachRate["numOfrates"]
+        coachRate["numOfrates"] += 1
+        coachRate["AVGrate"] = (int(coachRate["AVGrate"]) + int(rate))/int(coachRate["numOfrates"])
+        coachRatingCollection.update_one({"coach_id":coach["_id"]},{"$set":{"AVGrate":coachRate["AVGrate"]},"$inc":{"numOfrates":1}})
+    else:     ##coach dosent have a rate yet
+        mycoach = {"coach_id":coach["_id"],"coachFirstName":coach["firstName"],"coachLastName":coach["lastName"],"Email":coach["E-mail"],"numOfrates":1,"AVGrate":rate}
+        coachRatingCollection.insert_one(mycoach)
+
+
+def getAllCoachRates():
+    coachRates = list(coachRatingCollection.find({}))
+    return coachRates
 
 
 """ get user details and insert a new user to database"""
@@ -25,6 +46,10 @@ def insert_user(userName,password,firstName,lastName,role,Email):
 """"get user ID and returns all user details"""
 def get_user_by_ID(_ID):
     return usersCollection.find_one({"_id":_ID})
+
+def getcoachRate_by_id(_id):
+    return coachRatingCollection.find_one({"coach_id":_id})
+
 
 def removeUserByUserNamer(userName):
     usersCollection.remove({"userName":userName})

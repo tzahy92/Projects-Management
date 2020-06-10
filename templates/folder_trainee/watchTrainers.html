@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body{
+  content: "";
+  background: url('../../static/HomePage/assets/images/switBack.png');
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-size:cover
+  z-index: -1;
+  background-size: cover;
+}
+.button {
+
+    background-color: #267de1; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+    width: 10px;
+    height: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    border-radius: 8px;
+  margin: 14px 2px;
+  cursor: pointer;
+}
+
+.in-button-font{
+    color: #fff;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    position: relative;
+    right: 3px;
+    bottom: 10px;
+
+}
+
+.button:hover {background-color: #135095}
+
+.button:active {
+  background-color: #135095;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+    border: 1px solid red;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d0ddec;
+}
+
+.table-wrapper
+{
+    border: 1px solid white;
+    width: 1200px;
+    height: 500px;
+    overflow: auto;
+
+
+}
+
+table
+{
+    border: 1px solid black;
+    width: 100%;
+
+}
+
+td
+{
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+    .pane {
+    display: inline-block;
+    overflow-y: scroll;
+    max-height:200px;
+}
+
+    .topBtn:hover{
+        !important;
+    }
+    .collapse navbar-collapse:hover{
+        !important;
+    }
+    .nav navbar-nav pull-right:hover{
+         !important;
+    }
+    ::placeholder{
+        color:white !important;
+    }
+    a:hover, a:focus {
+    color: @nonhoovercolor;
+}
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <h1 class="headline" style = "text-align:center;">   say hello to our trainers </h1>
+
+     <div class="table-wrapper" >
+
+        <table >
+                <tr>
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>avg rate</th>
+                    <th>E-mail</th>
+                    <th>rate trainer</th>
+                </tr >
+        {%for rate in coachRates%}
+                <tr>
+                    <td>{{rate.firstName}}</td>
+                    <td>{{rate.lastName}}</td>
+                    <td>{{rate.AVGrate}}</td>
+                    <td>{{rate.Email}}</td>
+                    <td align="center">
+                        <button
+                             style="text-align:center!important; width:50% !important;"class="button" type="button">
+                             <a href = {% url 'rateCoach' coachID=rate.coachID userName=user%} formmethod="post" class="in-button-font" formmethod="post">rate</a>
+                        </button>
+                    </td>
+                </tr>
+            {%endfor%}
+        </table>
+    </div>
+<script>
+
+</script>
+</body>
+</html>

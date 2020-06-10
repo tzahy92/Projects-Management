@@ -13,6 +13,7 @@ from django.template import RequestContext
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 
+
 def trainer(request):
     print("")
 
@@ -24,6 +25,39 @@ def admin(request):
     return render(request,"../templates/admin.html")
 
 
+def rateCoach(request,coachID,userName):
+    coach = DB_Action.get_user_by_ID(coachID)
+    coach["coachID"] = coach["_id"]
+    context = {"coach":coach, "userName":userName}
+    return render(request,"../templates/folder_trainee/rateCoach.html",context)
+
+def afterCoachRate(request,coachID,rate,userName):
+    coach = DB_Action.get_user_by_ID(coachID)
+    DB_Action.insertCoachRate(rate,coach)
+    user = DB_Action.get_user_by_userName(userName)
+    neighborhoddList = json_Action.dict_neighborho.keys()
+    facilitiesList = json_Action.dict_Type.keys()
+    user["Email"] = user["E-mail"]
+    context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : userName,"role": "3"}
+    return render(request, "../templates/folder_trainee/web_trainee.html",context)
+
+
+
+def watchTrainers(request,userName):
+    allcoaches = list(DB_Action.usersCollection.find({"role": "2"}))
+    allrates = DB_Action.getAllCoachRates()
+    for coach in allcoaches:
+        coach["numOfRates"] = 0
+        coach["AVGrate"] = 0
+        coach["Email"] = coach["E-mail"]
+        coach["coachID"] = coach["_id"]
+    for rate in allrates:
+        for coach in allcoaches:
+            if (rate["coach_id"] == coach["_id"]):
+                coach["numOfRates"] = rate["numOfrates"]
+                coach["AVGrate"] = rate["AVGrate"]
+    context = {"coachRates": allcoaches,"user":userName}
+    return render(request,"../templates/folder_trainee/watchTrainers.html",context)
 
 def adminAfterUpdate(request):
     id = request.POST.get('ID')
@@ -79,6 +113,8 @@ def loginBtn(request):
     user["Email"] = user["E-mail"]
     if(user!= None and uname != None and pwd != None):
         if(user['password']==pwd):
+
+            currentUserID = user["_id"]
             if (user['role'] == '1'):
                 allusers = DB_Action.getAllUsers()
                 facilities = json_Action.Sports_facilities()
