@@ -54,9 +54,11 @@ pipeline {
                }
             }
             steps{
-               sh 'npm install -g lighthouse'   
-               sh 'npx lighthouse-ci https://http://127.0.0.1:8080/ --jsonReport --report=PM'
-               lighthouseReport('PM/report.json')
+               withEnv(["HOME=${env.WORKSPACE}"]) {
+                  sh 'npm install -g lighthouse'   
+                  sh 'npx lighthouse-ci https://http://127.0.0.1:8080/ --jsonReport --report=PM'
+                  lighthouseReport('PM/report.json')
+               }
             }
       }
    } //Stages
