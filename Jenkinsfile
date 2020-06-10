@@ -44,5 +44,17 @@ pipeline {
               echo 'Deploying'
            }
        }
+       stage('LightHouse'){
+         // Generate your lighthouse report.
+           agent {
+               docker {
+                   image 'python:3-alpine'
+               }
+            }
+            steps{
+                  sh 'npx lighthouse-ci https://www.example.com --jsonReport --report=.'
+                  lighthouseReport('./report.json')
+            }
+      }
    } //Stages
 } //Pipeline
