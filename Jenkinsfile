@@ -31,7 +31,6 @@ pipeline {
                    sh 'pip install dnspython'
                    sh 'pip install django-jenkins'
                    sh 'python manage.py test'
-                   sh 'python manage.py runserver'
                }
            }
        }
