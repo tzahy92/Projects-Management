@@ -34,5 +34,15 @@ pipeline {
                }
            }
        }
-   }
-}
+       stage('Deploy') {
+           agent {
+               docker {
+                   image 'python:3-alpine'
+               }
+           }
+           steps {
+              echo 'Deploying'
+           }
+       }
+   } //Stages
+} //Pipeline
