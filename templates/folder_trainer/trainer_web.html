@@ -411,9 +411,15 @@ select[id = Addresses]{
         <h1>Welcome to the sport Web Site</h1>
           <form method="POST" action="../ShowCourts/">
 {% csrf_token %}
-          <input type=hidden  value={{ username }} name="username" />
-          <input type=hidden  value={{ id }} name="id" />
-          <input type=hidden  value={{ role }} name="role" />
+              <input type=hidden value={{ user }} name="user" />
+              <input type=hidden value={{ user.userName }} name="userName" />
+              <input type=hidden value={{ user.firstName }} name="firstName" />
+              <input type=hidden value={{ user.lastName  }} name="lastName" />
+              <input type=hidden value={{ user.password }} name="password" />
+              <input type=hidden value={{ user.Email }} name="Email" />
+              <input type=hidden  value={{ id }} name="id" />
+              <input type=hidden  value={{ role }} name="role" />
+
         <select  name="neighborhoods">
          <option  selected disabled>שכונה</option>
                {% for instance in neighborhoddList %}
@@ -439,6 +445,7 @@ select[id = Addresses]{
     <th>LIGHTNING</th>
     <th>CONDITION</th>
     <th>OWNER</th>
+    <th>OpenHours</th>
   </tr >
            {% if massege == False %}
                 <td colspan="5">Please select a neighborhood and type of facility</td>
@@ -455,6 +462,7 @@ select[id = Addresses]{
                     <th>{{ instance.lighting}}</th>
                     <th>{{ instance.condition}}</th>
                     <th>{{ instance.Owner}}</th>
+                    <th>{{ instance.OpenHours}}</th>
                    </tr>
                {% empty %}
                    <tr><td colspan="5">No sports facilities found</td></tr>

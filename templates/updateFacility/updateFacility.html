@@ -496,7 +496,7 @@ input {
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">update facility details</h2>
-                        <form method="POST" action="{% url 'afterFacilityUpdate' origName=myFacility.Name origType=myFacility.Type  origOwner=myFacility.Owner  origNeighborhood=myFacility.neighborho  origOperator=myFacility.Operator%}" name = "signUpForm">
+                        <form method="POST" action="{% url 'afterFacilityUpdate' origName=myFacility.Name origType=myFacility.Type  origOwner=myFacility.Owner  origNeighborhood=myFacility.neighborho  origOperator=myFacility.Operator origOpenHours=myFacility.OpenHours%}" name = "signUpForm">
                         {% csrf_token %}
                         <div class="input-group">
                             <a>name</a>
@@ -518,12 +518,19 @@ input {
                                      <a>Operator</a>
                                     <input class="input--style-1" type="text" value="{{ myFacility.Operator }}" name="Operator" style="text-align: center">
                             </div>
+                            <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                      <a>Owner</a>
                                      <input class="input--style-1" type="text" value="{{ myFacility.Owner }}" name="Owner" style="text-align: center">
                                     </div>
                                 </div>
+                                <div class="input-group">
+                                     <a>Opening hours</a>
+                                <input class="input--style-1" type="text" value="{{ myFacility.OpenHours }}" name="OpenHours" style="text-align: center">
+                            </div>
+                            </div>
+
                         <div class="p-t-20">
 
                              <input type="submit"  style="margin-left: 140px; background-color: white;color:#0F81F8;width:260px; alignment: center; border: 3px solid #0F81F8" class="btn btn--radius btn--green" value="UPDATE">

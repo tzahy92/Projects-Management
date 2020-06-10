@@ -68,12 +68,14 @@ class Sports_facilities():
 
                 obj.update(newFacility)
                 break
+        sport ={}
+        sport["Sports"] = self.distros_dict
         my_path = os.path.abspath(os.path.dirname(__file__))
         path = os.path.join(my_path, "temp.json")
         ##with open(path, 'w') as fp:
         ##   json.dump(x, fp, indent=4)
         jsonFile = open(path, "w+", encoding='utf-8')
-        x = json.dumps(self.distros_dict, indent=4)
+        x = json.dumps(sport, indent=4)
         jsonFile.write(x)
         jsonFile.close()
 
@@ -95,6 +97,10 @@ def Add_New_Facility(new_Facilities):
     with open('PM/Sport.json', encoding="utf-8") as Sport_Json:
         data = json.load(Sport_Json)
 
+    fac = Sports_facilities()
+    new_Facilities["id"] = str(int(fac.distros_dict[len(fac.distros_dict)-1])+1)
+
+
     temp = data['Sports']
     temp.append(new_Facilities)
 
@@ -104,6 +110,8 @@ def Add_New_Facility(new_Facilities):
         print(sport)"""
     Sport_Json.close()
     file.close()
+def check_permission(user):
+    return user["role"] == '1'
 
 def insert_id():
     my_path = os.path.abspath(os.path.dirname(__file__))
