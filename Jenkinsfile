@@ -34,22 +34,5 @@ pipeline {
                }
            }
        }
-      stage('LightHouse'){
-         // Generate your lighthouse report.
-         agent{
-            steps{
-               node {
-                  sh 'npx lighthouse-ci https://www.example.com --jsonReport --report=.'
-                  lighthouseReport('./report.json')
-               }
-
-               //Generate your lighthouse report with specific report name
-               node {
-                  sh 'npx lighthouse-ci https://www.example.com --jsonReport --report=.'
-                  lighthouseReport file: './report.json', name: 'My Report'
-               }
-            }
-         }
-      }
    }
 }
