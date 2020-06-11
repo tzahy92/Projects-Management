@@ -17,14 +17,19 @@ def insertCoachRate(rate,coach):
     print(rate)
     print("********************************************************")
     coachRate = coachRatingCollection.find_one({"coach_id":coach["_id"]})
-    if (coachRate != None):
-        ##y= coachRate["numOfrates"]
-        coachRate["numOfrates"] += 1
-        coachRate["AVGrate"] = (int(coachRate["AVGrate"]) + int(rate))/int(coachRate["numOfrates"])
-        coachRatingCollection.update_one({"coach_id":coach["_id"]},{"$set":{"AVGrate":coachRate["AVGrate"]},"$inc":{"numOfrates":1}})
-    else:     ##coach dosent have a rate yet
-        mycoach = {"coach_id":coach["_id"],"coachFirstName":coach["firstName"],"coachLastName":coach["lastName"],"Email":coach["E-mail"],"numOfrates":1,"AVGrate":rate}
-        coachRatingCollection.insert_one(mycoach)
+    ##y= coachRate["numOfrates"]
+    coachRate["numOfrates"] += 1
+    coachRate["AVGrate"] = (int(coachRate["AVGrate"]) + int(rate))/int(coachRate["numOfrates"])
+    coachRatingCollection.update_one({"coach_id":coach["_id"]},{"$set":{"AVGrate":coachRate["AVGrate"]},"$inc":{"numOfrates":1}})
+
+
+
+
+def insertcoachToRate(userName):
+    coach = get_user_by_userName(userName)
+    mycoach = {"coach_id": coach["_id"], "coachFirstName": coach["firstName"], "coachLastName": coach["lastName"],
+               "Email": coach["E-mail"], "numOfrates": 1, "AVGrate": 0}
+    coachRatingCollection.insert_one(mycoach)
 
 
 def getAllCoachRates():

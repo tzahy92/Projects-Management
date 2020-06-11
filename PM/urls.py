@@ -20,6 +20,8 @@ from trainer import views
 from django.conf.urls import include, url
 
 
+
+
 urlpatterns = [
     #path('admini/', admini.site.urls),
     path('', views.showHomePage, name='loginPage'),
@@ -39,6 +41,9 @@ urlpatterns = [
     path('updateUserDetails/<str:UserID>', views.showUpdateUser, name="updateUserDetails"),
     path('rateCoach/<str:coachID>/<str:userName>', views.rateCoach, name="rateCoach"),
     path('afterCoachRate/<str:coachID>/<str:rate>/<str:userName>', views.afterCoachRate, name="afterCoachRate"),
+    path('rateFacility/<str:facilityID>/<str:userName>', views.rateFacility, name="rateFacility"),
+    path('publishTrainer/<str:userName>', views.publishTrainer, name="publishTrainer"),
+    path('afterverify/<str:ans>/<str:userName>', views.afterverify, name="afterverify"),
     path('ShowCourts/', views.ShowCourts, name="ShowCourts"),
     path('backToAdmin/', views.backtoAdmin, name="backtoAdmin"),
     path('adminAfterFacilityUpdate/<str:origName>/<str:origType>/<str:origOwner>/<str:origNeighborhood>/<str:origOperator>/<str:origOpenHours>', views.afterFacilityUpdate, name="afterFacilityUpdate"),
@@ -51,3 +56,6 @@ urlpatterns = [
     #url(r'^trainer/delete/(?P<value>.*)/$', views.delete_user, name='deleteUser'),
     #path('delete_user',views.delete_user,name='delete_user'),
 ]
+
+
+

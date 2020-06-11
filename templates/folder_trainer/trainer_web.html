@@ -378,7 +378,7 @@ select[id = Addresses]{
           <li class="selected"><a style="color:white;" href="trainer_web.html">Home</a></li>
           <li><a href="#" style="color:white;">Examples</a></li>
           <li><a href="#" style="color:white;" data-toggle="modal" data-target="#exampleModalCenter">My Info</a></li>
-          <li><a href="#" style="color:white;">Another Page</a></li>
+          <li><a href="{%url 'publishTrainer' userName=username%}"  style="color:white;">publish</a></li>
           <li><a href="/" style="color:white;">Logout</a></li>
         </ul>
       </div>
@@ -514,6 +514,5 @@ select[id = Addresses]{
     </div>
   </div>
 </div>
-
 
 </html>

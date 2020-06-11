@@ -401,6 +401,8 @@ table tr td
     <th>CONDITION</th>
     <th>OWNER</th>
     <th>OpenHours</th>
+    <th>rate facility</th>
+
   </tr >
            {% if massege == False %}
                 <td colspan="5">Please select a neighborhood and type of facility</td>
@@ -418,6 +420,13 @@ table tr td
                     <th>{{ instance.condition}}</th>
                     <th>{{ instance.Owner}}</th>
                     <th>{{ instance.OpenHours}}</th>
+                    <td>
+                 <button
+                         style="text-align:center!important; width:50% !important;"class="button" type="button">
+                         <a href = {% url 'rateFacility' facilityID=instance.id userName=username%} class="in-button-font">rate22</a>
+                 </button>
+
+            </td>
                    </tr>
                {% empty %}
                    <tr><td colspan="5">No sports facilities found</td></tr>

@@ -404,16 +404,25 @@ table tr td
     <th>LIGHTNING</th>
     <th>CONDITION</th>
     <th>OWNER</th>
+    <th>rate</th>
   </tr >
         {% for instance in courtsList %}
             <tr>
-            <th>{{ instance.Type}}</th>
-            <th>{{ instance.Name}}</th>
-            <th>{{ instance.neighborho }}</th>
-            <th>{{ instance.Operator}}</th>
-            <th>{{ instance.lighting}}</th>
-            <th>{{ instance.condition}}</th>
-            <th>{{ instance.Owner}}</th>
+            <td>{{ instance.Type}}</td>
+            <td>{{ instance.Name}}</td>
+            <td>{{ instance.neighborho }}</td>
+            <td>{{ instance.Operator}}</td>
+            <td>{{ instance.lighting}}</td>
+            <td>{{ instance.condition}}</td>
+            <td>{{ instance.Owner}}</td>
+            <td>
+                 <button
+                         style="text-align:center!important; width:50% !important;"class="button" type="button">
+                         <a href = {% url 'rateFacility' facilityID=instance.id userName=userName%} formmethod="post" class="in-button-font" formmethod="post">rate</a>
+                 </button>
+
+            </td>
+
             </tr>
         {% endfor %}
 </table>

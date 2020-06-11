@@ -1,3 +1,5 @@
+import os
+
 from django.shortcuts import render
 # Create your views here.
 from django import forms
@@ -32,14 +34,17 @@ def rateCoach(request,coachID,userName):
     return render(request,"../templates/folder_trainee/rateCoach.html",context)
 
 def afterCoachRate(request,coachID,rate,userName):
+    #flagFile = open("../static/flag.txt", "r")
+    #flag = flagFile.read()
     coach = DB_Action.get_user_by_ID(coachID)
     DB_Action.insertCoachRate(rate,coach)
-    user = DB_Action.get_user_by_userName(userName)
+    user  = DB_Action.get_user_by_userName(userName)
     neighborhoddList = json_Action.dict_neighborho.keys()
     facilitiesList = json_Action.dict_Type.keys()
     user["Email"] = user["E-mail"]
     context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : userName,"role": "3"}
     return render(request, "../templates/folder_trainee/web_trainee.html",context)
+
 
 
 
@@ -81,6 +86,14 @@ def showHomePage(request):
 def showLogin(request):
     return render(request,"../templates/registration/sign-in.html")
 
+def rateFacility(request,facilityID,userName):
+    context = {"facilityID":facilityID,"userName":userName}
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    print(userName)
+    print(facilityID)
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    return render(request, "../templates/folder_trainee/rateFacility.html" ,context)
+
 def logout(request):
     auth.logout(request)
     messages.info(request,"You are now logout!")
@@ -105,6 +118,23 @@ def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,ori
 def showRegister(request):
     return render(request, "../templates/registration/sign-up.html")
 
+
+def publishTrainer(request,userName):
+    context = {"userName":userName}
+    return render(request,'../templates/folder_trainer/verifyPublish.html',context)
+
+def afterverify(request,ans,userName):
+    if(ans=="0"):
+        DB_Action.insertcoachToRate(userName)
+    user = DB_Action.get_user_by_userName(userName)
+    neighborhoddList = json_Action.dict_neighborho.keys()
+    facilitiesList = json_Action.dict_Type.keys()
+    user["Email"] = user["E-mail"]
+    context = {"user": user, "neighborhoddList": neighborhoddList, "facilities": facilitiesList, "id": user['_id'],
+               "username": user["userName"], "role": "2"}
+    return render(request, "../templates/folder_trainer/trainer_web.html", context)
+
+
 """sign button clicked action, gets username and password from sign in page, and navigate to the right page"""
 def loginBtn(request):
     uname = request.POST.get('username',False)
@@ -113,8 +143,6 @@ def loginBtn(request):
     user["Email"] = user["E-mail"]
     if(user!= None and uname != None and pwd != None):
         if(user['password']==pwd):
-
-            currentUserID = user["_id"]
             if (user['role'] == '1'):
                 allusers = DB_Action.getAllUsers()
                 facilities = json_Action.Sports_facilities()
@@ -134,6 +162,13 @@ def loginBtn(request):
                 context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
                 return render(request, "../templates/folder_trainee/web_trainee.html",context)
     return render(request,"registration/sign-in.html")
+
+
+
+
+
+
+
 
 def delete_user(request,userID):
     DB_Action.removeUserByID(userID)
