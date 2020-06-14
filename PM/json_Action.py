@@ -35,6 +35,12 @@ class Sports_facilities():
         return lst_result
 
 
+    def getFacilityNameByID(self,facilityID):
+        for d in self.distros_dict:
+            if(d['id'] == facilityID):
+                return d['Name']
+
+
     def get_distros_dict(self):
         return self.distros_dict
 
@@ -58,6 +64,7 @@ class Sports_facilities():
         x= json.dumps(sport,indent=4)
         jsonFile.write(x)
         jsonFile.close()
+
 
     def updateFacility(self, originalFacility, newFacility):
         for obj in self.distros_dict:

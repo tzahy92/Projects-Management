@@ -518,13 +518,38 @@ button:hover {
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">facilityid = {{facilityID}}    username = {{userName}}</h2>
-                    <button type="submit" name="5" ><a href="{% url 'afterCoachRate' coachID=coach.coachID rate=5 userName=userName%}"><b>amazing!!</b></a></button>
-                    <button type="submit" name="4"><a href="{% url 'afterCoachRate' coachID=coach.coachID rate=4 userName=userName % }"><b>great</b></a></button>
-                    <button type="submit" name="3"><a href="{% url 'afterCoachRate' coachID=coach.coachID  rate=3 userName=userName%}"><b>it was OK</b></a></button>
-                    <button type="submit" name="2"><a href="{% url 'afterCoachRate' coachID=coach.coachID  rate=2 userName=userName%}"><b>not that good</b></a></button>
-                    <button type="submit" name="1"><a href="{% url 'afterCoachRate' coachID=coach.coachID  rate=1 userName=userName%}"><b>horrible</b></a></button>
+                    <h2 class="title">rate facility</h2>
 
+                    <div class="container">
+                        <form action="{% url 'afterFacilityRate' facilityID=facilityID  userName=userName %}">
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="radio1">
+                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="amazing!!" checked>amazing!!
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="radio2">
+                                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="great">great
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="radio2">
+                                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="it was OK">it was OK
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="radio2">
+                                <input type="radio" class="form-check-input" id="radio4" name="optradio" value="not that good">not that good
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="radio2">
+                                <input type="radio" class="form-check-input" id="radio5" name="optradio" value="horrible">horrible
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

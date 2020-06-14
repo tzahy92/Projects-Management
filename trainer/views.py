@@ -165,7 +165,19 @@ def loginBtn(request):
 
 
 
-
+def afterFacilityRate(request,facilityID,userName):
+    some_var = request.POST.getlist('checks[]')
+    for i in range(1,6):
+        rb = "radio{}".format(i)
+        if rb in request.POST:
+            DB_Action.facilityRate(i,facilityID)
+    user = DB_Action.get_user_by_userName(userName)
+    neighborhoddList = json_Action.dict_neighborho.keys()
+    facilitiesList = json_Action.dict_Type.keys()
+    user["Email"] = user["E-mail"]
+    context = {"user": user, "neighborhoddList": neighborhoddList, "facilities": facilitiesList, "id": user['_id'],
+               "username": userName, "role": "3"}
+    return render(request, "../templates/folder_trainee/web_trainee.html", context)
 
 
 
