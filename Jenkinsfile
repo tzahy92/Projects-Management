@@ -60,6 +60,6 @@ pipeline {
                   lighthouseReport('PM/report.json')
                }
             }
-      }
+      } //stage
    } //Stages
 } //Pipeline
