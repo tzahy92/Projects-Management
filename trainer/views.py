@@ -57,11 +57,12 @@ def watchTrainers(request,userName):
         coach["Email"] = coach["E-mail"]
         coach["coachID"] = coach["_id"]
     for rate in allrates:
+        rate["coachID"] = rate["coach_id"]
         for coach in allcoaches:
             if (rate["coach_id"] == coach["_id"]):
                 coach["numOfRates"] = rate["numOfrates"]
                 coach["AVGrate"] = rate["AVGrate"]
-    context = {"coachRates": allcoaches,"user":userName}
+    context = {"coachRates": allrates,"user":userName}
     return render(request,"../templates/folder_trainee/watchTrainers.html",context)
 
 def adminAfterUpdate(request):
@@ -169,9 +170,14 @@ def afterFacilityRate(request,facilityID,userName):
     some_var = request.POST.getlist('checks[]')
     for i in range(1,6):
         rb = "radio{}".format(i)
+        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+        print(rb)
+        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
         if rb in request.POST:
+            print("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888")
             DB_Action.facilityRate(i,facilityID)
     user = DB_Action.get_user_by_userName(userName)
+
     neighborhoddList = json_Action.dict_neighborho.keys()
     facilitiesList = json_Action.dict_Type.keys()
     user["Email"] = user["E-mail"]
