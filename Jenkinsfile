@@ -40,10 +40,16 @@ pipeline {
                             failedTotalAll: 400
                         )
 		                recordIssues(tools: [flake8(pattern: 'reports/pyflakes.report')])
-
+                        mail to: 'bsnani7@gmail.com',
+                        subject: "Status of pipeline:
+                        ${currentBuild.fullDisplayName}",
+                            body: "click here to for full view
+                        ${env.BUILD_URL} has result
+                        ${currentBuild.result} click this link to view the test results:
+                        ${BUILD_URL}/testReport"
                 }
            }
-       }
+       }//stage
 
 
    } //Stages
