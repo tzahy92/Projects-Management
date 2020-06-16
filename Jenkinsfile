@@ -28,18 +28,18 @@ pipeline {
            }
            post{
                 always{
-                    junit 'PM/reports/junit.xml'
+                    junit 'reports/junit.xml'
                         recordIssues(
-                            tool: pep8(pattern: 'PM/reports/pep8.report'),
+                            tool: pep8(pattern: 'reports/pep8.report'),
                             unstableTotalAll: 400,
                             failedTotalAll: 400
                         )
                         recordIssues(
-                            tool: pyLint(pattern: 'PM/reports/pylint.report'),
+                            tool: pyLint(pattern: 'reports/pylint.report'),
                             unstableTotalAll: 400,
                             failedTotalAll: 400
                         )
-		                recordIssues(tools: [flake8(pattern: 'PM/reports/pyflakes.report')])
+		                recordIssues(tools: [flake8(pattern: 'reports/pyflakes.report')])
 
                 }
            }
