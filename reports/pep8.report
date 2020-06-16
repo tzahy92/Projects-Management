@@ -1,991 +1,3 @@
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\actions.py:21:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\actions.py:28:80: E501 line too long (111 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\actions.py:41:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\actions.py:71:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\actions.py:72:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\actions.py:79:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:95:80: E501 line too long (115 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:111:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:117:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:123:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:156:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:159:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:172:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:174:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:179:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:211:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:214:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:226:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:228:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:229:80: E501 line too long (111 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:235:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:241:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:272:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:276:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:285:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:287:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:289:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:293:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:299:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:311:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:322:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:346:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:347:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:362:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:385:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:388:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:395:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:398:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:409:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:412:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:419:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:423:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:434:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:440:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:458:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:467:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:470:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:482:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:485:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:486:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:498:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:500:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:503:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:504:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:517:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:520:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:531:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:542:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:545:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:561:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:582:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:592:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:595:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:612:80: E501 line too long (116 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:613:80: E501 line too long (113 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:666:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:691:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:705:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:714:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:717:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:735:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:744:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:745:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:762:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:766:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:775:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:787:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:790:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:796:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:814:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:825:80: E501 line too long (116 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:838:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:850:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:858:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:866:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:875:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:878:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:886:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:897:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:900:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:907:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:911:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:912:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:922:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:936:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:958:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:959:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:978:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1035:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1037:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1050:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1058:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1068:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1078:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1086:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1128:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\checks.py:1129:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:38:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:46:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:52:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:59:80: E501 line too long (106 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:107:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:113:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:159:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:165:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:169:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:184:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:198:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:206:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:212:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:218:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:232:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:233:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:235:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:247:80: E501 line too long (111 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:253:80: E501 line too long (111 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:258:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:267:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:275:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:285:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:291:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:302:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:330:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:348:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:360:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:385:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:386:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:393:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:394:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:405:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:411:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:421:80: E501 line too long (111 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\filters.py:422:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:34:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:71:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:89:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:100:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:111:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:118:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:127:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:165:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:190:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:194:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:215:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:218:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:228:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:251:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:253:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:280:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:283:80: E501 line too long (116 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:286:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:292:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:335:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:341:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:353:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:357:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\helpers.py:389:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:26:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:57:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:59:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:76:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:83:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:110:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:111:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:120:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:121:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:125:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:128:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:129:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:131:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\models.py:145:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:147:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:152:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:156:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:158:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:165:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:169:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:170:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:171:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:172:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:175:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:184:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:214:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:218:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:229:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:231:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:257:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:259:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:273:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:274:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:276:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:336:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:364:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:377:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:390:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:391:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:393:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:407:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:458:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:524:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:590:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:613:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:615:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:616:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:617:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:618:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:621:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:676:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:678:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:697:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:701:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:755:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:767:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:770:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:781:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:796:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:797:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:851:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:852:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:860:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:863:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:879:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:892:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:953:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1024:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1036:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1052:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1075:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1118:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1122:80: E501 line too long (106 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1126:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1136:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1178:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1200:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1215:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1226:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1231:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1260:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1272:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1276:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1281:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1286:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1294:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1299:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1306:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1324:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1387:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1423:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1446:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1466:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1473:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1475:80: E501 line too long (111 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1482:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1483:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1486:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1491:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1492:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1493:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1518:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1527:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1529:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1532:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1534:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1560:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1570:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1574:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1587:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1590:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1593:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1600:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1605:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1621:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1631:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1639:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1648:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1655:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1711:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1727:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1745:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1749:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1750:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1757:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1758:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1789:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1803:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1804:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1845:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1847:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1855:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1857:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1859:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1861:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1891:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1905:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1945:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1967:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:1972:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2030:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2045:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2053:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2060:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2067:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2076:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2097:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2108:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2109:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2111:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2128:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2152:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2156:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\options.py:2186:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:33:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:34:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:35:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:36:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:79:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:105:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:109:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:117:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:121:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:136:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:213:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:250:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:256:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:269:80: E501 line too long (108 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:296:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:316:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:329:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:343:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:390:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:441:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:446:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:502:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\sites.py:529:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\tests.py:15:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\tests.py:41:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\tests.py:96:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\tests.py:142:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\tests.py:146:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\tests.py:150:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\tests.py:161:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:59:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:129:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:154:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:296:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:300:80: E501 line too long (108 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:306:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:336:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\utils.py:456:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:153:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:157:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:161:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:181:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:202:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:252:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:254:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:256:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:301:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:303:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:347:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:399:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:418:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:435:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:445:80: E501 line too long (106 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\widgets.py:452:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\migrations\0001_initial.py:17:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\migrations\0001_initial.py:18:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\migrations\0001_initial.py:19:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\migrations\0001_initial.py:20:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\migrations\0001_initial.py:21:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\migrations\0001_initial.py:22:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:42:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:53:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:88:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:116:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:125:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:187:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:188:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:189:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:190:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:195:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:227:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:233:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:238:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:249:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:250:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:255:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:267:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:283:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:285:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:381:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:385:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:386:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:388:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:399:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:400:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:412:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:413:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:451:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_list.py:475:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:23:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:30:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:31:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:33:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:45:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:61:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:62:80: E501 line too long (119 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:63:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:72:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_modify.py:86:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_urls.py:40:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_urls.py:41:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\admin_urls.py:42:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\base.py:14:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\base.py:28:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\log.py:22:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\log.py:33:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\templatetags\log.py:59:80: E501 line too long (106 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\autocomplete.py:45:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\decorators.py:5:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:40:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:41:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:68:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:111:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:117:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:127:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:141:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:150:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:184:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:185:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:208:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:232:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:233:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:280:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:294:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:349:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:354:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:366:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\admin\views\main.py:439:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:48:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:70:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:75:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:84:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:102:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:124:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:165:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:167:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\__init__.py:170:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\admin.py:37:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\admin.py:48:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\admin.py:93:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\admin.py:134:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\admin.py:142:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\admin.py:202:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\apps.py:26:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\backends.py:26:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\backends.py:42:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\backends.py:59:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\backends.py:60:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\backends.py:61:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\backends.py:89:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\base_user.py:76:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\base_user.py:127:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\base_user.py:139:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:43:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:55:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:65:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:68:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:88:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:101:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:117:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:121:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:122:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:123:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:135:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:136:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:146:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\checks.py:157:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\decorators.py:10:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\decorators.py:38:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:29:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:45:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:103:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:156:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:195:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:196:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:198:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:205:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:245:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:254:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:256:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:310:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\forms.py:366:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\hashers.py:20:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\hashers.py:75:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\hashers.py:193:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\hashers.py:202:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\hashers.py:211:80: E501 line too long (106 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\hashers.py:227:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\hashers.py:617:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\middleware.py:62:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\middleware.py:69:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\middleware.py:104:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\mixins.py:24:80: E501 line too long (112 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\mixins.py:31:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\mixins.py:44:80: E501 line too long (116 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\mixins.py:66:80: E501 line too long (112 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\mixins.py:67:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\mixins.py:96:80: E501 line too long (106 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:29:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:176:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:191:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:302:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:314:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:388:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:391:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:394:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:397:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\models.py:400:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:28:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:62:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:84:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:88:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:102:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:103:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:131:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:145:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:147:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:151:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:157:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\password_validation.py:170:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\tokens.py:21:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\tokens.py:41:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\tokens.py:47:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\tokens.py:49:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\tokens.py:82:80: E501 line too long (112 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\tokens.py:83:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\urls.py:2:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\urls.py:13:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\urls.py:14:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\urls.py:16:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\urls.py:17:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\urls.py:18:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\urls.py:19:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\views.py:53:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\views.py:57:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\views.py:172:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\views.py:266:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\views.py:278:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\views.py:289:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\__init__.py:35:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\__init__.py:42:80: E501 line too long (115 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\__init__.py:63:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\__init__.py:133:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\changepassword.py:26:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\changepassword.py:57:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\changepassword.py:70:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:31:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:39:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:43:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:44:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:84:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:89:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:92:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:93:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:95:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:117:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:120:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:124:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:128:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:132:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:135:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:142:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:144:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:152:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:154:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:156:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py:201:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:17:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:25:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:28:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:40:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:41:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:42:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:55:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:56:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:57:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:60:80: E501 line too long (113 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:64:80: E501 line too long (115 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:68:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:69:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:70:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:72:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:77:80: E501 line too long (118 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:81:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:83:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:85:80: E501 line too long (116 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:90:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0001_initial.py:91:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py:14:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py:17:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py:19:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py:14:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py:16:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py:17:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py:16:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py:17:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py:14:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py:14:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:37:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:39:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:40:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:41:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:42:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:50:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:51:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:52:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py:69:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:21:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:45:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:46:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:58:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:59:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:66:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:69:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:74:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:75:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:95:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:96:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:101:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:106:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\admin.py:118:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\checks.py:13:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\checks.py:28:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:41:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:135:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:144:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:149:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:196:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:204:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:205:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:231:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:263:80: E501 line too long (101 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:288:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:289:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:306:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:334:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:339:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:340:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:352:80: E501 line too long (106 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:438:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:446:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:449:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:462:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:465:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:468:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:476:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:477:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:519:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:534:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:545:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:550:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:556:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:570:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:578:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\fields.py:608:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\forms.py:31:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\forms.py:47:80: E501 line too long (112 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\forms.py:48:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\forms.py:54:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\forms.py:69:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\forms.py:70:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\models.py:107:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\models.py:126:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\models.py:127:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\models.py:168:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\models.py:174:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\views.py:59:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\views.py:86:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\__init__.py:20:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\__init__.py:45:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\__init__.py:64:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\__init__.py:80:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\__init__.py:95:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\__init__.py:104:80: E501 line too long (119 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\__init__.py:118:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\commands\remove_stale_contenttypes.py:14:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\commands\remove_stale_contenttypes.py:19:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\commands\remove_stale_contenttypes.py:28:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\commands\remove_stale_contenttypes.py:39:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\commands\remove_stale_contenttypes.py:61:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\management\commands\remove_stale_contenttypes.py:68:80: E501 line too long (113 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py:14:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py:17:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py:27:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py:23:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\base_session.py:27:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\middleware.py:36:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\middleware.py:46:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\middleware.py:68:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:94:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:97:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:113:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:242:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:308:80: E501 line too long (94 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:316:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:324:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:331:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:337:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\base.py:348:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\cache.py:70:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\cached_db.py:38:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\cached_db.py:44:80: E501 line too long (114 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\db.py:38:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\db.py:87:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\db.py:109:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:30:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:34:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:35:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:72:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:78:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:87:80: E501 line too long (95 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:92:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:153:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\backends\file.py:157:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\migrations\0001_initial.py:15:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\migrations\0001_initial.py:17:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\sessions\migrations\0001_initial.py:18:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\base.py:25:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\base.py:36:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\base.py:95:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\base.py:106:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\cookie.py:92:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\cookie.py:113:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\fallback.py:48:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\session.py:20:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\session.py:29:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\messages\storage\session.py:36:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\finders.py:38:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\finders.py:45:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\finders.py:88:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:71:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:89:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:93:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:184:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:188:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:189:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:190:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:192:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:198:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:211:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:220:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:237:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:244:80: E501 line too long (113 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:252:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:288:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:292:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:356:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:366:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:367:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:407:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\storage.py:420:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\utils.py:13:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:40:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:67:80: E501 line too long (92 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:68:80: E501 line too long (107 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:82:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:83:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:117:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:118:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:119:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:130:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:154:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:177:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:198:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:200:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:201:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:237:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:252:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:259:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:272:80: E501 line too long (98 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py:323:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py:9:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py:15:80: E501 line too long (87 > 79 characters)
-PM\DB_Action.py:9:80: E501 line too long (138 > 79 characters)
-PM\DB_Action.py:9:118: E262 inline comment should start with '# '
-PM\DB_Action.py:10:28: E262 inline comment should start with '# '
-PM\DB_Action.py:11:32: E262 inline comment should start with '# '
-PM\DB_Action.py:15:1: E302 expected 2 blank lines, found 0
-PM\DB_Action.py:15:25: E231 missing whitespace after ','
-PM\DB_Action.py:15:34: E231 missing whitespace after ','
-PM\DB_Action.py:15:44: E231 missing whitespace after ','
-PM\DB_Action.py:15:53: E231 missing whitespace after ','
-PM\DB_Action.py:15:58: E231 missing whitespace after ','
-PM\DB_Action.py:16:38: E711 comparison to None should be 'if cond is not None:'
-PM\DB_Action.py:16:38: E225 missing whitespace around operator
-PM\DB_Action.py:18:5: E265 block comment should start with '# '
-PM\DB_Action.py:19:6: E114 indentation is not a multiple of four (comment)
-PM\DB_Action.py:19:6: E266 too many leading '#' for block comment
-PM\DB_Action.py:21:80: E501 line too long (136 > 79 characters)
-PM\DB_Action.py:21:30: E203 whitespace before ':'
-PM\DB_Action.py:21:52: E203 whitespace before ':'
-PM\DB_Action.py:21:41: E231 missing whitespace after ','
-PM\DB_Action.py:21:87: E231 missing whitespace after ','
-PM\DB_Action.py:21:98: E231 missing whitespace after ':'
-PM\DB_Action.py:21:121: E231 missing whitespace after ','
-PM\DB_Action.py:21:130: E231 missing whitespace after ':'
-PM\DB_Action.py:26:1: E302 expected 2 blank lines, found 0
-PM\DB_Action.py:27:43: E231 missing whitespace after ':'
-PM\DB_Action.py:29:1: E302 expected 2 blank lines, found 1
-PM\DB_Action.py:30:39: E231 missing whitespace after ':'
-PM\DB_Action.py:32:1: E302 expected 2 blank lines, found 1
-PM\DB_Action.py:33:34: E231 missing whitespace after ':'
-PM\DB_Action.py:35:80: E501 line too long (89 > 79 characters)
-PM\DB_Action.py:36:1: E302 expected 2 blank lines, found 0
-PM\DB_Action.py:36:26: E231 missing whitespace after ','
-PM\DB_Action.py:36:32: E231 missing whitespace after ','
-PM\DB_Action.py:37:61: E711 comparison to None should be 'if cond is not None:'
-PM\DB_Action.py:39:49: E711 comparison to None should be 'if cond is not None:'
-PM\DB_Action.py:41:38: E231 missing whitespace after ':'
-PM\DB_Action.py:41:43: E231 missing whitespace after ','
-PM\DB_Action.py:41:51: E231 missing whitespace after ':'
-PM\DB_Action.py:41:58: E231 missing whitespace after ':'
-PM\DB_Action.py:43:1: E302 expected 2 blank lines, found 0
-PM\DB_Action.py:46:1: E302 expected 2 blank lines, found 1
-PM\DB_Action.py:47:62: E711 comparison to None should be 'if cond is not None:'
-PM\DB_Action.py:47:11: E271 multiple spaces after keyword
-PM\DB_Action.py:49:1: E302 expected 2 blank lines, found 1
-PM\DB_Action.py:50:57: E711 comparison to None should be 'if cond is not None:'
-PM\DB_Action.py:50:11: E271 multiple spaces after keyword
-PM\DB_Action.py:52:1: E302 expected 2 blank lines, found 1
-PM\DB_Action.py:52:18: E231 missing whitespace after ','
-PM\DB_Action.py:52:28: E231 missing whitespace after ','
-PM\DB_Action.py:52:37: E231 missing whitespace after ','
-PM\DB_Action.py:52:46: E231 missing whitespace after ','
-PM\DB_Action.py:52:55: E231 missing whitespace after ','
-PM\DB_Action.py:52:61: E231 missing whitespace after ','
-PM\DB_Action.py:53:80: E501 line too long (106 > 79 characters)
-PM\DB_Action.py:53:62: E231 missing whitespace after ','
-PM\DB_Action.py:53:72: E231 missing whitespace after ','
-PM\DB_Action.py:53:81: E231 missing whitespace after ','
-PM\DB_Action.py:53:90: E231 missing whitespace after ','
-PM\DB_Action.py:53:99: E231 missing whitespace after ','
-PM\DB_Action.py:54:80: E501 line too long (126 > 79 characters)
-PM\DB_Action.py:54:29: E231 missing whitespace after ':'
-PM\DB_Action.py:54:39: E231 missing whitespace after ','
-PM\DB_Action.py:54:50: E231 missing whitespace after ':'
-PM\DB_Action.py:54:59: E231 missing whitespace after ','
-PM\DB_Action.py:54:70: E231 missing whitespace after ':'
-PM\DB_Action.py:54:79: E231 missing whitespace after ','
-PM\DB_Action.py:54:90: E231 missing whitespace after ':'
-PM\DB_Action.py:54:99: E231 missing whitespace after ','
-PM\DB_Action.py:54:108: E231 missing whitespace after ':'
-PM\DB_Action.py:54:114: E231 missing whitespace after ','
-PM\DB_Action.py:54:121: E231 missing whitespace after ':'
-PM\DB_Action.py:55:5: E265 block comment should start with '# '
-PM\DB_Action.py:56:34: E231 missing whitespace after ':'
-PM\DB_Action.py:56:38: E231 missing whitespace after ','
-PM\DB_Action.py:58:1: E302 expected 2 blank lines, found 1
-PM\DB_Action.py:73:1: W391 blank line at end of file
-PM\__init__.py:4:1: W391 blank line at end of file
-PM\json_Action.py:6:80: E501 line too long (382 > 79 characters)
-PM\json_Action.py:6:22: E231 missing whitespace after ':'
-PM\json_Action.py:6:32: E231 missing whitespace after ','
-PM\json_Action.py:6:45: E231 missing whitespace after ','
-PM\json_Action.py:6:65: E231 missing whitespace after ','
-PM\json_Action.py:6:74: E231 missing whitespace after ':'
-PM\json_Action.py:6:84: E231 missing whitespace after ','
-PM\json_Action.py:6:97: E231 missing whitespace after ','
-PM\json_Action.py:6:117: E231 missing whitespace after ','
-PM\json_Action.py:6:126: E231 missing whitespace after ':'
-PM\json_Action.py:6:136: E231 missing whitespace after ','
-PM\json_Action.py:6:145: E231 missing whitespace after ','
-PM\json_Action.py:6:157: E231 missing whitespace after ':'
-PM\json_Action.py:6:171: E231 missing whitespace after ','
-PM\json_Action.py:6:183: E231 missing whitespace after ':'
-PM\json_Action.py:6:197: E231 missing whitespace after ','
-PM\json_Action.py:6:210: E231 missing whitespace after ':'
-PM\json_Action.py:6:225: E231 missing whitespace after ','
-PM\json_Action.py:6:236: E231 missing whitespace after ':'
-PM\json_Action.py:6:249: E231 missing whitespace after ','
-PM\json_Action.py:6:263: E231 missing whitespace after ':'
-PM\json_Action.py:6:279: E231 missing whitespace after ','
-PM\json_Action.py:6:291: E231 missing whitespace after ':'
-PM\json_Action.py:6:304: E231 missing whitespace after ','
-PM\json_Action.py:6:318: E231 missing whitespace after ','
-PM\json_Action.py:6:331: E231 missing whitespace after ':'
-PM\json_Action.py:6:345: E231 missing whitespace after ','
-PM\json_Action.py:6:364: E231 missing whitespace after ','
-PM\json_Action.py:6:377: E231 missing whitespace after ':'
-PM\json_Action.py:7:80: E501 line too long (456 > 79 characters)
-PM\json_Action.py:7:23: E231 missing whitespace after ':'
-PM\json_Action.py:7:52: E231 missing whitespace after ':'
-PM\json_Action.py:7:64: E231 missing whitespace after ':'
-PM\json_Action.py:7:93: E231 missing whitespace after ':'
-PM\json_Action.py:7:115: E231 missing whitespace after ':'
-PM\json_Action.py:7:139: E231 missing whitespace after ':'
-PM\json_Action.py:7:185: E231 missing whitespace after ':'
-PM\json_Action.py:7:220: E231 missing whitespace after ':'
-PM\json_Action.py:7:264: E231 missing whitespace after ':'
-PM\json_Action.py:7:290: E231 missing whitespace after ':'
-PM\json_Action.py:7:315: E231 missing whitespace after ':'
-PM\json_Action.py:7:340: E231 missing whitespace after ':'
-PM\json_Action.py:7:361: E231 missing whitespace after ':'
-PM\json_Action.py:7:381: E231 missing whitespace after ':'
-PM\json_Action.py:7:403: E231 missing whitespace after ':'
-PM\json_Action.py:7:425: E231 missing whitespace after ':'
-PM\json_Action.py:7:446: E231 missing whitespace after ':'
-PM\json_Action.py:8:19: E231 missing whitespace after ':'
-PM\json_Action.py:8:25: E231 missing whitespace after ','
-PM\json_Action.py:8:31: E231 missing whitespace after ','
-PM\json_Action.py:8:43: E231 missing whitespace after ','
-PM\json_Action.py:8:47: E231 missing whitespace after ','
-PM\json_Action.py:8:52: E231 missing whitespace after ':'
-PM\json_Action.py:8:58: E231 missing whitespace after ','
-PM\json_Action.py:9:1: E302 expected 2 blank lines, found 0
-PM\json_Action.py:14:23: E231 missing whitespace after ','
-PM\json_Action.py:24:31: E711 comparison to None should be 'if cond is not None:'
-PM\json_Action.py:38:5: E303 too many blank lines (2)
-PM\json_Action.py:41:29: E231 missing whitespace after ','
-PM\json_Action.py:51:9: E265 block comment should start with '# '
-PM\json_Action.py:54:9: E265 block comment should start with '# '
-PM\json_Action.py:55:10: E114 indentation is not a multiple of four (comment)
-PM\json_Action.py:55:10: E116 unexpected indentation (comment)
-PM\json_Action.py:55:10: E266 too many leading '#' for block comment
-PM\json_Action.py:57:35: E231 missing whitespace after ','
-PM\json_Action.py:58:28: E231 missing whitespace after ','
-PM\json_Action.py:58:10: E225 missing whitespace around operator
-PM\json_Action.py:64:80: E501 line too long (103 > 79 characters)
-PM\json_Action.py:65:80: E501 line too long (112 > 79 characters)
-PM\json_Action.py:71:16: E225 missing whitespace around operator
-PM\json_Action.py:75:9: E265 block comment should start with '# '
-PM\json_Action.py:76:9: E266 too many leading '#' for block comment
-PM\json_Action.py:83:43: E231 missing whitespace after ','
-PM\json_Action.py:83:49: E231 missing whitespace after ','
-PM\json_Action.py:96:1: E303 too many blank lines (4)
-PM\json_Action.py:101:80: E501 line too long (80 > 79 characters)
-PM\json_Action.py:104:5: E303 too many blank lines (2)
-PM\json_Action.py:113:1: E302 expected 2 blank lines, found 0
-PM\json_Action.py:116:1: E302 expected 2 blank lines, found 1
-PM\json_Action.py:124:10: E225 missing whitespace around operator
-PM\json_Action.py:128:5: E265 block comment should start with '# '
-PM\json_Action.py:129:5: E266 too many leading '#' for block comment
-PM\json_Action.py:178:1: W391 blank line at end of file
-PM\settings.py:87:80: E501 line too long (109 > 79 characters)
-PM\settings.py:91:80: E501 line too long (102 > 79 characters)
-PM\settings.py:92:8: E131 continuation line unaligned for hanging indent
-PM\settings.py:91:9: E265 block comment should start with '# '
-PM\settings.py:92:8: E266 too many leading '#' for block comment
-PM\settings.py:102:80: E501 line too long (91 > 79 characters)
-PM\settings.py:105:80: E501 line too long (81 > 79 characters)
-PM\settings.py:108:80: E501 line too long (82 > 79 characters)
-PM\settings.py:111:80: E501 line too long (83 > 79 characters)
-PM\settings.py:137:19: E225 missing whitespace around operator
-PM\urls.py:33:80: E501 line too long (119 > 79 characters)
-PM\urls.py:39:80: E501 line too long (91 > 79 characters)
-PM\urls.py:42:80: E501 line too long (200 > 79 characters)
-PM\urls.py:43:80: E501 line too long (87 > 79 characters)
-PM\urls.py:44:80: E501 line too long (98 > 79 characters)
-PM\urls.py:46:80: E501 line too long (470 > 79 characters)
-PM\urls.py:47:80: E501 line too long (139 > 79 characters)
-PM\urls.py:48:80: E501 line too long (83 > 79 characters)
-PM\urls.py:26:18: E231 missing whitespace after ','
-PM\urls.py:26:38: E231 missing whitespace after ','
-PM\urls.py:27:37: E231 missing whitespace after ','
-PM\urls.py:35:20: E231 missing whitespace after ','
-PM\urls.py:35:36: E231 missing whitespace after ','
-PM\urls.py:37:20: E231 missing whitespace after ','
-PM\urls.py:37:34: E231 missing whitespace after ','
-PM\urls.py:38:35: E231 missing whitespace after ','
-PM\urls.py:38:53: E231 missing whitespace after ','
-PM\urls.py:24:5: E265 block comment should start with '# '
-PM\urls.py:28:5: E265 block comment should start with '# '
-PM\urls.py:33:5: E265 block comment should start with '# '
-PM\urls.py:46:5: E265 block comment should start with '# '
-PM\urls.py:47:5: E265 block comment should start with '# '
-PM\urls.py:48:5: E265 block comment should start with '# '
-PM\urls.py:49:5: E265 block comment should start with '# '
 trainer\admin.py:7:1: W391 blank line at end of file
 trainer\models.py:4:5: E116 unexpected indentation (comment)
 trainer\models.py:5:9: E116 unexpected indentation (comment)
@@ -1043,258 +55,249 @@ trainer\tests.py:66:75: E231 missing whitespace after ','
 trainer\tests.py:66:86: E231 missing whitespace after ','
 trainer\tests.py:66:92: E231 missing whitespace after ','
 trainer\urls.py:7:80: E501 line too long (82 > 79 characters)
-trainer\urls.py:9:1: W391 blank line at end of file
-trainer\views.py:7:38: E231 missing whitespace after ','
-trainer\views.py:16:1: E302 expected 2 blank lines, found 1
-trainer\views.py:23:1: E302 expected 2 blank lines, found 1
-trainer\views.py:24:26: E231 missing whitespace after ','
-trainer\views.py:28:1: E303 too many blank lines (3)
-trainer\views.py:38:28: E231 missing whitespace after ','
-trainer\views.py:38:38: E231 missing whitespace after ','
-trainer\views.py:38:48: E231 missing whitespace after ','
-trainer\views.py:38:52: E231 missing whitespace after ','
-trainer\views.py:38:61: E231 missing whitespace after ','
-trainer\views.py:38:67: E231 missing whitespace after ','
-trainer\views.py:44:1: E302 expected 2 blank lines, found 1
-trainer\views.py:47:1: E302 expected 2 blank lines, found 1
-trainer\views.py:48:26: E231 missing whitespace after ','
-trainer\views.py:50:1: E302 expected 2 blank lines, found 1
-trainer\views.py:52:26: E231 missing whitespace after ','
-trainer\views.py:55:80: E501 line too long (105 > 79 characters)
-trainer\views.py:55:1: E302 expected 2 blank lines, found 1
-trainer\views.py:55:32: E231 missing whitespace after ','
-trainer\views.py:55:41: E231 missing whitespace after ','
-trainer\views.py:55:50: E231 missing whitespace after ','
-trainer\views.py:55:60: E231 missing whitespace after ','
-trainer\views.py:55:77: E231 missing whitespace after ','
-trainer\views.py:55:90: E231 missing whitespace after ','
-trainer\views.py:62:80: E501 line too long (128 > 79 characters)
-trainer\views.py:62:29: E231 missing whitespace after ':'
-trainer\views.py:62:34: E231 missing whitespace after ','
-trainer\views.py:62:41: E231 missing whitespace after ':'
-trainer\views.py:62:46: E231 missing whitespace after ','
-trainer\views.py:62:57: E231 missing whitespace after ':'
-trainer\views.py:62:66: E231 missing whitespace after ','
-trainer\views.py:62:74: E231 missing whitespace after ':'
-trainer\views.py:62:80: E231 missing whitespace after ','
-trainer\views.py:62:93: E231 missing whitespace after ':'
-trainer\views.py:62:106: E231 missing whitespace after ','
-trainer\views.py:62:118: E231 missing whitespace after ':'
-trainer\views.py:62:21: E225 missing whitespace around operator
-trainer\views.py:63:80: E501 line too long (126 > 79 characters)
-trainer\views.py:63:29: E231 missing whitespace after ':'
-trainer\views.py:63:38: E231 missing whitespace after ','
-trainer\views.py:63:45: E231 missing whitespace after ':'
-trainer\views.py:63:54: E231 missing whitespace after ','
-trainer\views.py:63:65: E231 missing whitespace after ':'
-trainer\views.py:63:78: E231 missing whitespace after ','
-trainer\views.py:63:86: E231 missing whitespace after ':'
-trainer\views.py:63:96: E231 missing whitespace after ','
-trainer\views.py:63:109: E231 missing whitespace after ':'
-trainer\views.py:63:21: E225 missing whitespace around operator
-trainer\views.py:65:47: E231 missing whitespace after ','
-trainer\views.py:71:1: E302 expected 2 blank lines, found 1
-trainer\views.py:74:80: E501 line too long (110 > 79 characters)
-trainer\views.py:75:1: E302 expected 2 blank lines, found 0
-trainer\views.py:76:40: E231 missing whitespace after ','
+trainer\urls.py:8:1: W391 blank line at end of file
+trainer\views.py:9:38: E231 missing whitespace after ','
+trainer\views.py:26:1: E302 expected 2 blank lines, found 1
+trainer\views.py:27:26: E231 missing whitespace after ','
+trainer\views.py:30:22: E231 missing whitespace after ','
+trainer\views.py:30:30: E231 missing whitespace after ','
+trainer\views.py:33:23: E231 missing whitespace after ':'
+trainer\views.py:33:41: E231 missing whitespace after ':'
+trainer\views.py:34:26: E231 missing whitespace after ','
+trainer\views.py:34:71: E231 missing whitespace after ','
+trainer\views.py:36:1: E302 expected 2 blank lines, found 1
+trainer\views.py:36:27: E231 missing whitespace after ','
+trainer\views.py:36:35: E231 missing whitespace after ','
+trainer\views.py:36:40: E231 missing whitespace after ','
+trainer\views.py:37:5: E265 block comment should start with '# '
+trainer\views.py:38:5: E265 block comment should start with '# '
+trainer\views.py:40:35: E231 missing whitespace after ','
+trainer\views.py:41:9: E221 multiple spaces before operator
+trainer\views.py:45:80: E501 line too long (144 > 79 characters)
+trainer\views.py:45:96: E203 whitespace before ':'
+trainer\views.py:45:121: E203 whitespace before ':'
+trainer\views.py:45:22: E231 missing whitespace after ':'
+trainer\views.py:45:27: E231 missing whitespace after ','
+trainer\views.py:45:46: E231 missing whitespace after ':'
+trainer\views.py:45:63: E231 missing whitespace after ','
+trainer\views.py:45:76: E231 missing whitespace after ':'
+trainer\views.py:45:91: E231 missing whitespace after ','
+trainer\views.py:45:110: E231 missing whitespace after ','
+trainer\views.py:45:132: E231 missing whitespace after ','
+trainer\views.py:46:80: E501 line too long (82 > 79 characters)
+trainer\views.py:46:74: E231 missing whitespace after ','
+trainer\views.py:51:1: E303 too many blank lines (4)
+trainer\views.py:51:26: E231 missing whitespace after ','
+trainer\views.py:64:40: E231 missing whitespace after ','
+trainer\views.py:64:47: E231 missing whitespace after ':'
+trainer\views.py:65:80: E501 line too long (83 > 79 characters)
+trainer\views.py:65:26: E231 missing whitespace after ','
+trainer\views.py:65:75: E231 missing whitespace after ','
+trainer\views.py:67:1: E302 expected 2 blank lines, found 1
+trainer\views.py:77:28: E231 missing whitespace after ','
 trainer\views.py:77:38: E231 missing whitespace after ','
-trainer\views.py:80:12: E711 comparison to None should be 'if cond is not None:'
-trainer\views.py:80:12: E225 missing whitespace around operator
-trainer\views.py:81:28: E225 missing whitespace around operator
-trainer\views.py:86:80: E501 line too long (103 > 79 characters)
-trainer\views.py:86:53: E203 whitespace before ':'
-trainer\views.py:86:77: E203 whitespace before ':'
-trainer\views.py:86:34: E231 missing whitespace after ':'
-trainer\views.py:86:39: E231 missing whitespace after ','
-trainer\views.py:86:64: E231 missing whitespace after ','
-trainer\views.py:87:53: E231 missing whitespace after ','
-trainer\views.py:92:80: E501 line too long (153 > 79 characters)
-trainer\views.py:92:108: E203 whitespace before ':'
-trainer\views.py:92:133: E203 whitespace before ':'
-trainer\views.py:92:34: E231 missing whitespace after ':'
-trainer\views.py:92:39: E231 missing whitespace after ','
-trainer\views.py:92:58: E231 missing whitespace after ':'
-trainer\views.py:92:75: E231 missing whitespace after ','
-trainer\views.py:92:88: E231 missing whitespace after ':'
-trainer\views.py:92:103: E231 missing whitespace after ','
-trainer\views.py:92:122: E231 missing whitespace after ','
-trainer\views.py:92:141: E231 missing whitespace after ','
-trainer\views.py:93:80: E501 line too long (94 > 79 characters)
-trainer\views.py:93:86: E231 missing whitespace after ','
-trainer\views.py:98:80: E501 line too long (153 > 79 characters)
-trainer\views.py:98:108: E203 whitespace before ':'
-trainer\views.py:98:133: E203 whitespace before ':'
-trainer\views.py:98:34: E231 missing whitespace after ':'
-trainer\views.py:98:39: E231 missing whitespace after ','
-trainer\views.py:98:58: E231 missing whitespace after ':'
-trainer\views.py:98:75: E231 missing whitespace after ','
-trainer\views.py:98:88: E231 missing whitespace after ':'
-trainer\views.py:98:103: E231 missing whitespace after ','
-trainer\views.py:98:122: E231 missing whitespace after ','
-trainer\views.py:98:141: E231 missing whitespace after ','
-trainer\views.py:99:80: E501 line too long (94 > 79 characters)
-trainer\views.py:99:86: E231 missing whitespace after ','
-trainer\views.py:100:26: E231 missing whitespace after ','
+trainer\views.py:77:48: E231 missing whitespace after ','
+trainer\views.py:77:52: E231 missing whitespace after ','
+trainer\views.py:77:61: E231 missing whitespace after ','
+trainer\views.py:77:67: E231 missing whitespace after ','
+trainer\views.py:83:1: E302 expected 2 blank lines, found 1
+trainer\views.py:86:1: E302 expected 2 blank lines, found 1
+trainer\views.py:87:26: E231 missing whitespace after ','
+trainer\views.py:89:1: E302 expected 2 blank lines, found 1
+trainer\views.py:89:25: E231 missing whitespace after ','
+trainer\views.py:89:36: E231 missing whitespace after ','
+trainer\views.py:90:28: E231 missing whitespace after ':'
+trainer\views.py:90:39: E231 missing whitespace after ','
+trainer\views.py:90:50: E231 missing whitespace after ':'
+trainer\views.py:95:80: E501 line too long (84 > 79 characters)
+trainer\views.py:95:75: E203 whitespace before ','
+trainer\views.py:95:76: E231 missing whitespace after ','
+trainer\views.py:97:1: E302 expected 2 blank lines, found 1
+trainer\views.py:99:26: E231 missing whitespace after ','
+trainer\views.py:102:80: E501 line too long (105 > 79 characters)
 trainer\views.py:102:1: E302 expected 2 blank lines, found 1
-trainer\views.py:102:24: E231 missing whitespace after ','
-trainer\views.py:107:26: E231 missing whitespace after ','
-trainer\views.py:107:53: E231 missing whitespace after ','
-trainer\views.py:109:1: E302 expected 2 blank lines, found 1
-trainer\views.py:111:80: E501 line too long (81 > 79 characters)
-trainer\views.py:111:61: E231 missing whitespace after ','
-trainer\views.py:111:25: E225 missing whitespace around operator
-trainer\views.py:114:80: E501 line too long (83 > 79 characters)
-trainer\views.py:114:26: E231 missing whitespace after ','
-trainer\views.py:114:66: E231 missing whitespace after ','
-trainer\views.py:114:74: E231 missing whitespace after ':'
-trainer\views.py:116:1: E302 expected 2 blank lines, found 1
-trainer\views.py:119:61: E231 missing whitespace after ','
-trainer\views.py:162:1: E303 too many blank lines (3)
-trainer\views.py:164:80: E501 line too long (155 > 79 characters)
-trainer\views.py:178:1: E302 expected 2 blank lines, found 1
-trainer\views.py:179:80: E501 line too long (159 > 79 characters)
-trainer\views.py:179:8: E114 indentation is not a multiple of four (comment)
-trainer\views.py:180:8: E111 indentation is not a multiple of four
-trainer\views.py:181:8: E111 indentation is not a multiple of four
-trainer\views.py:182:8: E111 indentation is not a multiple of four
-trainer\views.py:182:11: E225 missing whitespace around operator
-trainer\views.py:183:8: E111 indentation is not a multiple of four
-trainer\views.py:184:8: E111 indentation is not a multiple of four
-trainer\views.py:185:12: E111 indentation is not a multiple of four
-trainer\views.py:185:24: E225 missing whitespace around operator
-trainer\views.py:186:16: E111 indentation is not a multiple of four
-trainer\views.py:186:17: E225 missing whitespace around operator
-trainer\views.py:187:16: E111 indentation is not a multiple of four
-trainer\views.py:188:8: E111 indentation is not a multiple of four
-trainer\views.py:190:8: E111 indentation is not a multiple of four
-trainer\views.py:190:31: E231 missing whitespace after ':'
-trainer\views.py:190:33: E231 missing whitespace after ','
-trainer\views.py:190:41: E231 missing whitespace after ':'
-trainer\views.py:191:8: E111 indentation is not a multiple of four
-trainer\views.py:191:29: E231 missing whitespace after ','
-trainer\views.py:191:66: E231 missing whitespace after ','
-trainer\views.py:195:13: E225 missing whitespace around operator
-trainer\views.py:196:14: E225 missing whitespace around operator
-trainer\views.py:197:13: E225 missing whitespace around operator
-trainer\views.py:198:13: E225 missing whitespace around operator
-trainer\views.py:199:10: E225 missing whitespace around operator
-trainer\views.py:200:7: E225 missing whitespace around operator
-trainer\views.py:201:9: E225 missing whitespace around operator
-trainer\views.py:202:80: E501 line too long (118 > 79 characters)
-trainer\views.py:202:21: E231 missing whitespace after ':'
-trainer\views.py:202:30: E231 missing whitespace after ','
-trainer\views.py:202:42: E231 missing whitespace after ':'
-trainer\views.py:202:52: E231 missing whitespace after ','
-trainer\views.py:202:63: E231 missing whitespace after ':'
-trainer\views.py:202:72: E231 missing whitespace after ','
-trainer\views.py:202:83: E231 missing whitespace after ':'
-trainer\views.py:202:92: E231 missing whitespace after ','
-trainer\views.py:202:100: E231 missing whitespace after ':'
-trainer\views.py:202:106: E231 missing whitespace after ','
-trainer\views.py:202:113: E231 missing whitespace after ':'
-trainer\views.py:202:9: E225 missing whitespace around operator
-trainer\views.py:203:9: E225 missing whitespace around operator
-trainer\views.py:206:59: E231 missing whitespace after ','
-trainer\views.py:207:53: E231 missing whitespace after ','
-trainer\views.py:208:40: E231 missing whitespace after ','
-trainer\views.py:212:80: E501 line too long (82 > 79 characters)
-trainer\views.py:218:80: E501 line too long (172 > 79 characters)
-trainer\views.py:218:118: E203 whitespace before ':'
-trainer\views.py:218:134: E203 whitespace before ':'
-trainer\views.py:218:165: E203 whitespace before ':'
-trainer\views.py:218:28: E231 missing whitespace after ':'
-trainer\views.py:218:35: E231 missing whitespace after ','
-trainer\views.py:218:54: E231 missing whitespace after ':'
-trainer\views.py:218:71: E231 missing whitespace after ','
-trainer\views.py:218:84: E231 missing whitespace after ':'
-trainer\views.py:218:99: E231 missing whitespace after ','
-trainer\views.py:218:109: E231 missing whitespace after ':'
-trainer\views.py:218:113: E231 missing whitespace after ','
-trainer\views.py:218:123: E231 missing whitespace after ','
-trainer\views.py:218:145: E231 missing whitespace after ','
-trainer\views.py:218:158: E231 missing whitespace after ','
-trainer\views.py:221:80: E501 line too long (85 > 79 characters)
-trainer\views.py:221:30: E231 missing whitespace after ','
-trainer\views.py:221:77: E231 missing whitespace after ','
-trainer\views.py:224:80: E501 line too long (81 > 79 characters)
-trainer\views.py:224:5: E303 too many blank lines (2)
-trainer\views.py:224:26: E231 missing whitespace after ','
-trainer\views.py:224:73: E231 missing whitespace after ','
-trainer\views.py:229:46: E231 missing whitespace after ','
-trainer\views.py:230:54: E231 missing whitespace after ','
-trainer\views.py:231:53: E231 missing whitespace after ','
-trainer\views.py:232:43: E231 missing whitespace after ','
-trainer\views.py:233:49: E231 missing whitespace after ','
-trainer\views.py:234:40: E231 missing whitespace after ','
-trainer\views.py:236:30: E231 missing whitespace after ','
-trainer\views.py:237:30: E231 missing whitespace after ','
-trainer\views.py:244:29: E231 missing whitespace after ','
-trainer\views.py:251:80: E501 line too long (101 > 79 characters)
-trainer\views.py:251:36: E231 missing whitespace after ','
-trainer\views.py:251:45: E231 missing whitespace after ','
-trainer\views.py:251:68: E231 missing whitespace after ','
-trainer\views.py:251:91: E231 missing whitespace after ','
-trainer\views.py:251:95: E231 missing whitespace after ','
-trainer\views.py:255:1: W391 blank line at end of file
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\runner.py:64:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\runner.py:69:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\runner.py:88:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\runner.py:105:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\management\commands\jenkins.py:16:80: E501 line too long (87 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\management\commands\jenkins.py:54:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\management\commands\jenkins.py:61:80: E501 line too long (103 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\management\commands\jenkins.py:69:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\management\commands\jenkins.py:92:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\management\commands\jenkins.py:136:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\management\commands\jenkins.py:139:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\__init__.py:8:80: E501 line too long (108 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\__init__.py:16:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\__init__.py:17:80: E501 line too long (85 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\__init__.py:24:80: E501 line too long (84 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_csslint.py:20:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_csslint.py:23:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_csslint.py:25:80: E501 line too long (89 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_csslint.py:37:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:11:80: E501 line too long (121 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:28:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:37:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:43:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:51:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:52:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:54:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:56:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:58:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_flake8.py:61:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_jshint.py:17:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_jshint.py:20:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_jshint.py:22:80: E501 line too long (88 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_jshint.py:30:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:13:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:22:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:31:80: E501 line too long (93 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:34:80: E501 line too long (102 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:41:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:42:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:44:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:46:80: E501 line too long (90 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pep8.py:48:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pyflakes.py:22:80: E501 line too long (82 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pyflakes.py:30:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pyflakes.py:32:80: E501 line too long (117 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pyflakes.py:37:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pylint.py:33:80: E501 line too long (80 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_pylint.py:44:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_scsslint.py:17:80: E501 line too long (96 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_scsslint.py:20:80: E501 line too long (99 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_scsslint.py:22:80: E501 line too long (91 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_scsslint.py:25:80: E501 line too long (105 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_scsslint.py:35:80: E501 line too long (104 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_sloccount.py:8:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_sloccount.py:9:80: E501 line too long (83 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\run_sloccount.py:16:80: E501 line too long (100 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\with_coverage.py:34:80: E501 line too long (110 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\with_coverage.py:39:80: E501 line too long (109 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\with_coverage.py:45:80: E501 line too long (97 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\with_coverage.py:48:80: E501 line too long (81 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\with_coverage.py:58:80: E501 line too long (86 > 79 characters)
-..\..\..\..\..\..\Program Files\Python38\lib\site-packages\django_jenkins\tasks\with_coverage.py:59:80: E501 line too long (83 > 79 characters)
+trainer\views.py:102:32: E231 missing whitespace after ','
+trainer\views.py:102:41: E231 missing whitespace after ','
+trainer\views.py:102:50: E231 missing whitespace after ','
+trainer\views.py:102:60: E231 missing whitespace after ','
+trainer\views.py:102:77: E231 missing whitespace after ','
+trainer\views.py:102:90: E231 missing whitespace after ','
+trainer\views.py:109:80: E501 line too long (128 > 79 characters)
+trainer\views.py:109:29: E231 missing whitespace after ':'
+trainer\views.py:109:34: E231 missing whitespace after ','
+trainer\views.py:109:41: E231 missing whitespace after ':'
+trainer\views.py:109:46: E231 missing whitespace after ','
+trainer\views.py:109:57: E231 missing whitespace after ':'
+trainer\views.py:109:66: E231 missing whitespace after ','
+trainer\views.py:109:74: E231 missing whitespace after ':'
+trainer\views.py:109:80: E231 missing whitespace after ','
+trainer\views.py:109:93: E231 missing whitespace after ':'
+trainer\views.py:109:106: E231 missing whitespace after ','
+trainer\views.py:109:118: E231 missing whitespace after ':'
+trainer\views.py:109:21: E225 missing whitespace around operator
+trainer\views.py:110:80: E501 line too long (126 > 79 characters)
+trainer\views.py:110:29: E231 missing whitespace after ':'
+trainer\views.py:110:38: E231 missing whitespace after ','
+trainer\views.py:110:45: E231 missing whitespace after ':'
+trainer\views.py:110:54: E231 missing whitespace after ','
+trainer\views.py:110:65: E231 missing whitespace after ':'
+trainer\views.py:110:78: E231 missing whitespace after ','
+trainer\views.py:110:86: E231 missing whitespace after ':'
+trainer\views.py:110:96: E231 missing whitespace after ','
+trainer\views.py:110:109: E231 missing whitespace after ':'
+trainer\views.py:110:21: E225 missing whitespace around operator
+trainer\views.py:112:47: E231 missing whitespace after ','
+trainer\views.py:118:1: E302 expected 2 blank lines, found 1
+trainer\views.py:122:27: E231 missing whitespace after ','
+trainer\views.py:123:26: E231 missing whitespace after ':'
+trainer\views.py:124:80: E501 line too long (83 > 79 characters)
+trainer\views.py:124:26: E231 missing whitespace after ','
+trainer\views.py:124:75: E231 missing whitespace after ','
+trainer\views.py:126:1: E302 expected 2 blank lines, found 1
+trainer\views.py:126:24: E231 missing whitespace after ','
+trainer\views.py:126:28: E231 missing whitespace after ','
+trainer\views.py:127:11: E225 missing whitespace around operator
+trainer\views.py:133:80: E501 line too long (115 > 79 characters)
+trainer\views.py:135:80: E501 line too long (83 > 79 characters)
+trainer\views.py:138:80: E501 line too long (110 > 79 characters)
+trainer\views.py:139:1: E302 expected 2 blank lines, found 0
+trainer\views.py:140:40: E231 missing whitespace after ','
+trainer\views.py:141:38: E231 missing whitespace after ','
+trainer\views.py:144:12: E711 comparison to None should be 'if cond is not None:'
+trainer\views.py:144:12: E225 missing whitespace around operator
+trainer\views.py:145:28: E225 missing whitespace around operator
+trainer\views.py:150:80: E501 line too long (103 > 79 characters)
+trainer\views.py:150:53: E203 whitespace before ':'
+trainer\views.py:150:77: E203 whitespace before ':'
+trainer\views.py:150:34: E231 missing whitespace after ':'
+trainer\views.py:150:39: E231 missing whitespace after ','
+trainer\views.py:150:64: E231 missing whitespace after ','
+trainer\views.py:151:53: E231 missing whitespace after ','
+trainer\views.py:156:80: E501 line too long (153 > 79 characters)
+trainer\views.py:156:108: E203 whitespace before ':'
+trainer\views.py:156:133: E203 whitespace before ':'
+trainer\views.py:156:34: E231 missing whitespace after ':'
+trainer\views.py:156:39: E231 missing whitespace after ','
+trainer\views.py:156:58: E231 missing whitespace after ':'
+trainer\views.py:156:75: E231 missing whitespace after ','
+trainer\views.py:156:88: E231 missing whitespace after ':'
+trainer\views.py:156:103: E231 missing whitespace after ','
+trainer\views.py:156:122: E231 missing whitespace after ','
+trainer\views.py:156:141: E231 missing whitespace after ','
+trainer\views.py:157:80: E501 line too long (94 > 79 characters)
+trainer\views.py:157:86: E231 missing whitespace after ','
+trainer\views.py:162:80: E501 line too long (153 > 79 characters)
+trainer\views.py:162:108: E203 whitespace before ':'
+trainer\views.py:162:133: E203 whitespace before ':'
+trainer\views.py:162:34: E231 missing whitespace after ':'
+trainer\views.py:162:39: E231 missing whitespace after ','
+trainer\views.py:162:58: E231 missing whitespace after ':'
+trainer\views.py:162:75: E231 missing whitespace after ','
+trainer\views.py:162:88: E231 missing whitespace after ':'
+trainer\views.py:162:103: E231 missing whitespace after ','
+trainer\views.py:162:122: E231 missing whitespace after ','
+trainer\views.py:162:141: E231 missing whitespace after ','
+trainer\views.py:163:80: E501 line too long (94 > 79 characters)
+trainer\views.py:163:86: E231 missing whitespace after ','
+trainer\views.py:164:26: E231 missing whitespace after ','
+trainer\views.py:173:1: E303 too many blank lines (8)
+trainer\views.py:173:24: E231 missing whitespace after ','
+trainer\views.py:178:26: E231 missing whitespace after ','
+trainer\views.py:178:53: E231 missing whitespace after ','
+trainer\views.py:180:1: E302 expected 2 blank lines, found 1
+trainer\views.py:182:80: E501 line too long (81 > 79 characters)
+trainer\views.py:182:61: E231 missing whitespace after ','
+trainer\views.py:182:25: E225 missing whitespace around operator
+trainer\views.py:185:80: E501 line too long (83 > 79 characters)
+trainer\views.py:185:26: E231 missing whitespace after ','
+trainer\views.py:185:66: E231 missing whitespace after ','
+trainer\views.py:185:74: E231 missing whitespace after ':'
+trainer\views.py:187:1: E302 expected 2 blank lines, found 1
+trainer\views.py:190:61: E231 missing whitespace after ','
+trainer\views.py:233:1: E303 too many blank lines (3)
+trainer\views.py:235:80: E501 line too long (155 > 79 characters)
+trainer\views.py:249:1: E302 expected 2 blank lines, found 1
+trainer\views.py:250:80: E501 line too long (159 > 79 characters)
+trainer\views.py:250:8: E114 indentation is not a multiple of four (comment)
+trainer\views.py:251:8: E111 indentation is not a multiple of four
+trainer\views.py:252:8: E111 indentation is not a multiple of four
+trainer\views.py:253:8: E111 indentation is not a multiple of four
+trainer\views.py:253:11: E225 missing whitespace around operator
+trainer\views.py:254:8: E111 indentation is not a multiple of four
+trainer\views.py:255:8: E111 indentation is not a multiple of four
+trainer\views.py:256:12: E111 indentation is not a multiple of four
+trainer\views.py:256:24: E225 missing whitespace around operator
+trainer\views.py:257:16: E111 indentation is not a multiple of four
+trainer\views.py:257:17: E225 missing whitespace around operator
+trainer\views.py:258:16: E111 indentation is not a multiple of four
+trainer\views.py:259:8: E111 indentation is not a multiple of four
+trainer\views.py:261:8: E111 indentation is not a multiple of four
+trainer\views.py:261:31: E231 missing whitespace after ':'
+trainer\views.py:261:33: E231 missing whitespace after ','
+trainer\views.py:261:41: E231 missing whitespace after ':'
+trainer\views.py:262:8: E111 indentation is not a multiple of four
+trainer\views.py:262:29: E231 missing whitespace after ','
+trainer\views.py:262:66: E231 missing whitespace after ','
+trainer\views.py:266:13: E225 missing whitespace around operator
+trainer\views.py:267:14: E225 missing whitespace around operator
+trainer\views.py:268:13: E225 missing whitespace around operator
+trainer\views.py:269:13: E225 missing whitespace around operator
+trainer\views.py:270:10: E225 missing whitespace around operator
+trainer\views.py:271:7: E225 missing whitespace around operator
+trainer\views.py:272:9: E225 missing whitespace around operator
+trainer\views.py:273:80: E501 line too long (118 > 79 characters)
+trainer\views.py:273:21: E231 missing whitespace after ':'
+trainer\views.py:273:30: E231 missing whitespace after ','
+trainer\views.py:273:42: E231 missing whitespace after ':'
+trainer\views.py:273:52: E231 missing whitespace after ','
+trainer\views.py:273:63: E231 missing whitespace after ':'
+trainer\views.py:273:72: E231 missing whitespace after ','
+trainer\views.py:273:83: E231 missing whitespace after ':'
+trainer\views.py:273:92: E231 missing whitespace after ','
+trainer\views.py:273:100: E231 missing whitespace after ':'
+trainer\views.py:273:106: E231 missing whitespace after ','
+trainer\views.py:273:113: E231 missing whitespace after ':'
+trainer\views.py:273:9: E225 missing whitespace around operator
+trainer\views.py:274:9: E225 missing whitespace around operator
+trainer\views.py:277:59: E231 missing whitespace after ','
+trainer\views.py:278:53: E231 missing whitespace after ','
+trainer\views.py:279:40: E231 missing whitespace after ','
+trainer\views.py:283:80: E501 line too long (82 > 79 characters)
+trainer\views.py:289:80: E501 line too long (172 > 79 characters)
+trainer\views.py:289:118: E203 whitespace before ':'
+trainer\views.py:289:134: E203 whitespace before ':'
+trainer\views.py:289:165: E203 whitespace before ':'
+trainer\views.py:289:28: E231 missing whitespace after ':'
+trainer\views.py:289:35: E231 missing whitespace after ','
+trainer\views.py:289:54: E231 missing whitespace after ':'
+trainer\views.py:289:71: E231 missing whitespace after ','
+trainer\views.py:289:84: E231 missing whitespace after ':'
+trainer\views.py:289:99: E231 missing whitespace after ','
+trainer\views.py:289:109: E231 missing whitespace after ':'
+trainer\views.py:289:113: E231 missing whitespace after ','
+trainer\views.py:289:123: E231 missing whitespace after ','
+trainer\views.py:289:145: E231 missing whitespace after ','
+trainer\views.py:289:158: E231 missing whitespace after ','
+trainer\views.py:292:80: E501 line too long (85 > 79 characters)
+trainer\views.py:292:30: E231 missing whitespace after ','
+trainer\views.py:292:77: E231 missing whitespace after ','
+trainer\views.py:295:80: E501 line too long (81 > 79 characters)
+trainer\views.py:295:5: E303 too many blank lines (2)
+trainer\views.py:295:26: E231 missing whitespace after ','
+trainer\views.py:295:73: E231 missing whitespace after ','
+trainer\views.py:300:46: E231 missing whitespace after ','
+trainer\views.py:301:54: E231 missing whitespace after ','
+trainer\views.py:302:53: E231 missing whitespace after ','
+trainer\views.py:303:43: E231 missing whitespace after ','
+trainer\views.py:304:49: E231 missing whitespace after ','
+trainer\views.py:305:40: E231 missing whitespace after ','
+trainer\views.py:307:30: E231 missing whitespace after ','
+trainer\views.py:308:30: E231 missing whitespace after ','
+trainer\views.py:315:29: E231 missing whitespace after ','
+trainer\views.py:322:80: E501 line too long (101 > 79 characters)
+trainer\views.py:322:36: E231 missing whitespace after ','
+trainer\views.py:322:45: E231 missing whitespace after ','
+trainer\views.py:322:68: E231 missing whitespace after ','
+trainer\views.py:322:91: E231 missing whitespace after ','
+trainer\views.py:322:95: E231 missing whitespace after ','
+trainer\views.py:326:1: W391 blank line at end of file

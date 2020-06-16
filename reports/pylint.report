@@ -1,0 +1,584 @@
+************* Module trainer.admin
+trainer\admin.py:7: [C0305(trailing-newlines), ] Trailing newlines
+trainer\admin.py:1: [W0611(unused-import), ] Unused admin imported from django.contrib
+************* Module trainer.models
+trainer\models.py:7: [C0304(missing-final-newline), ] Final newline missing
+trainer\models.py:1: [W0611(unused-import), ] Unused models imported from django.db
+************* Module trainer.tests
+trainer\tests.py:24: [C0326(bad-whitespace), ] Exactly one space required after comma
+        with self.assertRaisesRegex(Exception,"this username is taken"): ##username already in the DB
+                                             ^
+trainer\tests.py:25: [C0326(bad-whitespace), ] Exactly one space required after comma
+            DB_Action.insert_user("user0", "1234","admin89","maymon", "1","tza@gmail.com")
+                                                 ^
+trainer\tests.py:25: [C0326(bad-whitespace), ] Exactly one space required after comma
+            DB_Action.insert_user("user0", "1234","admin89","maymon", "1","tza@gmail.com")
+                                                           ^
+trainer\tests.py:25: [C0326(bad-whitespace), ] Exactly one space required after comma
+            DB_Action.insert_user("user0", "1234","admin89","maymon", "1","tza@gmail.com")
+                                                                         ^
+trainer\tests.py:29: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(DB_Action.get_user_by_ID("001"),None)
+                                                        ^
+trainer\tests.py:30: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(DB_Action.get_user_by_ID("389"),{"_id": "389", "userName": "admin89", "password": "1234", "firstName": "bar", "lastName": "butler",
+                                                        ^
+trainer\tests.py:31: [C0330(bad-continuation), ] Wrong continued indentation (add 40 spaces).
+                  "role": "1","E-mail":"admin89@gmail.com"})
+                  ^                                       |
+trainer\tests.py:31: [C0326(bad-whitespace), ] Exactly one space required after comma
+                  "role": "1","E-mail":"admin89@gmail.com"})
+                             ^
+trainer\tests.py:34: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(DB_Action.get_user_by_userName("tz"),None)
+                                                             ^
+trainer\tests.py:35: [C0301(line-too-long), ] Line too long (166/160)
+trainer\tests.py:35: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(DB_Action.get_user_by_userName("admin89"),{"_id": "389", "userName": "admin89", "password": "1234", "firstName": "bar", "lastName": "butler",
+                                                                  ^
+trainer\tests.py:36: [C0330(bad-continuation), ] Wrong continued indentation (add 50 spaces).
+                  "role": "1","E-mail":"admin89@gmail.com"})
+                  ^                                                 |
+trainer\tests.py:36: [C0326(bad-whitespace), ] Exactly one space required after comma
+                  "role": "1","E-mail":"admin89@gmail.com"})
+                             ^
+trainer\tests.py:40: [C0326(bad-whitespace), ] Exactly one space required after comma
+            DB_Action.update_user_by_ID("389","userName","admin89")
+                                             ^
+trainer\tests.py:40: [C0326(bad-whitespace), ] Exactly one space required after comma
+            DB_Action.update_user_by_ID("389","userName","admin89")
+                                                        ^
+trainer\tests.py:42: [C0326(bad-whitespace), ] Exactly one space required after comma
+            DB_Action.update_user_by_ID("001","id","389")
+                                             ^
+trainer\tests.py:42: [C0326(bad-whitespace), ] Exactly one space required after comma
+            DB_Action.update_user_by_ID("001","id","389")
+                                                  ^
+trainer\tests.py:47: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(facility.get_distros_dict(),self.distros_dict)
+                                                    ^
+trainer\tests.py:51: [C0326(bad-whitespace), ] Exactly one space required after comma
+        print(json_Action.modular_filtering(facility.get_by_type_neighborho('ג',"כל-המתקנים"),"lighting","כן"))
+                                                                               ^
+trainer\tests.py:51: [C0326(bad-whitespace), ] Exactly one space required after comma
+        print(json_Action.modular_filtering(facility.get_by_type_neighborho('ג',"כל-המתקנים"),"lighting","כן"))
+                                                                                             ^
+trainer\tests.py:51: [C0326(bad-whitespace), ] Exactly one space required after comma
+        print(json_Action.modular_filtering(facility.get_by_type_neighborho('ג',"כל-המתקנים"),"lighting","כן"))
+                                                                                                        ^
+trainer\tests.py:52: [C0301(line-too-long), ] Line too long (442/160)
+trainer\tests.py:52: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(facility.get_by_type_neighborho('ג','קט-רגל'),[{'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076', 'id': '142'}])
+                                                            ^
+trainer\tests.py:52: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(facility.get_by_type_neighborho('ג','קט-רגל'),[{'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076', 'id': '142'}])
+                                                                      ^
+trainer\tests.py:56: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\tests.py:56: [C0326(bad-whitespace), ] Exactly one space required around comparison
+        if (DB_Action.checkUserNameExistence(user_name)==False):
+                                                       ^^
+trainer\tests.py:60: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\tests.py:60: [C0326(bad-whitespace), ] Exactly one space required before comparison
+        if(json_Action.check_permission(user)== False):
+                                             ^^
+trainer\tests.py:63: [C0301(line-too-long), ] Line too long (6719/160)
+trainer\tests.py:63: [C0326(bad-whitespace), ] Exactly one space required after assignment
+        facilities_result =[{'Type': "מגרש ספורט משולב – 43X32 מ'", 'Name': 'רמב"ם', 'street': 'קדושי בגדד', 'HouseNumbe': '1.0', 'neighborho': "ג'", 'Operator': 'ניהול עצמי', 'Seats': '0.0', 'Activity': 'פתוח ללא הגבלה', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': 'רמב"ם', 'associatio': '', 'SportType': '', 'lat': '31.252959540000063', 'lon': '34.77930799000006', 'id': '20'}, {'Type': "אצטדיון/מסלול אתלטיקה קלה – 6-4 מסלולים, 250 או 300 מ'", 'Name': "מקיף א'", 'street': 'דרך השלום', 'HouseNumbe': '15.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'פתוח ללא הגבלה', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': "מקיף א'", 'associatio': '', 'SportType': '', 'lat': '31.252697283000032', 'lon': '34.801092856000025', 'id': '59'}, {'Type': "מגרש כדורגל – 45X90 מ'", 'Name': 'טאובל', 'street': 'בן גוריון', 'HouseNumbe': '0.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'בתיאום בלבד', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': '', 'associatio': '', 'SportType': '', 'lat': '31.253835614000025', 'lon': '34.813499412000056', 'id': '66'}, {'Type': 'מגרש טניס', 'Name': 'טאובל', 'street': 'בן גוריון', 'HouseNumbe': '0.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'פתוח ללא הגבלה', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': '', 'associatio': '', 'SportType': '', 'lat': '31.255589585000052', 'lon': '34.812797157000034', 'id': '67'}, {'Type': "מגרש כדורסל – 19X32 מ'", 'Name': 'נטעים', 'street': 'גולומב', 'HouseNumbe': '0.0', 'neighborho': "ג'", 'Operator': 'ניהול עצמי', 'Seats': '0.0', 'Activity': 'פתוח ללא הגבלה', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': 'נטעים', 'associatio': '', 'SportType': '', 'lat': '31.25481152900005', 'lon': '34.80434551500008', 'id': '77'}, {'Type': "אולם ספורט קטן – 20x10 מ'", 'Name': 'נטעים', 'street': 'גולומב', 'HouseNumbe': '0.0', 'neighborho': "ג'", 'Operator': 'ניהול עצמי', 'Seats': '0.0', 'Activity': 'בתיאום בלבד', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': 'נטעים', 'associatio': '', 'SportType': '', 'lat': '31.254599988000052', 'lon': '34.80413410500006', 'id': '78'}, {'Type': "מגרש כדורסל – 19X32 מ'", 'Name': 'אולפנת אמי"ת', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'פתוח ללא הגבלה', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': 'אמי"ת', 'associatio': '', 'SportType': '', 'lat': '31.254698034000057', 'lon': '34.801090842000065', 'id': '88'}, {'Type': "אולם ספורט בינוני – 32x19 מ'", 'Name': 'אולפנת אמי"ת', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '100.0', 'Activity': 'בתיאום בלבד', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': 'אמי"ת', 'associatio': 'מכבי דרום', 'SportType': 'התעמלות אומנותית', 'lat': '31.254729720000057', 'lon': '34.800717803000055', 'id': '89'}, {'Type': "אולם ספורט קטן – 20x10 מ'", 'Name': 'דגניה', 'street': "ז'בוטינסקי", 'HouseNumbe': '17.0', 'neighborho': "ג'", 'Operator': 'ניהול עצמי', 'Seats': '0.0', 'Activity': 'בתיאום בלבד', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': '', 'associatio': '', 'SportType': '', 'lat': '31.24996042300006', 'lon': '34.80812192500008', 'id': '98'}, {'Type': "אולם ספורט קטן – 15x24 מ'", 'Name': 'חזון עובדיה', 'street': 'גוש עציון', 'HouseNumbe': '13.0', 'neighborho': "ג'", 'Operator': 'ניהול עצמי', 'Seats': '0.0', 'Activity': 'בתיאום בלבד', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': '', 'associatio': '', 'SportType': '', 'lat': '31.253308584000024', 'lon': '34.80797698500004', 'id': '102'}, {'Type': "מגרש ספורט משולב – 43X32 מ'", 'Name': 'טאובל', 'street': 'בן גוריון', 'HouseNumbe': '0.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'פתוח ללא הגבלה', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': '', 'associatio': '', 'SportType': '', 'lat': '31.255115363000073', 'lon': '34.813026809000064', 'id': '103'}, {'Type': "אולם ספורט בינוני – 32x19 מ'", 'Name': "מקיף א'", 'street': 'דרך השלום', 'HouseNumbe': '15.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'בתיאום בלבד', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': "מקיף א'", 'associatio': 'ניקה,מכבי, כיוונים', 'SportType': 'ריקודים, כדורסל, נכים', 'lat': '31.252473181000028', 'lon': '34.80021493900006', 'id': '116'}, {'Type': "מגרש ספורט משולב – 43X32 מ'", 'Name': "מקיף א'", 'street': 'דרך השלום', 'HouseNumbe': '15.0', 'neighborho': "ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'פתוח ללא הגבלה', 'fencing': 'קיים גידור', 'lighting': 'קיימת תאורה', 'handicappe': 'נגיש לנכים', 'condition': 'תקין ופעיל', 'Owner': 'עיריית באר שבע', 'ForSchool': "מקיף א'", 'associatio': '', 'SportType': '', 'lat': '31.252804155000035', 'lon': '34.80168226600006', 'id': '120'}, {'Type': 'קט רגל וינגייט', 'Name': '', 'street': 'וינגייט', 'HouseNumbe': '0.0', 'neighborho': 'ג', 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': '', 'fencing': '', 'lighting': 'כן', 'handicappe': '', 'condition': 'טוב מאוד', 'Owner': '', 'ForSchool': '', 'associatio': 'לא', 'SportType': '', 'lat': '31.256328799000073', 'lon': '34.802853764000076', 'id': '142'}, {'Type': 'מתקן אימון כושר גופני', 'Name': 'פארק מרמלדה', 'street': "שד' בן גוריון", 'HouseNumbe': '0.0', 'neighborho': "שכונה ג'", 'Operator': 'כיוונים', 'Seats': '0.0', 'Activity': 'כן', 'fencing': 'כן', 'lighting': 'כן', 'handicappe': '', 'condition': '', 'Owner': '', 'ForSchool': '', 'associatio': '', 'SportType': '', 'lat': '31.259607209000023', 'lon': '34.81121359200006', 'id': '165'}]
+                          ^
+trainer\tests.py:65: [C0326(bad-whitespace), ] Exactly one space required after comma
+        filtered_facilities = facility.get_by_type_neighborho('ג',"כל-המתקנים")
+                                                                 ^
+trainer\tests.py:66: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(json_Action.modular_filtering(filtered_facilities,"lighting","כן"),facilities_result)
+                                                                          ^
+trainer\tests.py:66: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(json_Action.modular_filtering(filtered_facilities,"lighting","כן"),facilities_result)
+                                                                                     ^
+trainer\tests.py:66: [C0326(bad-whitespace), ] Exactly one space required after comma
+        self.assertEqual(json_Action.modular_filtering(filtered_facilities,"lighting","כן"),facilities_result)
+                                                                                           ^
+trainer\tests.py:56: [C0121(singleton-comparison), MyTestCase.test_get_filtered_sport_facility_by_ligth] Comparison to False should be 'not expr'
+trainer\tests.py:60: [C0121(singleton-comparison), MyTestCase.test_get_filtered_sport_facility_by_ligth] Comparison to False should be 'not expr'
+trainer\tests.py:4: [W0611(unused-import), ] Unused TestCase imported from django.test
+trainer\tests.py:8: [C0411(wrong-import-order), ] standard import "import json" should be placed before "from django.test import TestCase"
+trainer\tests.py:9: [C0411(wrong-import-order), ] standard import "import os.path" should be placed before "from django.test import TestCase"
+************* Module trainer.urls
+trainer\urls.py:8: [C0304(missing-final-newline), ] Final newline missing
+trainer\urls.py:3: [W0611(unused-import), ] Unused path imported from django.urls
+trainer\urls.py:3: [C0411(wrong-import-order), ] third party import "from django.urls import path" should be placed before "from . import views"
+************* Module trainer.views
+trainer\views.py:9: [C0326(bad-whitespace), ] Exactly one space required after comma
+from django.contrib.auth import login,logout
+                                     ^
+trainer\views.py:27: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/admin.html")
+                         ^
+trainer\views.py:30: [C0326(bad-whitespace), ] Exactly one space required after comma
+def rateCoach(request,coachID,userName):
+                     ^
+trainer\views.py:30: [C0326(bad-whitespace), ] Exactly one space required after comma
+def rateCoach(request,coachID,userName):
+                             ^
+trainer\views.py:34: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/folder_trainee/rateCoach.html",context)
+                         ^
+trainer\views.py:34: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/folder_trainee/rateCoach.html",context)
+                                                                      ^
+trainer\views.py:36: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterCoachRate(request,coachID,rate,userName):
+                          ^
+trainer\views.py:36: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterCoachRate(request,coachID,rate,userName):
+                                  ^
+trainer\views.py:36: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterCoachRate(request,coachID,rate,userName):
+                                       ^
+trainer\views.py:40: [C0326(bad-whitespace), ] Exactly one space required after comma
+    DB_Action.insertCoachRate(rate,coach)
+                                  ^
+trainer\views.py:41: [C0326(bad-whitespace), ] Exactly one space required before assignment
+    user  = DB_Action.get_user_by_userName(userName)
+          ^
+trainer\views.py:45: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : userName,"role": "3"}
+                          ^
+trainer\views.py:45: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : userName,"role": "3"}
+                                                              ^
+trainer\views.py:45: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : userName,"role": "3"}
+                                                                                          ^
+trainer\views.py:45: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : userName,"role": "3"}
+                                                                                                             ^
+trainer\views.py:45: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : userName,"role": "3"}
+                                                                                                                                   ^
+trainer\views.py:46: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request, "../templates/folder_trainee/web_trainee.html",context)
+                                                                         ^
+trainer\views.py:51: [C0326(bad-whitespace), ] Exactly one space required after comma
+def watchTrainers(request,userName):
+                         ^
+trainer\views.py:61: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:64: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"coachRates": allcoaches,"user":userName}
+                                       ^
+trainer\views.py:65: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/folder_trainee/watchTrainers.html",context)
+                         ^
+trainer\views.py:65: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/folder_trainee/watchTrainers.html",context)
+                                                                          ^
+trainer\views.py:77: [C0326(bad-whitespace), ] Exactly one space required after comma
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+                           ^
+trainer\views.py:77: [C0326(bad-whitespace), ] Exactly one space required after comma
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+                                     ^
+trainer\views.py:77: [C0326(bad-whitespace), ] Exactly one space required after comma
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+                                               ^
+trainer\views.py:77: [C0326(bad-whitespace), ] Exactly one space required after comma
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+                                                   ^
+trainer\views.py:77: [C0326(bad-whitespace), ] Exactly one space required after comma
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+                                                            ^
+trainer\views.py:77: [C0326(bad-whitespace), ] Exactly one space required after comma
+    DB_Action.updateUser(id,firstName,lasttName,pwd,userName,Email,role)
+                                                                  ^
+trainer\views.py:87: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/registration/sign-in.html")
+                         ^
+trainer\views.py:89: [C0326(bad-whitespace), ] Exactly one space required after comma
+def rateFacility(request,facilityID,userName):
+                        ^
+trainer\views.py:89: [C0326(bad-whitespace), ] Exactly one space required after comma
+def rateFacility(request,facilityID,userName):
+                                   ^
+trainer\views.py:90: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"facilityID":facilityID,"userName":userName}
+                                      ^
+trainer\views.py:95: [C0326(bad-whitespace), ] No space allowed before comma
+    return render(request, "../templates/folder_trainee/rateFacility.html" ,context)
+                                                                           ^
+trainer\views.py:95: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request, "../templates/folder_trainee/rateFacility.html" ,context)
+                                                                           ^
+trainer\views.py:99: [C0326(bad-whitespace), ] Exactly one space required after comma
+    messages.info(request,"You are now logout!")
+                         ^
+trainer\views.py:102: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator,origOpenHours):
+                               ^
+trainer\views.py:102: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator,origOpenHours):
+                                        ^
+trainer\views.py:102: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator,origOpenHours):
+                                                 ^
+trainer\views.py:102: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator,origOpenHours):
+                                                           ^
+trainer\views.py:102: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator,origOpenHours):
+                                                                            ^
+trainer\views.py:102: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterFacilityUpdate(request,origName,origType,origOwner,origNeighborhood,origOperator,origOpenHours):
+                                                                                         ^
+trainer\views.py:109: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood,"OpenHours":OpenHours}
+                    ^
+trainer\views.py:109: [C0326(bad-whitespace), ] Exactly one space required after comma
+    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood,"OpenHours":OpenHours}
+                                 ^
+trainer\views.py:109: [C0326(bad-whitespace), ] Exactly one space required after comma
+    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood,"OpenHours":OpenHours}
+                                             ^
+trainer\views.py:109: [C0326(bad-whitespace), ] Exactly one space required after comma
+    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood,"OpenHours":OpenHours}
+                                                                 ^
+trainer\views.py:109: [C0326(bad-whitespace), ] Exactly one space required after comma
+    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood,"OpenHours":OpenHours}
+                                                                               ^
+trainer\views.py:109: [C0326(bad-whitespace), ] Exactly one space required after comma
+    facilityToUpdate={"Type":type,"Name":name,"Operator":Operator,"Owner":Owner,"neighborho":neighborhood,"OpenHours":OpenHours}
+                                                                                                         ^
+trainer\views.py:110: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    originalFacility={"Type":origType,"Name":origName,"Operator":origOperator,"Owner":origOwner,"neighborho":origNeighborhood}
+                    ^
+trainer\views.py:110: [C0326(bad-whitespace), ] Exactly one space required after comma
+    originalFacility={"Type":origType,"Name":origName,"Operator":origOperator,"Owner":origOwner,"neighborho":origNeighborhood}
+                                     ^
+trainer\views.py:110: [C0326(bad-whitespace), ] Exactly one space required after comma
+    originalFacility={"Type":origType,"Name":origName,"Operator":origOperator,"Owner":origOwner,"neighborho":origNeighborhood}
+                                                     ^
+trainer\views.py:110: [C0326(bad-whitespace), ] Exactly one space required after comma
+    originalFacility={"Type":origType,"Name":origName,"Operator":origOperator,"Owner":origOwner,"neighborho":origNeighborhood}
+                                                                             ^
+trainer\views.py:110: [C0326(bad-whitespace), ] Exactly one space required after comma
+    originalFacility={"Type":origType,"Name":origName,"Operator":origOperator,"Owner":origOwner,"neighborho":origNeighborhood}
+                                                                                               ^
+trainer\views.py:112: [C0326(bad-whitespace), ] Exactly one space required after comma
+    facilities.updateFacility(originalFacility,facilityToUpdate)
+                                              ^
+trainer\views.py:122: [C0326(bad-whitespace), ] Exactly one space required after comma
+def publishTrainer(request,userName):
+                          ^
+trainer\views.py:124: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,'../templates/folder_trainer/verifyPublish.html',context)
+                         ^
+trainer\views.py:124: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,'../templates/folder_trainer/verifyPublish.html',context)
+                                                                          ^
+trainer\views.py:126: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterverify(request,ans,userName):
+                       ^
+trainer\views.py:126: [C0326(bad-whitespace), ] Exactly one space required after comma
+def afterverify(request,ans,userName):
+                           ^
+trainer\views.py:127: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:127: [C0326(bad-whitespace), ] Exactly one space required around comparison
+    if(ans=="0"):
+          ^^
+trainer\views.py:140: [C0326(bad-whitespace), ] Exactly one space required after comma
+    uname = request.POST.get('username',False)
+                                       ^
+trainer\views.py:141: [C0326(bad-whitespace), ] Exactly one space required after comma
+    pwd = request.POST.get('password',False)
+                                     ^
+trainer\views.py:144: [C0326(bad-whitespace), ] Exactly one space required before comparison
+    if(user!= None and uname != None and pwd != None):
+           ^^
+trainer\views.py:145: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:145: [C0326(bad-whitespace), ] Exactly one space required around comparison
+        if(user['password']==pwd):
+                           ^^
+trainer\views.py:146: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:150: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"object_List" : allusers,"facilities" : facilities.distros_dict}
+                                      ^
+trainer\views.py:150: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"object_List" : allusers,"facilities" : facilities.distros_dict}
+                                                               ^
+trainer\views.py:151: [C0326(bad-whitespace), ] Exactly one space required after comma
+                return render(request, "admin2.html",context)
+                                                    ^
+trainer\views.py:152: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:156: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
+                                      ^
+trainer\views.py:156: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
+                                                                          ^
+trainer\views.py:156: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
+                                                                                                      ^
+trainer\views.py:156: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
+                                                                                                                         ^
+trainer\views.py:156: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "2"}
+                                                                                                                                            ^
+trainer\views.py:157: [C0326(bad-whitespace), ] Exactly one space required after comma
+                return render(request, "../templates/folder_trainer/trainer_web.html",context)
+                                                                                     ^
+trainer\views.py:158: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:162: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
+                                      ^
+trainer\views.py:162: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
+                                                                          ^
+trainer\views.py:162: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
+                                                                                                      ^
+trainer\views.py:162: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
+                                                                                                                         ^
+trainer\views.py:162: [C0326(bad-whitespace), ] Exactly one space required after comma
+                context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
+                                                                                                                                            ^
+trainer\views.py:163: [C0326(bad-whitespace), ] Exactly one space required after comma
+                return render(request, "../templates/folder_trainee/web_trainee.html",context)
+                                                                                     ^
+trainer\views.py:164: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"registration/sign-in.html")
+                         ^
+trainer\views.py:173: [C0326(bad-whitespace), ] Exactly one space required after comma
+def delete_user(request,userID):
+                       ^
+trainer\views.py:178: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/admin2.html",context)
+                         ^
+trainer\views.py:178: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/admin2.html",context)
+                                                    ^
+trainer\views.py:182: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    context['firstName']="{} {}".format(context['firstName'],context['lastName'])
+                        ^
+trainer\views.py:182: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context['firstName']="{} {}".format(context['firstName'],context['lastName'])
+                                                            ^
+trainer\views.py:185: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/registration/update.html",{"user":context})
+                         ^
+trainer\views.py:185: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/registration/update.html",{"user":context})
+                                                                 ^
+trainer\views.py:190: [C0326(bad-whitespace), ] Exactly one space required after comma
+        print("dg,la;dgadgkad'lkgafdkh===================  ",facilityType)
+                                                            ^
+trainer\views.py:251: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:252: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:253: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:253: [C0326(bad-whitespace), ] Exactly one space required around assignment
+       tmp=tmp.distros_dict
+          ^
+trainer\views.py:254: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:255: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:256: [W0311(bad-indentation), ] Bad indentation. Found 11 spaces, expected 8
+trainer\views.py:256: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:256: [C0326(bad-whitespace), ] Exactly one space required around comparison
+           if(obf["id"]==facilityId):
+                       ^^
+trainer\views.py:257: [W0311(bad-indentation), ] Bad indentation. Found 15 spaces, expected 12
+trainer\views.py:257: [C0326(bad-whitespace), ] Exactly one space required before assignment
+               s= obf
+                ^
+trainer\views.py:258: [W0311(bad-indentation), ] Bad indentation. Found 15 spaces, expected 12
+trainer\views.py:259: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:259: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:260: [W0311(bad-indentation), ] Bad indentation. Found 12 spaces, expected 8
+trainer\views.py:261: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:261: [C0326(bad-whitespace), ] Exactly one space required after comma
+       context = {"myFacility":s,"users":users}
+                                ^
+trainer\views.py:262: [W0311(bad-indentation), ] Bad indentation. Found 7 spaces, expected 4
+trainer\views.py:262: [C0326(bad-whitespace), ] Exactly one space required after comma
+       return render(request,"updateFacility/updateFacility.html",context)
+                            ^
+trainer\views.py:262: [C0326(bad-whitespace), ] Exactly one space required after comma
+       return render(request,"updateFacility/updateFacility.html",context)
+                                                                 ^
+trainer\views.py:266: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    username=request.POST.get("userName")
+            ^
+trainer\views.py:267: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    firstName=request.POST.get("firstName")
+             ^
+trainer\views.py:268: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    lastName=request.POST.get("lastName")
+            ^
+trainer\views.py:269: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    password=request.POST.get("password")
+            ^
+trainer\views.py:270: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    Email=request.POST.get("Email")
+         ^
+trainer\views.py:271: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    id=request.POST.get("id")
+      ^
+trainer\views.py:272: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    role=request.POST.get("role")
+        ^
+trainer\views.py:273: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    user={"userName":username,"firstName":firstName,"lastName":lastName,"password":password,"Email":Email,"role":role}
+        ^
+trainer\views.py:273: [C0326(bad-whitespace), ] Exactly one space required after comma
+    user={"userName":username,"firstName":firstName,"lastName":lastName,"password":password,"Email":Email,"role":role}
+                             ^
+trainer\views.py:273: [C0326(bad-whitespace), ] Exactly one space required after comma
+    user={"userName":username,"firstName":firstName,"lastName":lastName,"password":password,"Email":Email,"role":role}
+                                                   ^
+trainer\views.py:273: [C0326(bad-whitespace), ] Exactly one space required after comma
+    user={"userName":username,"firstName":firstName,"lastName":lastName,"password":password,"Email":Email,"role":role}
+                                                                       ^
+trainer\views.py:273: [C0326(bad-whitespace), ] Exactly one space required after comma
+    user={"userName":username,"firstName":firstName,"lastName":lastName,"password":password,"Email":Email,"role":role}
+                                                                                           ^
+trainer\views.py:273: [C0326(bad-whitespace), ] Exactly one space required after comma
+    user={"userName":username,"firstName":firstName,"lastName":lastName,"password":password,"Email":Email,"role":role}
+                                                                                                         ^
+trainer\views.py:274: [C0326(bad-whitespace), ] Exactly one space required around assignment
+    role=user["role"]
+        ^
+trainer\views.py:277: [C0326(bad-whitespace), ] Exactly one space required after comma
+    selectedNeighbohood = request.POST.get("neighborhoods",False)
+                                                          ^
+trainer\views.py:278: [C0326(bad-whitespace), ] Exactly one space required after comma
+    facilityType = request.POST.get("facilitiesType",False)
+                                                    ^
+trainer\views.py:279: [C0326(bad-whitespace), ] Exactly one space required after comma
+    light = request.POST.get("lighting",False)
+                                       ^
+trainer\views.py:284: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:289: [C0301(line-too-long), ] Line too long (172/160)
+trainer\views.py:289: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
+                                  ^
+trainer\views.py:289: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
+                                                                      ^
+trainer\views.py:289: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
+                                                                                                  ^
+trainer\views.py:289: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
+                                                                                                                ^
+trainer\views.py:289: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
+                                                                                                                          ^
+trainer\views.py:289: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
+                                                                                                                                                ^
+trainer\views.py:289: [C0326(bad-whitespace), ] Exactly one space required after comma
+    context = {"courtsList":courts,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"massege":msg,"id" : id,"username" : username,"role": role,"user" : user}
+                                                                                                                                                             ^
+trainer\views.py:290: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:292: [C0326(bad-whitespace), ] Exactly one space required after comma
+        return render(request,"../templates/folder_trainer/trainer_web.html",context)
+                             ^
+trainer\views.py:292: [C0326(bad-whitespace), ] Exactly one space required after comma
+        return render(request,"../templates/folder_trainer/trainer_web.html",context)
+                                                                            ^
+trainer\views.py:295: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/folder_trainee/web_trainee.html",context)
+                         ^
+trainer\views.py:295: [C0326(bad-whitespace), ] Exactly one space required after comma
+    return render(request,"../templates/folder_trainee/web_trainee.html",context)
+                                                                        ^
+trainer\views.py:300: [C0326(bad-whitespace), ] Exactly one space required after comma
+    uname = request.POST.get('usernameSignUp',False)
+                                             ^
+trainer\views.py:301: [C0326(bad-whitespace), ] Exactly one space required after comma
+    firstpwd = request.POST.get('firstPasswordSignUp',False)
+                                                     ^
+trainer\views.py:302: [C0326(bad-whitespace), ] Exactly one space required after comma
+    secpwd = request.POST.get('secondPasswordSignUp',False)
+                                                    ^
+trainer\views.py:303: [C0326(bad-whitespace), ] Exactly one space required after comma
+    fullName = request.POST.get('fullName',False)
+                                          ^
+trainer\views.py:304: [C0326(bad-whitespace), ] Exactly one space required after comma
+    email = request.POST.get('emailAdressSignUp',False)
+                                                ^
+trainer\views.py:305: [C0326(bad-whitespace), ] Exactly one space required after comma
+    views = request.POST.get('fullName',False)
+                                       ^
+trainer\views.py:306: [C0325(superfluous-parens), ] Unnecessary parens after 'if' keyword
+trainer\views.py:307: [C0326(bad-whitespace), ] Exactly one space required after comma
+        messages.info(request,'please enter same password')
+                             ^
+trainer\views.py:308: [C0326(bad-whitespace), ] Exactly one space required after comma
+        return render(request,"../templates/registration/sign-up.html")
+                             ^
+trainer\views.py:309: [C0325(superfluous-parens), ] Unnecessary parens after 'elif' keyword
+trainer\views.py:312: [C0325(superfluous-parens), ] Unnecessary parens after 'elif' keyword
+trainer\views.py:315: [C0325(superfluous-parens), ] Unnecessary parens after 'elif' keyword
+trainer\views.py:315: [C0326(bad-whitespace), ] Exactly one space required after comma
+    elif(not re.search(regex,email)):
+                            ^
+trainer\views.py:318: [C0325(superfluous-parens), ] Unnecessary parens after 'elif' keyword
+trainer\views.py:322: [C0326(bad-whitespace), ] Exactly one space required after comma
+        DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
+                                   ^
+trainer\views.py:322: [C0326(bad-whitespace), ] Exactly one space required after comma
+        DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
+                                            ^
+trainer\views.py:322: [C0326(bad-whitespace), ] Exactly one space required after comma
+        DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
+                                                                   ^
+trainer\views.py:322: [C0326(bad-whitespace), ] Exactly one space required after comma
+        DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
+                                                                                          ^
+trainer\views.py:322: [C0326(bad-whitespace), ] Exactly one space required after comma
+        DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
+                                                                                              ^
+trainer\views.py:326: [C0305(trailing-newlines), ] Trailing newlines
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\.'. String constant might be missing an r prefix.
+trainer\views.py:299: [W1401(anomalous-backslash-in-string), ] Anomalous backslash in string: '\w'. String constant might be missing an r prefix.
+trainer\views.py:6: [W0404(reimported), ] Reimport 'render' (imported line 3)
+trainer\views.py:11: [E0611(no-name-in-module), ] No name 'registration' in module 'templates'
+trainer\views.py:12: [W0404(reimported), ] Reimport 'messages' (imported line 7)
+trainer\views.py:68: [W0622(redefined-builtin), adminAfterUpdate] Redefining built-in 'id'
+trainer\views.py:97: [E0102(function-redefined), logout] function already defined line 9
+trainer\views.py:104: [W0622(redefined-builtin), afterFacilityUpdate] Redefining built-in 'type'
+trainer\views.py:102: [R0914(too-many-locals), afterFacilityUpdate] Too many local variables (18/15)
+trainer\views.py:138: [W0105(pointless-string-statement), ] String statement has no effect
+trainer\views.py:144: [C0121(singleton-comparison), loginBtn] Comparison to None should be 'expr is not None'
+trainer\views.py:144: [C0121(singleton-comparison), loginBtn] Comparison to None should be 'expr is not None'
+trainer\views.py:144: [C0121(singleton-comparison), loginBtn] Comparison to None should be 'expr is not None'
+trainer\views.py:187: [R0914(too-many-locals), addNewFacilities] Too many local variables (20/15)
+trainer\views.py:271: [W0622(redefined-builtin), ShowCourts] Redefining built-in 'id'
+trainer\views.py:265: [R0914(too-many-locals), ShowCourts] Too many local variables (19/15)
+trainer\views.py:287: [W0612(unused-variable), ShowCourts] Unused variable 'e'
+trainer\views.py:306: [R1705(no-else-return), register] Unnecessary "elif" after "return"
+trainer\views.py:305: [W0612(unused-variable), register] Unused variable 'views'
+trainer\views.py:1: [W0611(unused-import), ] Unused import os
+trainer\views.py:5: [W0611(unused-import), ] Unused forms imported from django
+trainer\views.py:8: [W0611(unused-import), ] Unused User imported from django.contrib.auth.models
+trainer\views.py:9: [W0611(unused-import), ] Unused logout imported from django.contrib.auth
+trainer\views.py:9: [W0611(unused-import), ] Unused login imported from django.contrib.auth
+trainer\views.py:11: [W0611(unused-import), ] Unused registration imported from templates
+trainer\views.py:14: [W0611(unused-import), ] Unused RequestContext imported from django.template
+trainer\views.py:15: [W0611(unused-import), ] Unused HttpResponse imported from django.http
+trainer\views.py:16: [W0611(unused-import), ] Unused HttpResponseRedirect imported from django.http
+trainer\views.py:12: [C0411(wrong-import-order), ] third party import "from django.contrib import messages" should be placed before "from PM import DB_Action, json_Action"
+trainer\views.py:13: [C0411(wrong-import-order), ] standard import "import re" should be placed before "from django.shortcuts import render"
+trainer\views.py:14: [C0411(wrong-import-order), ] third party import "from django.template import RequestContext" should be placed before "from PM import DB_Action, json_Action"
+trainer\views.py:15: [C0411(wrong-import-order), ] third party import "from django.http import HttpResponse" should be placed before "from PM import DB_Action, json_Action"
+trainer\views.py:16: [C0411(wrong-import-order), ] third party import "from django.http import HttpResponseRedirect" should be placed before "from PM import DB_Action, json_Action"
+trainer\views.py:12: [C0412(ungrouped-imports), ] Imports from package django are not grouped
+
+-----------------------------------
+Your code has been rated at 1.55/10
+

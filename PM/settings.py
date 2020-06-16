@@ -14,6 +14,9 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -43,8 +46,14 @@ INSTALLED_APPS = [
 
 JENKINS_TASKS = (
     'django_jenkins.tasks.run_pep8',
-    'django_jenkins.tasks.run_pyflakes'
+    'django_jenkins.tasks.run_pyflakes',
+    'django_jenkins.tasks.run_pylint'
 )
+
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
+
+PROJECT_APPS =['trainer']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,3 +146,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'root')
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'static'),
 ]
+
