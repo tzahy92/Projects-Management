@@ -28,7 +28,7 @@ pipeline {
            }
            post{
                 always{
-                    juint 'PM/reports/juint.xml'
+                    junit 'PM/reports/junit.xml'
                         recordIssues(
                             tool: pep8(pattern: 'PM/reports/pep8.report'),
                             unstableTotalAll: 400,
