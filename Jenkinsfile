@@ -43,8 +43,7 @@ pipeline {
                         mail to: 'bsnani7@gmail.com',
                         subject: "Status of pipeline:
                         ${currentBuild.fullDisplayName}",
-                            body: "click here to for full view
-                        ${env.BUILD_URL} has result
+                            body: build has result
                         ${currentBuild.result} click this link to view the test results:
                         ${BUILD_URL}/testReport"
                 }
