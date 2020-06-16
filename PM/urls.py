@@ -41,6 +41,7 @@ urlpatterns = [
     path('updateUserDetails/<str:UserID>', views.showUpdateUser, name="updateUserDetails"),
     path('rateCoach/<str:coachID>/<str:userName>', views.rateCoach, name="rateCoach"),
     path('afterCoachRate/<str:coachID>/<str:rate>/<str:userName>', views.afterCoachRate, name="afterCoachRate"),
+    path('afterFacilityRate/<str:facilityID>/<str:userName>', views.afterFacilityRate, name="afterFacilityRate"),
     path('rateFacility/<str:facilityID>/<str:userName>', views.rateFacility, name="rateFacility"),
     path('publishTrainer/<str:userName>', views.publishTrainer, name="publishTrainer"),
     path('afterverify/<str:ans>/<str:userName>', views.afterverify, name="afterverify"),

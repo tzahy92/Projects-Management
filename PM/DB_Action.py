@@ -1,10 +1,12 @@
 import copy
-
+from PM import json_Action
 from django.contrib import admin
 from django.urls import path
 from pymongo import MongoClient
 
 """this file connecting all the other files to the project's data base"""
+
+
 
 cluster = MongoClient("mongodb+srv://yahelfr:29913051@cluster0-4iuqq.mongodb.net/test?retryWrites=true&w=majority")  ## connect to cluster
 db = cluster["shareball"]  ##connect to database
@@ -13,17 +15,33 @@ coachRatingCollection = db["coachRating"]
 facilityRatingCollection = db["facilityRating"]
 
 def insertCoachRate(rate,coach):
-    print("********************************************************")
-    print(rate)
-    print("********************************************************")
     coachRate = coachRatingCollection.find_one({"coach_id":coach["_id"]})
     ##y= coachRate["numOfrates"]
-    coachRate["numOfrates"] += 1
-    coachRate["AVGrate"] = (int(coachRate["AVGrate"]) + int(rate))/int(coachRate["numOfrates"])
-    coachRatingCollection.update_one({"coach_id":coach["_id"]},{"$set":{"AVGrate":coachRate["AVGrate"]},"$inc":{"numOfrates":1}})
+    coachRate["numOfrates"] =int(coachRate["numOfrates"])+ 1
+    coachRate["AVGrate"] = (int(coachRate["AVGrate"]) + int(rate)) / int(coachRate["numOfrates"])
+    coachRatingCollection.update_one({"coach_id": coach["_id"]},
+                                         {"$set": {"AVGrate": coachRate["AVGrate"]}, "$inc": {"numOfrates": 1}})
 
 
 
+
+
+def facilityRate(rate,facilityID):
+    print("++++++++++++++++++++++++++++++++++")
+    print(facilityID)
+    print(rate)
+    print("++++++++++++++++++++++++++++++++++")
+    getNameAction = json_Action.Sports_facilities()
+    name = getNameAction.getFacilityNameByID(facilityID)
+    currentRate = facilityRatingCollection.find_one({"facilityID":facilityID})
+    # if(currentRate == None):
+    facilityRatingCollection.insert_one({"facilityID": facilityID,"numOfRates":str(1),"AVGRate":rate,"facilityName":name})
+    #     return
+    # myquery = {"facilityID": facilityID}
+    # NumOfRates = int(currentRate["numOfRates"]) +1
+    # currentAVG = int(currentRate["AVGRate"])
+    # newvalues = {"$set": {"numOfRates": NumOfRates,"AVGRate":(currentAVG+rate)/NumOfRates}}
+    # facilityRatingCollection.update_one(myquery, newvalues)
 
 def insertcoachToRate(userName):
     coach = get_user_by_userName(userName)

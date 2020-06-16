@@ -57,11 +57,12 @@ def watchTrainers(request,userName):
         coach["Email"] = coach["E-mail"]
         coach["coachID"] = coach["_id"]
     for rate in allrates:
+        rate["coachID"] = rate["coach_id"]
         for coach in allcoaches:
             if (rate["coach_id"] == coach["_id"]):
                 coach["numOfRates"] = rate["numOfrates"]
                 coach["AVGrate"] = rate["AVGrate"]
-    context = {"coachRates": allcoaches,"user":userName}
+    context = {"coachRates": allrates,"user":userName}
     return render(request,"../templates/folder_trainee/watchTrainers.html",context)
 
 def adminAfterUpdate(request):
@@ -140,8 +141,8 @@ def loginBtn(request):
     uname = request.POST.get('username',False)
     pwd = request.POST.get('password',False)
     user = DB_Action.get_user_by_userName(uname)
-    user["Email"] = user["E-mail"]
     if(user!= None and uname != None and pwd != None):
+        user["Email"] = user["E-mail"]
         if(user['password']==pwd):
             if (user['role'] == '1'):
                 allusers = DB_Action.getAllUsers()
@@ -161,11 +162,31 @@ def loginBtn(request):
                 user["Email"] = user["E-mail"]
                 context = {"user":user,"neighborhoddList":neighborhoddList,"facilities":facilitiesList,"id" : user['_id'],"username" : uname,"role": "3"}
                 return render(request, "../templates/folder_trainee/web_trainee.html",context)
-    return render(request,"registration/sign-in.html")
+    else:
+        messages.info(request, 'username or password are inccorect')
+        return render(request, "../templates/registration/sign-in.html")
 
 
 
 
+def afterFacilityRate(request,facilityID,userName):
+    some_var = request.POST.getlist('checks[]')
+    for i in range(1,6):
+        rb = "radio{}".format(i)
+        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+        print(rb)
+        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+        if rb in request.POST:
+            print("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888")
+            DB_Action.facilityRate(i,facilityID)
+    user = DB_Action.get_user_by_userName(userName)
+
+    neighborhoddList = json_Action.dict_neighborho.keys()
+    facilitiesList = json_Action.dict_Type.keys()
+    user["Email"] = user["E-mail"]
+    context = {"user": user, "neighborhoddList": neighborhoddList, "facilities": facilitiesList, "id": user['_id'],
+               "username": userName, "role": "3"}
+    return render(request, "../templates/folder_trainee/web_trainee.html", context)
 
 
 
