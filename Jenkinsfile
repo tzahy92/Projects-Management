@@ -23,7 +23,7 @@ pipeline {
                    sh 'pip install pyflakes'
                    sh 'pip install pylint'
                    sh 'pip install \'coverage==4.5.4\''
-                   sh 'python manage.py jenkins trainer.test --enable-coverage'
+                   sh 'python manage.py jenkins trainer.tests --enable-coverage'
                }
            }
            post{
