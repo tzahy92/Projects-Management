@@ -20,6 +20,7 @@ pipeline {
                withEnv(["HOME=${env.WORKSPACE}"]) {
                    sh 'pip install django-jenkins'
                    sh 'pip install pep8'
+                   sh 'pip install pyflakes'
                    sh 'pip install pylint'
                    sh 'pip install \'coverage==4.5.4\''
                    sh 'python manage.py jenkins trainer.test --enable-coverage'
