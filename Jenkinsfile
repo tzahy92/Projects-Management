@@ -48,7 +48,7 @@ pipeline {
                         body: "build has result success if you want to see the reports please see this link: ${BUILD_URL}/testReport"
                 }
                 failure {
-                    mail to: 'bsnani7@gmail.com',
+                    mail to: 'bsnani7@gmail.com' 'Tzahy92@gmail.com',
                         subject: "Status of pipeline: ${currentBuild.fullDisplayName}",
                         body: "build has result failure if you want to see the reports please see this link: ${BUILD_URL}/testReport "
                 }
