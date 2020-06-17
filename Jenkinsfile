@@ -63,6 +63,9 @@ pipeline {
                     mail to: 'matanlazimi@gmail.com',
                         subject: "Status of pipeline: ${currentBuild.fullDisplayName}",
                         body: "build has result success if you want to see the reports please see this link: ${BUILD_URL}/testReport"
+                    mail to: 'yahel.fri@gmail.com',
+                        subject: "Status of pipeline: ${currentBuild.fullDisplayName}",
+                        body: "build has result success if you want to see the reports please see this link: ${BUILD_URL}/testReport"
                 }
                 failure {
                     mail to: 'bsnani7@gmail.com',

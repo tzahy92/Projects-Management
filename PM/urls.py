@@ -52,6 +52,8 @@ urlpatterns = [
     path('updateFacilityDetails/<str:facilityId>', views.showUpdateFacility, name="editFacility"),
     path('newFacilities/', views.addNewFacilities, name="newFacilities"),
     path('watchTrainers/<str:userName>', views.watchTrainers, name="watchTrainers"),
+    path('showInMap/<str:facilityId>', views.showFacilityInMap, name="show_in_map"),
+
     #path('newFacilities/<str:facilityType>/<str:facilityName>/<str:facilityStreet>/<str:facilityHouseNumbe>/<str:facilityNeighborho>/<str:facilityOperator>/<str:facilitySeats>/<str:facilityActivity>/<str:facilityFencing>/<str:facilityLighting>/<str:facilityHandicappe>/<str:facilityCondition>/<str:facilityOwner><str:facilityForSchool>/<str:facilityAssociatio>/<str:facilitySportType>/<str:facilitylat>/<str:facilitylon>', views.addNewFacilities, name="newFacilities"),
     ##facilityName=instance.Name facilityNeighborhood=instance.neighborho facilityOperator=instance.Operator facilityOwner = instance.Owner
     #url(r'^trainer/delete/(?P<value>.*)/$', views.delete_user, name='deleteUser'),
