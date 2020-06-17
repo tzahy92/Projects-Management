@@ -42,7 +42,6 @@ class MyTestCase(unittest.TestCase):
             DB_Action.update_user_by_ID("001","id","389")
 
     def test_get_all_sport_facility(self):
-
         facility = json_Action.Sports_facilities()
         self.assertEqual(facility.get_distros_dict(),self.distros_dict)
 
