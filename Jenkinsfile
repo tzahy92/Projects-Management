@@ -18,6 +18,7 @@ pipeline {
        stage('Static code metrics') {
            steps {
                 echo "Code Coverage"
+                sh 'pip install pycobertura'
                 sh  ''' source activate ${BUILD_TAG}
                         coverage run irisvmpy/iris.py 1 1 2 3
                         python -m coverage xml -o ./reports/coverage.xml
