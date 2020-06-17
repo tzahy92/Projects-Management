@@ -41,6 +41,17 @@ pipeline {
                         )
 		                recordIssues(tools: [flake8(pattern: 'reports/pyflakes.report')])
 		                //mail to: 'bsnani7@gmail.com', subject: "Status of pipeline: ${currentBuild.fullDisplayName}", body: "build has result ${currentBuild.result} click this link to view the test results: ${BUILD_URL}/testReport"
+		                step([$class: 'CoberturaPublisher',
+                                   autoUpdateHealth: false,
+                                   autoUpdateStability: false,
+                                   coberturaReportFile: 'reports/coverage.xml',
+                                   failNoReports: false,
+                                   failUnhealthy: false,
+                                   failUnstable: false,
+                                   maxNumberOfBuilds: 10,
+                                   onlyStable: false,
+                                   sourceEncoding: 'ASCII',
+                                   zoomCoverageChart: false])
                 }
                 success {
                     mail to: 'bsnani7@gmail.com',
