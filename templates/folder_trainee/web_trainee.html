@@ -202,13 +202,14 @@ td
     <tr>
     <th>TYPE</th>
     <th>NAME</th>
-    <th>NEIGHBORHOOD</th>
-    <th>OPERATOR</th>
-    <th>LIGHTNING</th>
-    <th>CONDITION</th>
-    <th>OWNER</th>
-    <th>OpenHours</th>
-    <th>rate facility</th>
+    <th> NEIGHBORHOOD </th>
+    <th> OPERATOR </th>
+    <th> LIGHTNING </th>
+    <th> CONDITION </th>
+    <th> OWNER </th>
+    <th> OpenHours </th>
+    <th> rate facility </th>
+    <th> show in map </th>
 
   </tr >
            {% if massege == False %}
@@ -232,8 +233,9 @@ td
                          style="text-align:center!important; width:50% !important;"class="button" type="button">
                          <a href = {% url 'rateFacility' facilityID=instance.id userName=username%} class="in-button-font">rate</a>
                  </button>
-
             </th>
+                       <th align="center"><button class="button" type="button"><a class="in-button-font" href ={% url 'show_in_map' facilityId=instance.id %}  formmethod="post">Location</a></button></th>
+
                    </tr>
                {% empty %}
                    <tr><td colspan="5">No sports facilities found</td></tr>

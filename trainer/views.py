@@ -343,5 +343,15 @@ def register(request):
         DB_Action.insert_user(uname,firstpwd,fullName.split(" ")[0],fullName.split(" ")[1],'1',email)
         return render(request, "../templates/registration/sign-in.html")
 
-
-
+def showFacilityInMap(request, facilityId):
+    # facilityToUpdate = {"Type": facilityType,"Name":facilityName , "neighborho":facilityNeighborhood,"Operator": facilityOperator, "Owner": facilityOwner}
+    users = DB_Action.getAllUsers()
+    tmp = json_Action.Sports_facilities()
+    tmp = tmp.distros_dict
+    s = {}
+    for obf in tmp:
+        if (obf["id"] == facilityId):
+            s = obf
+            break
+    context = {"myFacility": s, "users": users}
+    return render(request, "map.html", context)
