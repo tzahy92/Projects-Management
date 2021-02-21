@@ -1,6 +1,6 @@
 # Projects-Management
 
-Yzahk Tzahy Maymon
+Itzhak Maymon
 
 Yahel Friedman
 
